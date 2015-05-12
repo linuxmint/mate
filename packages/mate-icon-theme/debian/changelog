@@ -1,0 +1,35 @@
+mate-icon-theme (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2015 14:02:40 +0200
+
+mate-icon-theme (1.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/changelog:
+    + Adapt to files in new upstream source tarball.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * lintian:
+    + Drop unused overrides.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 15 Mar 2014 21:42:02 +0100
+
+mate-icon-theme (1.6.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards: to 3.9.5. No changes needed.
+  * debian/copyright:
+    + Add license stanza for new file: compile.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 15 Jan 2014 10:51:13 +0100
+
+mate-icon-theme (1.6.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #728463).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 05 Nov 2013 19:20:51 +0100

@@ -1,0 +1,47 @@
+libmateweather (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2015 14:03:05 +0200
+
+libmateweather (1.8.0-2) unstable; urgency=low
+
+  * debian/control:
+    + Add Breaks:'n'Replaces: fields for previous dbg:packages.
+  * debian/copyright:
+    + Point to git.mate-desktop.org in Source: field.
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 15:40:53 +0200
+
+libmateweather (1.8.0-1) unstable; urgency=low
+
+  * New upstream released.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/control:
+    + Rename libmateweather-dbg to libmateweather1-dbg.
+    + Improve bin:packages' LONG_DESCRIPTION texts.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * debian/copyright:
+    + Adapt copyright file to new upstream release.
+  * lintian: Drop unused overrides.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 06 Mar 2014 12:55:19 +0100
+
+libmateweather (1.6.2-2) unstable; urgency=low
+
+  * Use dh-autoreconf to fix FTBFS on ppc64el. (Closes: #733840).
+  * Bump Standards: to 3.9.5 (no changes needed).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 04 Jan 2014 23:22:12 +0100
+
+libmateweather (1.6.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #726405).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 16 Oct 2013 01:38:48 +0200

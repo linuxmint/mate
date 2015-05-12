@@ -1,0 +1,3 @@
+version=3
+http://git.mate-desktop.org/mate-icon-theme/ \
+    snapshot/mate-icon-theme-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz

@@ -1,0 +1,160 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libmateweather
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/libmateweather
+
+Files: libmateweather/location-entry.c
+       libmateweather/location-entry.h
+       libmateweather/mateweather-location.*
+       libmateweather/mateweather-timezone.*
+       libmateweather/mateweather-win32.*
+       libmateweather/parser.c
+       libmateweather/parser.h
+       libmateweather/timezone-menu.c
+       libmateweather/timezone-menu.h
+Copyright: 2008, Red Hat, Inc
+           2008, Novell, Inc
+License: LGPL-2.1+
+
+Files: libmateweather/mateweather-xml-*
+Copyright: 2004, Gareth Owen
+           2005, Ryan Lortie
+License: GPL-2+
+
+Files: icons/*.svg
+       icons/*.png
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Presuming GPL-2+ (SVGs only hint to GPL-2) as all other licenses
+ used in this source code opt usage of a higher license version.
+ .
+ PNGs are derived from SVGs, so assuming the same license.
+
+Files: icons/moonshadow.pl
+       libmateweather/mateweather-prefs.*
+       libmateweather/weather*.*
+       python/mateweathermodule.c
+Copyright: *No copyright*
+License: GPL-2+
+
+Files: po/*
+Copyright: 1998-2010, Free Software Foundation, Inc.
+           2009, GNOME i18n Project for Vietnamese.
+           1999-2002, Jesús Bravo Álvarez
+           2001, Roy-Magne Mo
+           2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+           2003, 2005, 2006 Sharif FarsiWeb, Inc.
+           2004-2006 Adam Weinberger and the MATE Foundation
+           2004-20 THE PACKAGE'S COPYRIGHT HOLDER
+           2005, Canonical Ltd.
+           2008 Pavel Šefránek <ps@pjoul.cz>.
+           2010, Rosetta Contributors and Canonical Ltd.
+           1999, Dave Camp"
+           2003, Sun Microsystems"
+           1999-2004, Sergey V. Udaltsov
+           1999-2005, S. Papadimitriou
+           1999-2004, Siarhiej V. Udalcoŭ
+           THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+ or LGPL-2.1+
+ Apply appropriate license as either found in COPYING
+ file or in COPYING.GPL file.
+
+Files: po-locations/*
+Copyright: 2000-2010, Free Software Foundation, Inc.
+           2009, GNOME I18N Project for Vietnamese
+           2004-2006, Miloslav Trmac <mitr@volny.cz>
+           2004-2005, Adam Weinberger and the GNOME Foundation
+           2004-2005, Sharif FarsiWeb, Inc.
+           2004, Kostas Papadimas, Simos Xenitellis, FSF
+           2004, The GNOME Foundation
+           2005, Rajesh Ranjan <rranjan@redhat.com>
+           2005, Sunil Mohan Adapa <sunil@atc.tcs.co.in>
+           2005, Yahoo! Inc.
+           2006, Mate Georgian Translators
+           2008, Pavel Šefránek <ps@pjoul.cz>
+           2010, Krasimir Chonov <mk2616@abv.bg>
+           2010, Rosetta Contributors and Canonical Ltd.
+           THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+ or LGPL-2.1+
+ Apply appropriate license as either found in COPYING
+ file or in COPYING.GPL file.
+
+Files: data/Makefile.am
+       data/Locations.xml.in
+       data/README*
+       data/check-timezones.sh
+       data/locations.dtd
+       doc/*
+       icons/Makefile.am
+       libmateweather/Makefile.am
+       libmateweather/mateweather-enum-types.c
+       libmateweather/mateweather-enum-types.h
+       libmateweather/mateweather-uninstalled.pc.in
+       libmateweather/org.mate.weather.gschema.xml.in.in
+       libmateweather/test_*.c
+       po/LINGUAS
+       po/POTFILES.in
+       po/POTFILES.skip
+       po-locations/Makefile.am
+       po-locations/extract.xsl
+       po-locations/regen.sh
+       python/Makefile.am
+       python/bad__init__.py
+       python/demo.py
+       python/mateweather.*
+       Makefile.am
+       acinclude.m4
+       autogen.sh
+       configure.ac
+Copyright: *No copyright*
+License: GPL-2+ or LGPL-2.1+
+ Apply appropriate license as either found in COPYING
+ file or in COPYING.GPL file.
+
+Files: debian/*
+Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
+           2014 Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2.1+
+
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA  02110-1301  USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2,1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
