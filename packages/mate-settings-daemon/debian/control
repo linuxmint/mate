@@ -1,0 +1,195 @@
+Source: mate-settings-daemon
+Section: x11
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper (>= 9),
+               cdbs,
+               autotools-dev,
+               intltool,
+               libdbus-glib-1-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libmate-desktop-dev (>= 1.8.1),
+               libnotify-dev,
+               libxt-dev,
+               libxi-dev,
+               libxrandr-dev,
+               libxrender-dev,
+               libfontconfig1-dev,
+               libxext-dev,
+               libx11-dev,
+               libmatekbd-dev,
+               libxklavier-dev,
+               libgstreamer0.10-dev,
+               libgstreamer-plugins-base0.10-dev,
+               libstartup-notification0-dev,
+               libmatepolkit-dev,
+               libpolkit-agent-1-dev,
+               libpolkit-gobject-1-dev,
+               libpulse-dev,
+               libcanberra-gtk-dev,
+               x11proto-kb-dev,
+               libdconf-dev,
+               mate-common
+Standards-Version: 3.9.6
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-settings-daemon.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-settings-daemon.git
+
+Package: mate-settings-daemon
+Architecture: all
+Depends: ${misc:Depends},
+         mate-settings-daemon-pulse (>= ${source:Version}) | mate-settings-daemon-gstreamer (>= ${source:Version})
+Description: MATE session settings daemon (metapackage)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This is a metapackage, it depends on GStreamer or PulseAudio backends.
+
+Package: mate-settings-daemon-gstreamer
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-settings-daemon-common (= ${source:Version}),
+         mate-desktop-common (>= 1.8),
+         x11-xserver-utils
+Replaces: mate-settings-daemon (<< 1.1.1-1)
+Conflicts: mate-settings-daemon-pulse
+Description: MATE session settings daemon (GStreamer version)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package uses GStreamer for media keys.
+
+Package: mate-settings-daemon-pulse
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-settings-daemon-common (= ${source:Version}),
+         mate-desktop-common (>= 1.8),
+         pulseaudio,
+         x11-xserver-utils
+Replaces: mate-settings-daemon (<< 1.1.1-1)
+Conflicts: mate-settings-daemon-gstreamer
+Description: MATE session settings daemon (PulseAudio version)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package uses PulseAudio instead of GStreamer for media keys.
+
+Package: mate-settings-daemon-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: mate-settings-daemon (<< 1.1.1-1)
+Description: MATE session settings daemon (common files)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-settings-daemon-gstreamer-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-settings-daemon-gstreamer (= ${binary:Version})
+Description: MATE session settings daemon (GStreamer version, debugging symbols)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains the debugging symbols of the GStreamer backend.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-settings-daemon-pulse-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-settings-daemon-pulse (= ${binary:Version})
+Description: MATE session settings daemon (PulseAudio version, debugging symbols)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+  * Keyboard: layout, accessibility options, shortcuts, media keys
+  * Clipboard management
+  * Theming: background, icons, GTK+ applications
+  * Cleanup of unused files
+  * Mouse: cursors, speed, accessibility options
+  * Startup of other daemons: screensaver, sound daemon
+  * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains the debugging symbols for the PulseAudio backend.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+

@@ -1,0 +1,66 @@
+Source: mate-session-manager
+Section: x11
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9),
+               intltool,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libdbus-glib-1-dev,
+               libstartup-notification0-dev,
+               libsm-dev,
+               libice-dev,
+               libx11-dev,
+               libxt-dev,
+               libxau-dev,
+               libxext-dev,
+               libxtst-dev,
+               libxrender-dev,
+               libsystemd-login-dev [linux-any],
+               xmlto,
+               xsltproc,
+               gobject-introspection,
+               mate-common,
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-session-manager.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-session-manager.git
+
+Package: mate-session-manager
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         dbus-x11,
+         upower
+Recommends: mate-settings-daemon,
+            mate-panel,
+            marco,
+            caja,
+            mate-polkit
+Provides: x-session-manager
+Description: Session manager of the MATE desktop environment
+ This package contains a session that can be started from a display
+ manager such as MDM. It will load all necessary applications for a
+ full-featured user session.
+ .
+ The session manager also features the ability to save a running session
+ an restore it later.
+ .
+ This version is configured to start the MATE desktop, based on the
+ MATE panel.
+
+Package: mate-session-manager-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-session-manager (= ${binary:Version})
+Description: Session manager of the MATE desktop environment (debug symbols)
+ This package contains debugging symbols for mate-session-manager.
+ It is provided to help debugging problems.
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

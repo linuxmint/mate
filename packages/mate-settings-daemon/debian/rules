@@ -1,0 +1,65 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_SRCDIR_mate-settings-daemon-pulse := $(CURDIR)/debian/build/mate-settings-daemon-pulse
+DEB_BUILDDIR_mate-settings-daemon-pulse := $(CURDIR)/debian/build/mate-settings-daemon-pulse
+DEB_DESTDIR_mate-settings-daemon-pulse := $(CURDIR)/debian/mate-settings-daemon-pulse
+
+DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-gstreamer += --no-act
+DEB_DH_MAKESHLIBS_ARGS_mate-settings-daemon-pulse += --no-act
+
+DEB_DH_INSTALL_ARGS += --fail-missing
+
+# use the NEWS file as upstream ChangeLog...
+DEB_DH_INSTALLCHANGELOGS_ARGS = NEWS
+DEB_INSTALL_DOCS_ALL = README AUTHORS
+
+DEB_BUILD_PARALLEL = 1
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+DEB_CONFIGURE_EXTRA_FLAGS += \
+	--disable-silent-rules \
+	--libexecdir=/usr/bin \
+	--disable-static \
+	--disable-pulse \
+	--enable-gstreamer \
+	--enable-polkit \
+	--with-gtk=2.0
+
+common-install-indep:: remove-cruft
+common-install-arch:: remove-cruft
+
+remove-cruft::
+	rm -fv debian/tmp/usr/lib/mate-settings-daemon/*.la
+	rm -fv debian/tmp/usr/share/MateConf/gsettings/*.convert
+
+configure/mate-settings-daemon-pulse:: $(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status
+$(DEB_BUILDDIR_mate-settings-daemon-pulse)/config.status:
+	cp -a `find . -maxdepth 1 -mindepth 1 -not -name debian` $(DEB_SRCDIR_mate-settings-daemon-pulse)/$*
+	cd $(DEB_BUILDDIR_mate-settings-daemon-pulse) && \
+		$(DEB_CONFIGURE_SCRIPT_ENV) $(DEB_CONFIGURE_SCRIPT) \
+			$(DEB_CONFIGURE_NORMAL_ARGS) \
+			$(cdbs_configure_flags) \
+			--disable-silent-rules \
+			--libexecdir=/usr/bin \
+			--disable-static \
+			--enable-pulse \
+			--disable-gstreamer \
+			--enable-polkit \
+			--with-gtk=2.0 \
+			$(DEB_CONFIGURE_USER_FLAGS)
+
+build/mate-settings-daemon-pulse::
+	make -C $(DEB_BUILDDIR_mate-settings-daemon-pulse)
+
+install/mate-settings-daemon-pulse::
+	make -C $(DEB_BUILDDIR_mate-settings-daemon-pulse) install DESTDIR=$(DEB_DESTDIR_mate-settings-daemon-pulse)
+	rm -rf debian/mate-settings-daemon-pulse/usr/lib/mate-settings-daemon/*.la
+	# delete conflicts file with mate-settings-daemon-common
+	rm -rf debian/mate-settings-daemon-pulse/usr/share/locale/
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

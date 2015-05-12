@@ -1,0 +1,11 @@
+Document: mate-session-manager
+Title: MATE Session documentation
+Author: William Jon McCann
+Abstract: This documents describes how MATE sessions integrate with DBUS.
+ This document has been derived from the former GNOMEv2 session
+ documentation.
+Section: Programming/X11
+
+Format: HTML
+Index: /usr/share/doc/mate-session-manager/dbus/mate-session.html
+Files: /usr/share/doc/mate-session-manager/dbus/mate-session.html
