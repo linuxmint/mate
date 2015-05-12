@@ -1,0 +1,83 @@
+libmatekbd (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2015 13:36:11 +0200
+
+libmatekbd (1.8.0-2) unstable; urgency=low
+
+  * debian/control:
+    + Let libmatekbd4-dbg provide libmatekbd-dbg.
+    + Add Breaks:'n'Replaces: fields for previous dbg:packages.
+  * debian/copyright:
+    + Point to git.mate-desktop.org in Source: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 15:03:02 +0200
+
+libmatekbd (1.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * Update libmatekbd4.symbols file.
+  * debian/rules:
+    + Build package using autogen.sh.
+    + Remove get-orig-source hack for previous wrong 1.7 uploads.
+    + Don't care about build-modified files in upstream source tree.
+  * debian/control:
+    + Rename bin:package libmatekbd-dbg to libmatekbd4-dbg.
+    + Mention libmatekbdui in bin:packages' LONG_DESCRIPTION texts.
+    + Drop B-D: dh-autoreconf.
+  * debian/copyright:
+    + Update copyright years for debian/ folder.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 06 Mar 2014 11:18:49 +0100
+
+libmatekbd (1.7.1.is.1.6.1-2) unstable; urgency=low
+
+  * Use dh-autoreconf to fix FTBFS on ppc64el. (Closes: #733839).
+  * Bump Standards: to 3.9.5 (no changes needed).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 04 Jan 2014 23:26:34 +0100
+
+libmatekbd (1.7.1.is.1.6.1-1) unstable; urgency=low
+
+  * Revert to stable 1.6.x upstream version (Closes: #719715).
+    This includes reverting the package back to a non-
+    multi-arch package for now.
+  * Reformat various sections in control file.
+  * debian/control:
+    + Add John Paul Adrian Glaubitz to Uploaders: field.
+  * debian/watch:
+    + Only consider even minor release number (stable releases) of MATE.
+  * debian/rules (get-orig-source):
+    + Special handling of 1.6.x upstream releases.
+  * debian/copyright:
+    + Add Upstream-Contact: field.
+    + Add stanza for Files: debian/*.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 14 Oct 2013 23:08:20 +0200
+
+libmatekbd (1.7.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/libmatekbd4.symbols:
+    + Update symbols for new upstream release.
+  * debian/rules:
+    + Take care of the upstream code staying intact after the clean rule has
+      run.
+  * Convert to multi-arch package.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Aug 2013 22:56:20 +0000
+
+libmatekbd (1.6.1-2) unstable; urgency=low
+
+  * Package becomes team maintained: MATE Packaging Team.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Aug 2013 22:13:44 +0200
+
+libmatekbd (1.6.1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 10:57:40 +0200
