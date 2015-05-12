@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+	update-alternatives --install /usr/bin/x-window-manager \
+	    x-window-manager /usr/bin/marco 30 \
+	    --slave /usr/share/man/man1/x-window-manager.1.gz \
+	    x-window-manager.1.gz /usr/share/man/man1/marco.1.gz
+fi
+
+#DEBHELPER#

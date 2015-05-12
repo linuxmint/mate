@@ -1,0 +1,14 @@
+libpolkit-gtk-mate-1.so.0 libpolkit-gtk-mate-1-0 #MINVER#
+ polkit_lock_button_get_can_obtain@Base 1.6.0
+ polkit_lock_button_get_is_authorized@Base 1.6.0
+ polkit_lock_button_get_is_visible@Base 1.6.0
+ polkit_lock_button_get_type@Base 1.6.0
+ polkit_lock_button_new@Base 1.6.0
+ polkit_lock_button_set_lock_down_text@Base 1.6.0
+ polkit_lock_button_set_lock_down_tooltip@Base 1.6.0
+ polkit_lock_button_set_lock_text@Base 1.6.0
+ polkit_lock_button_set_lock_tooltip@Base 1.6.0
+ polkit_lock_button_set_not_authorized_text@Base 1.6.0
+ polkit_lock_button_set_not_authorized_tooltip@Base 1.6.0
+ polkit_lock_button_set_unlock_text@Base 1.6.0
+ polkit_lock_button_set_unlock_tooltip@Base 1.6.0

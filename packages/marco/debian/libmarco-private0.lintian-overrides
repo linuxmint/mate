@@ -1,0 +1,2 @@
+# discussed with upstream and considered as wanted / unproblematic
+libmarco-private0: shlib-calls-exit usr/lib/x86_64-linux-gnu/libmarco-private.so.0.0.0

@@ -1,0 +1,120 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-polkit
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-polkit/
+
+Files: polkitgtkmate/example.c
+       polkitgtkmate/polkitgtkmate.h
+       polkitgtkmate/polkitgtkmatetypes.h
+       polkitgtkmate/polkitlockbutton.c
+       polkitgtkmate/polkitlockbutton.h
+       src/main.c
+       src/polkitmateauthenticationdialog.c
+       src/polkitmateauthenticationdialog.h
+       src/polkitmateauthenticator.c
+       src/polkitmateauthenticator.h
+       src/polkitmatelistener.c
+       src/polkitmatelistener.h
+Copyright: 2009, Red Hat, Inc
+License: LGPL-2+
+
+Files: Makefile.am
+       autogen.sh
+       configure.ac
+       po/ChangeLog
+       po/LINGUAS
+       po/POTFILES.*
+       polkitgtkmate/Makefile.am
+       polkitgtkmate/polkit-gtk-mate-1.pc.in
+       src/Makefile.am
+       src/polkit-mate-authentication-agent-1.desktop.in.in
+Copyright: *No copyright*
+License: LGPL-2+
+Comment:
+ Assume license found in COPYING file.
+
+Files: po/*.po
+Copyright: 2008-2010, the authors of mate-polkit
+           2008-2010, the authors of gnome-polkit
+           2008-2009, Khaled Hosny <khaledhosny@eglug.org>
+           2009, Alexander Nyakhaychyk <nyakhaychyk@gmail.com>
+           2010, Runa Bhattacharjee <runab@redhat.com>
+           2007, David Zeuthen
+           2008-2009, David Planella Molas <david.planella@gmail.com>
+           2008, Adrian Guniš <andygun@seznam.cz>
+           2008-2009, Petr Kovar <pknbe@volny.cz>
+           2007, David Zeuthen <davidz@redhat.com>
+           2009, Mads Bille Lundby <lundbymads@gmail.com>
+           2008, Denis Washington <denisw@svn.gnome.org>
+           2009, Mario Blättermann <mariobl@gnome.org>
+           2009, Christian Kirbach <Christian.Kirbach@googlemail.com>
+           2008, Rosetta Contributors and Canonical Ltd.
+           2008, Jennie Petoumenou <epetoumenou@gmail.com>
+           2009, Tournaris Pavlos <p.tournaris@gmail.com>
+           2009, Simos Xenitellis <simos@gnome.org>
+           2008-2009, Philip Withnall <philip@tecnocode.co.uk>
+           2008, Jorge González <jorgegonz@svn.gnome.org>
+           2008, Juanje Ojeda <jojeda@emergya.es>
+           2009, Jorge González <jorgegonz@svn.gnome.org>
+           2009, Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           2007-2008 Ville-Pekka Vainio, Timo Jyrinki
+           2009, Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>
+           2007-2010 Free Software Foundation, Inc.
+           2008-2009, Claude Paroz <claude@2xlibre.net>
+           2008, Robert-André Mauchin <zebob.m@pengzone.org>
+           2009, Fran Diéguez <fran.dieguez@mabishu.com>
+           2009-2010, Sweta Kothari <swkothar@redhat.com>
+           2008, Mark Krapivner
+           2010, Rajesh Ranjan <rajesh672@gmail.com>
+           2008, Rosetta Contributors and Canonical Ltd.
+           2008-2009, Gabor Kelemen <kelemeng at gnome dot hu>
+           2008-2009, Gianvito Cavasoli <janvitus@ubuntu-it.org>
+           2008, Takeshi AIHANA <takeshi.aihana@gmail.com>
+           2010, Shankar Prasad <svenkate@redhat.com>
+           2009, Žygimantas Beručka <zygis@gnome.org>
+           2010, Aurimas Černius <aurisc4@gmail.com>
+           2010, Ani Peter <apeter@redhat.com>
+           2010, Sandeep Shedmake <sshedmak@redhat.com>
+           2008, Kjartan Maraas <kmaraas@gnome.org>
+           2010, Manoj Kumar Giri <mgiri@redhat.com>
+           2009-2010, A S Alam <aalam@users.sf.net>
+           2008-2009, António Lima <amrlima@gmail.com>
+           2007-2010, David Zeuthen
+           2008, Laudeci Oliveira <laudeci@gmail.com>
+           2008, Igor Pires Soares <igor@projetofedora.org>
+           2009, Leonardo Ferreira Fontenelle <leonardof@gnome.org>
+           2009, Enrico Nicoletto <liverig@gmail.com>
+           2009, Rosetta Contributors and Canonical Ltd
+           2010, Lucian Adrian Grijincu <lucian.grijincu@gmail.com>
+           2008, Leonid Kanter <leon@asplinux.ru>
+           2008-2010, Pavol Šimo <palo.simo@gmail.com>
+           2010, Matej Urbančič <gnomeju@svn.gnome.org>
+           2008-2009, Daniel Nylander <po@danielnylander.se>
+           2010, I. Felix <ifelix@redhat.com>
+           2010, Krishna Babu K <kkrothap@redhat.com>
+           2010, Sira Nokyoongtong <gumaraa@gmail.com>
+           2010, Maxim Dziumanenko <dziumanenko@gmail.com>
+           2008, 甘露(Lu Gan) <ganlu@svn.gnome.org>
+           2009, Tao Wei <weitao1979@gmail.com>
+           2009, Aron Xu <happyaron.xu@gmail.com>
+           2008-2010, Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+License: LGPL-2+
+
+Files: debian/*
+Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
+           2014 Mike Gabriel <sunweaver@debian.org>
+License: LGPL-2+
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 3 can be found in "/usr/share/common-licenses/LGPL-2".

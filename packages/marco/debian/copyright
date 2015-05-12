@@ -1,0 +1,428 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: marco (old name: mate-window-manager)
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/marco/
+
+Files: src/core/eventqueue.h
+       src/core/frame-private.h
+       src/core/iconcache.c
+       src/core/iconcache.h
+       src/core/keybindings.h
+       src/core/place.h
+       src/core/session.h
+       src/include/errors.h
+       src/include/main.h
+       src/include/resizepopup.h
+       src/include/ui.h
+       src/include/xprops.h
+       src/tools/marco-message.c
+       src/tools/marco-window-demo.c
+       src/ui/fixedtip.c
+       src/ui/fixedtip.h
+       src/ui/frames.h
+       src/ui/menu.h
+       src/ui/preview-widget.c
+       src/ui/preview-widget.h
+       src/ui/resizepopup.c
+       src/ui/testgradient.c
+       src/ui/theme-parser.c
+       src/ui/theme-parser.h
+       src/ui/theme-viewer.c
+       src/ui/theme.c
+       src/ui/theme.h
+       src/ui/themewidget.c
+       src/ui/themewidget.h
+       src/wm-tester/main.c
+Copyright: 2001-2002, Havoc Pennington
+License: GPL-2+
+
+Files: src/core/delete.c
+       src/core/main.c
+       src/core/stack.h
+       src/core/util.c
+       src/core/workspace.h
+       src/include/common.h
+       src/include/core.h
+       src/include/prefs.h
+       src/include/tabpopup.h
+       src/include/util.h
+Copyright: 2001-2002, Havoc Pennington
+           2004-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/compositor/compositor-private.h
+       src/compositor/compositor.c
+       src/include/compositor.h
+       src/include/display.h
+       src/include/frame.h
+       src/include/screen.h
+       src/include/types.h
+       src/include/window.h
+Copyright: 2008, Iain Holmes
+License: GPL-2+
+
+Files: src/core/group-private.h
+       src/core/group.h
+       src/tools/marco-grayscale.c
+       src/tools/marco-mag.c
+       src/ui/draw-workspace.c
+       src/ui/draw-workspace.h
+Copyright: 2002, Red Hat, Inc.
+License: GPL-2+
+
+Files: src/core/display-private.h
+       src/core/display.c
+       src/core/place.c
+       src/core/stack.c
+       src/core/window-private.h
+Copyright: 2001, Havoc Pennington
+           2002-2004, Red Hat, Inc
+           2003-2004, Rob Adams
+           2004-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/edge-resistance.c
+       src/core/edge-resistance.h
+       src/core/testboxes.c
+       src/include/boxes.h
+Copyright: 2005-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/core.c
+       src/core/screen-private.h
+       src/core/workspace.c
+       src/ui/menu.c
+Copyright: 2001, Havoc Pennington
+           2003-2004, Rob Adams
+           2004-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/frame.c
+       src/ui/frames.c
+       src/ui/tabpopup.c
+Copyright: 2001, Havoc Pennington
+           2002-2004, Red Hat, Inc
+           2005-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/group-props.c
+       src/core/group-props.h
+       src/core/window-props.h
+Copyright: 2001-2002, Red Hat, Inc.
+License: GPL-2+
+
+Files: src/core/effects.c
+       src/core/effects.h
+Copyright: 2001, Anders Carlsson,
+           2001, Havoc Pennington
+License: GPL-2+
+
+Files: src/compositor/compositor-xrender.c
+       src/compositor/compositor-xrender.h
+Copyright: 2003, Keith Packard
+           2005-2007, Olivier Fourdan
+           2007, Iain Holmes
+License: GPL-2+
+
+Files: src/ui/metaaccellabel.c
+       src/ui/metaaccellabel.h
+Copyright: 1995-1997, Peter Mattis
+           1995-1997, Spencer Kimball
+           1995-1997, Josh MacDonald
+           1998, Tim Janik
+           2002, Red Hat, Inc.
+License: LGPL-2+
+
+Files: src/core/async-getprop.h
+       src/core/testasyncgetprop.c
+Copyright: 2002, Havoc Pennington
+           1986, 1998,  The Open Group
+License: MIT-OpenGroup
+
+Files: src/ui/gradient.c
+Copyright: 1997-2000, Dan Pascu and Alfredo Kojima
+           2001, Havoc Pennington, 99% copied from wrlib in
+           2005, Elijah Newren
+License: GPL-2+
+
+Files: src/ui/gradient.h
+Copyright: 1997-2000, Dan Pascu and Alfredo Kojima
+           2001, Havoc Pennington, 99% copied from wrlib in
+License: GPL-2+
+
+Files: src/core/xprops.c
+Copyright: 1987, Digital Equipment Corporation, Maynard, Massachusetts
+           1987-1988, 1998 The Open Group
+           1988, Wyse Technology, Inc., San Jose, Ca
+           2001, Havoc Pennington
+           2002, Red Hat, Inc.
+License: GPL-2+
+
+Files: src/core/screen.c
+Copyright: 2001, Dominik Vogt, Matthias Clasen, and fvwm2 team
+           2001-2002, Havoc Pennington
+           2002-2003, Red Hat, Inc.
+           2003, Rob Adams
+           2004-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/keybindings.c
+Copyright: 2001, Havoc Pennington
+           2002, Red Hat, Inc.
+           2003, Rob Adams
+           2004-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/atomnames.h
+Copyright: 2001, Havoc Pennington
+           2002-2004, Red Hat, Inc
+           2003-2004, Rob Adams
+           2004-2006, Elijah Newren
+           2008, Thomas Thurman
+License: GPL-2+
+
+Files: src/core/session.c
+Copyright: 2001, Tom Tromey
+           2001, Carsten Schaar
+           2001, Havoc Pennington (some code in here from
+           2004-2005, Elijah Newren
+License: GPL-2+
+
+Files: src/core/prefs.c
+Copyright: 2001, Havoc Pennington,
+           2002, Red Hat, Inc.
+           2006, Elijah Newren
+           2008, Thomas Thurman
+License: GPL-2+
+
+Files: src/core/window.c
+Copyright: 2001, Havoc Pennington,
+           2001, Anders Carlsson
+           2002-2003, Red Hat, Inc.
+           2003, Rob Adams
+           2004-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/constraints.h
+Copyright: 2002, Red Hat, Inc.
+           2005, Elijah Newren
+License: GPL-2+
+
+Files: src/core/boxes.c
+Copyright: 1995-2000, GTK+ Team
+           2002, Red Hat, Inc.
+           2005-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/constraints.c
+Copyright: 2002-2003, Red Hat, Inc.
+           2003-2004, Rob Adams
+           2005-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/core/window-props.c
+Copyright: 2001-2003, Red Hat, Inc.
+           2004-2005, Elijah Newren
+           2009, Thomas Thurman
+License: GPL-2+
+
+Files: src/core/bell.c
+Copyright: 2002, Sun Microsystems, Inc.
+           2005-2006, Elijah Newren
+License: GPL-2+
+
+Files: src/ui/ui.c
+Copyright: 2002, Havoc Pennington
+           2002, Jorn Baayen <jorn@nl.linux.org>
+License: GPL-2+
+
+Files: src/core/eventqueue.c
+Copyright: 2001, Havoc Pennington
+License: GPL-2+
+Comment:
+ Based on GDK code, copyrighted by Owen Taylor and Red Hat, Inc.
+
+Files: src/core/errors.c
+Copyright: 2001, Havoc Pennington, error trapping inspired by GDK
+License: GPL-2+
+Comment:
+ Error trapping inspired by GDK code copyrighted by the Gtk team.
+
+Files: src/core/group.c
+Copyright: 2002, Red Hat, Inc.
+           2003, Rob Adams
+License: GPL-2+
+
+Files: src/core/bell.h
+Copyright: 2002, Sun Microsystems, Inc.
+License: GPL-2+
+
+Files: src/include/all-keybindings.h
+       src/core/schema-bindings.c
+Copyright: 2008, Thomas Thurman
+License: GPL-2+
+
+Files: doc/marco-theme.dtd
+Copyright: 2002, Ross Burton <ross@burtonini.com>
+License: GPL-2+
+Comment:
+ File uses GPL, version 2. Using license from COPYING file here instead,
+ i.e. GPL-2+.
+
+Files: src/core/marco-Xatomtype.h
+Copyright: 1987, 1998 The Open Group
+           1987, Digital Equipment Corporation, Maynard, Massachusetts
+License: MIT-OpenGroup
+
+Files: src/core/async-getprop.c
+Copyright: 1986, 1998 The Open Group
+           2002, Havoc Pennington
+License: MIT-OpenGroup
+
+Files: src/themes/ClearlooksRe/*
+Copyright: 2005-2007, Daniel Borgmann <daniel.borgmann@gmail.com>
+           2005-2007, Andrea Cimitan <andrea.cimitan@gmail.com>
+           2010, Germán Augusto Perugorria <perberos@gmail.com>
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/themes/DustBlue/*
+Copyright: 2008, Kido Mariano,
+           2008, Rico Sta. Cruz
+           2008, DarkAenima
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/themes/Dopple*
+       src/themes/Spidey*
+       src/themes/Splint*
+Copyright: 2009, Brandon Wright
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/themes/WinMe/*
+Copyright: 2007, Srivatsa Kanchi <srivatsa_nk@dataone.in>
+           2010, Germán Augusto Perugorria <perberos@gmail.com>
+License: GPL-2+
+
+Files: src/themes/eOS/*
+Copyright: 2010, Canonical Ltd.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/include/tile-preview.h
+       src/ui/tile-preview.c
+Copyright: 2010, Florian Müllner
+License: GPL-2+
+
+Files: po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
+Copyright: THE PACKAGE's COPYRIGHT HOLDERS
+           2001-2010, Free Software Foundation, Inc.
+           2006-2007, Rosetta Contributors and Canonical Ltd.
+           2003-2006 Miloslav Trmac <mitr@volny.cz>
+           2002, Simos Xenitellis
+           2002, The Gnome Foundation
+           2004-2006, Adam Weinberger and the GNOME Foundation
+           2003-2006, Sharif FarsiWeb, Inc.
+           2008, Thomas Thurman
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: .tx/config
+       doc/man/Makefile.am
+       doc/man/*.1
+       doc/Makefile.am
+       doc/*.txt
+       po/LINGUAS
+       po/POTFILES.in
+       po/POTFILES.skip
+       src/tools/Makefile.am
+       src/themes/Makefile.am
+       src/wm-tester/Makefile.am
+       src/wm-tester/focus-window.c
+       src/wm-tester/test-gravity.c
+       src/wm-tester/test-resizing.c
+       src/wm-tester/test-size-hints.c
+       src/Makefile.am
+       src/*.xml.in
+       src/*.pc.in
+       src/*.convert
+       src/*.desktop.in
+       src/*.gschema.xml
+       src/tools/*.png
+       AUTHORS
+       COPYING
+       ChangeLog
+       HACKING
+       Makefile.am
+       NEWS
+       README
+       autogen.sh
+       configure.ac
+       rationales.txt
+Copyright: *No Copyright*
+License: GPL-2+
+Comment:
+ Files have no license header. Using license from COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+ or MIT-OpenGroup
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 3 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: MIT-OpenGroup
+ Permission to use, copy, modify, distribute, and sell this software
+ and its documentation for any purpose is hereby granted without
+ fee, provided that the above copyright notice appear in all copies
+ and that both that copyright notice and this permission notice
+ appear in supporting documentation.
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT.  IN NO EVENT SHALL THE OPEN GROUP BE LIABLE FOR
+ ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of the copyright holder shall not
+ be used in advertising or otherwise to promote the sale, use or other dealings
+ in this Software without prior written authorization from the copyright holder.
