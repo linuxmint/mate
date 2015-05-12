@@ -1,0 +1,4 @@
+version=3
+opts=dversionmangle=s/\+dfsg1// \
+http://git.mate-desktop.org/mate-panel/ \
+    snapshot/mate-panel-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
