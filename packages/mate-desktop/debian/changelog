@@ -1,0 +1,153 @@
+mate-desktop (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2015 11:39:44 +0200
+
+mate-desktop (1.8.1+dfsg1-3) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 0001_fix-pkexec-calls-in-desktop-launcher.patch. In
+      mate-desktop-item.c: Add a child watch if "do not reap child" flag is set.
+      This avoids double forking with desktop files that have "exec pkexec ..."
+      inside. (Closes: #781246).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Mar 2015 14:53:31 +0100
+
+mate-desktop (1.8.1+dfsg1-2) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Drop deprecated B-D: python-support.
+    + Add B-D: dh-python.
+    + Drop complete Pre-D field (libmate-desktop-2-17).
+  * debian/rules:
+    + Build with python2.
+    + Use upstream's NEWS file as upstream ChangeLog.
+  * debian/copyright:
+    + Rework completely. Add missing files, hanle renamed files since one
+      of the last upstream releases, drop information for not-existing-anymore
+      files.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Oct 2014 23:07:44 +0200
+
+mate-desktop (1.8.1+dfsg1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_fix-pkgconfig.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 18 May 2014 23:34:16 +0200
+
+mate-desktop (1.8.0+dfsg1-5) unstable; urgency=low
+
+  * debian/changelog:
+    + Fix typo (opinion -> option).
+  * debian/rules:
+    + Fix copy+paste error in tarball repacking code.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 14:34:27 +0200
+
+mate-desktop (1.8.0+dfsg1-4) unstable; urgency=low
+
+  [ Stefano Karapetsas ]
+  * debian/control:
+    + Remove unused gnome-doc-utils from Build-Depends.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 1001_fix-pkgconfig.patch. Fix dependency specifications for
+      mate-desktop-2.0-pc. (Closes: #744086).
+  * debian/control:
+    + Drop D (libmate-desktop-dev): libstartup-notification0-dev.
+    + Add D (libmate-desktop-dev): libgdk-pixbuf2.0-dev, libgtk2.0-dev.
+  * debian/rules:
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+    + Enable parallel builds.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 13 Apr 2014 00:11:52 +0200
+
+mate-desktop (1.8.0+dfsg1-3) unstable; urgency=low
+
+  * debian/control:
+    + Add Breaks:'n'Replaces: fields for previous dbg:packages.
+    + Drop B-D: mate-doc-utils, mate-doc-utils-gnome.
+  * debian/copyright:
+    + Point to git.mate-desktop.org in Source: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Mar 2014 16:24:22 +0100
+
+mate-desktop (1.8.0+dfsg1-2) unstable; urgency=low
+
+  * Split up mate-desktop-dbg into two bin:packages.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 06 Mar 2014 10:34:03 +0100
+
+mate-desktop (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Repack upstream tarball.
+    + Omit non-DFSG (GFDL-1.1) files.
+    + Remove obsolete license files in desktop-docs/ subfolder from package.
+  * debian/patches:
+    + Add patch 2001_omit-gfdl-licensed-user-guide.patch. Skip
+      user-guide/ and desktop-docs/ subfolders during configure/build.
+  * Update debian/libmate-desktop-2-17.symbols file.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+    + Mangle Debian version.
+  * debian/rules:
+    + Build package using autogen.sh.
+    + Drop unknown configure option --disable-scrollkeeper.
+  * debian/control:
+    + Add B-D: yelp-tools (for autogen.sh).
+    + Add B-D: libdconf-dev (>= 0.10.0).
+  * debian/copyright:
+    + Adapt to new upstream version.
+  * debian/mate-desktop-common.install: Adapt to new upstream release.
+  * lintian: Remove unused overrides.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 06 Mar 2014 10:17:22 +0100
+
+mate-desktop (1.6.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright:
+    + Add/update license stanza for autotools files.
+    + Add Upstream-Contact: field.
+    + Add license stanza for new tool: mate-conf-import.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 15 Jan 2014 12:18:55 +0100
+
+mate-desktop (1.6.1-3) unstable; urgency=low
+
+  * debian/control:
+    + Improve packages relations. Don't use Conflicts: field anymore. Rather
+      use Breaks: and Replaces: fields instead.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 11 Jan 2014 17:01:23 +0100
+
+mate-desktop (1.6.1-2) unstable; urgency=low
+
+  * debian/control:
+    + Build-depend on rarian-compat to fix FTBFS without internet connection.
+      (Closes: #734910).
+    + Bump Standards: to 3.9.5 (no changes needed).
+  * debian/rules:
+    + Use dh-autoreconf to fix FTBFS on ppc64el. (Closes: #734909).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 11 Jan 2014 15:58:14 +0100
+
+mate-desktop (1.6.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #708385).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Oct 2013 14:26:14 +0100
