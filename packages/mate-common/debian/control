@@ -1,0 +1,39 @@
+Source: mate-common
+Section: devel
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders:
+ John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+ Stefano Karapetsas <stefano@karapetsas.com>,
+ Mike Gabriel <sunweaver@debian.org>,
+Build-Depends:
+ debhelper (>= 9),
+ pkg-config,
+ autoconf,
+ automake,
+ libtool,
+ autotools-dev,
+ gettext,
+ intltool,
+Standards-Version: 3.9.5
+Homepage: http://www.mate-desktop.org
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-common.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-common.git
+
+Package: mate-common
+Architecture: all
+Pre-Depends:
+ dpkg (>= 1.15.6~),
+Depends:
+ ${misc:Depends},
+ autoconf,
+ automake,
+ libtool,
+ pkg-config,
+ gettext,
+ intltool,
+ gtk-doc-tools,
+Description: common scripts and macros to develop with MATE
+ mate-common is an extension to autoconf, automake and libtool for the MATE
+ environment and MATE using applications. Included are mate-autogen.sh and
+ several macros to help in MATE source trees.

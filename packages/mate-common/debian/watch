@@ -1,0 +1,3 @@
+version=3
+http://git.mate-desktop.org/mate-common/ \
+    snapshot/mate-common-(\d\.[24680]+\.\d)\.tar\.xz

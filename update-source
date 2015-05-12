@@ -1,0 +1,57 @@
+#!/usr/bin/python
+import os
+
+projects = []
+projects.append("mate-common")
+projects.append("mate-desktop")
+projects.append("libmatekbd")
+projects.append("libmateweather")
+projects.append("mate-icon-theme")
+projects.append("caja")
+projects.append("mate-polkit")
+projects.append("marco")
+projects.append("mate-settings-daemon")
+projects.append("mate-session-manager")
+projects.append("mate-menus")
+projects.append("mate-panel")
+projects.append("mate-backgrounds")
+projects.append("mate-themes")
+projects.append("mate-notification-daemon")
+projects.append("mate-control-center")
+projects.append("pluma")
+projects.append("mate-terminal")
+projects.append("mate-screensaver")
+projects.append("mate-utils")
+projects.append("mate-system-monitor")
+projects.append("eom")
+projects.append("engrampa")
+projects.append("atril")
+projects.append("caja-extensions")
+projects.append("mate-user-share")
+projects.append("mate-media")
+projects.append("mate-power-manager")
+projects.append("python-caja")
+projects.append("mate-applets")
+projects.append("mate-sensors-applet")
+projects.append("mate-netspeed")
+projects.append("mate-indicator-applet")
+projects.append("caja-dropbox")
+projects.append("libmatemixer")
+projects.append("mate-netbook")
+projects.append("mozo")
+projects.append("mate-user-guide")
+
+os.chdir("source")
+
+for project in projects:
+	print "--------------------------"
+	print "PROJECT: %s" % project
+	print ""
+	if os.path.exists(project):
+		os.chdir(project)
+		os.system("git checkout master")
+		os.system("git remote update")
+		os.system("git log HEAD..origin/master --oneline")
+		os.chdir("..")
+	else:
+		os.system("git clone git@github.com:mate-desktop/%s.git" % project)
