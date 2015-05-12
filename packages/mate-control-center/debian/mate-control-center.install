@@ -1,0 +1,11 @@
+etc/
+usr/bin/
+usr/lib/*/pkgconfig/mate-default-applications.pc
+usr/lib/*/pkgconfig/mate-keybindings.pc
+usr/sbin/
+usr/share/applications/
+usr/share/man/
+usr/share/mate-control-center/
+usr/share/mime/
+usr/share/polkit-1/
+usr/share/thumbnailers/

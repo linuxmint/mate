@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+%:
+	dh $@ $(DHFLAGS)
+
+override_dh_install:
+	rm -f debian/tmp/usr/lib/*/*/*/*.a
+	rm -rfv debian/tmp/usr/lib/*/mate-notification-daemon/engines/*.la
+	dh_install --fail-missing
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+	    --disable-silent-rules \
+	    --libexecdir=/usr/lib/mate-notification-daemon/
+
+override_dh_strip:
+	dh_strip --dbg-package=mate-notification-daemon-dbg
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

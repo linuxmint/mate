@@ -1,0 +1,508 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-control-center
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-control-center/
+
+Files: libslab/app-resizer.c
+       libslab/app-resizer.h
+       libslab/app-shell.c
+       libslab/app-shell.h
+       libslab/application-tile.c
+       libslab/application-tile.h
+       libslab/directory-tile.c
+       libslab/directory-tile.h
+       libslab/document-tile.c
+       libslab/document-tile.h
+       libslab/double-click-detector.c
+       libslab/double-click-detector.h
+       libslab/mate-utils.h
+       libslab/nameplate-tile.c
+       libslab/nameplate-tile.h
+       libslab/search-bar.c
+       libslab/search-bar.h
+       libslab/search-context-picker.c
+       libslab/search-context-picker.h
+       libslab/search-entry.c
+       libslab/search-entry.h
+       libslab/shell-window.c
+       libslab/shell-window.h
+       libslab/slab-mate-util.c
+       libslab/slab-mate-util.h
+       libslab/slab-section.c
+       libslab/slab-section.h
+       libslab/slab.h
+       libslab/themed-icon.c
+       libslab/themed-icon.h
+       libslab/tile-action.c
+       libslab/tile.c
+       libslab/tile.h
+Copyright: 2006-2007, Novell, Inc.
+License: LGPL-2+
+ 
+Files: capplets/appearance/appearance-desktop.c
+       capplets/appearance/appearance-desktop.h
+       capplets/appearance/appearance-main.c
+       capplets/appearance/appearance-style.h
+       capplets/appearance/appearance-themes.c
+       capplets/appearance/appearance-themes.h
+       capplets/appearance/theme-installer.c
+       capplets/appearance/theme-installer.h
+       capplets/appearance/theme-save.c
+       capplets/appearance/theme-save.h
+       capplets/appearance/theme-util.c
+       capplets/appearance/theme-util.h
+       capplets/common/gtkrc-utils.c
+       capplets/common/gtkrc-utils.h
+       capplets/keyboard/mate-keyboard-properties-a11y.c
+Copyright: 2007-2010, The GNOME Foundation
+License: GPL-2+
+ 
+Files: capplets/appearance/mate-wp-info.c
+       capplets/appearance/mate-wp-info.h
+       capplets/appearance/mate-wp-item.c
+       capplets/appearance/mate-wp-item.h
+       capplets/appearance/mate-wp-xml.c
+       capplets/appearance/mate-wp-xml.h
+Copyright: 2003-2006, Novell, Inc.
+License: GPL-2
+
+Files: capplets/display/mate-display-properties-install-systemwide.c
+       libslab/bookmark-agent.c
+       libslab/bookmark-agent.h
+       libslab/system-tile.c
+       libslab/system-tile.h
+       shell/control-center.c
+Copyright: 2006-2010 Novell, Inc.
+License: GPL-2+
+ 
+Files: capplets/keyboard/mate-keyboard-properties-xkb.c
+       capplets/keyboard/mate-keyboard-properties-xkblt.c
+       capplets/keyboard/mate-keyboard-properties-xkbltadd.c
+       capplets/keyboard/mate-keyboard-properties-xkbmc.c
+       capplets/keyboard/mate-keyboard-properties-xkbot.c
+       capplets/keyboard/mate-keyboard-properties-xkbpv.c
+Copyright: 2003-2007, Sergey V. Udaltsov
+License: GPL-2+
+ 
+Files: capplets/about-me/fingerprint-strings.h
+       capplets/about-me/mate-about-me-fingerprint.c
+       capplets/about-me/mate-about-me-fingerprint.h
+       font-viewer/totem-resources.c
+       font-viewer/totem-resources.h
+Copyright: 2007-2008, Bastien Nocera <hadess@hadess.net>
+License: GPL-2+
+ 
+Files: capplets/windows/mate-window-properties.c
+       libwindow-settings/marco-window-manager.c
+       libwindow-settings/mate-window-manager.c
+       libwindow-settings/mate-window-manager.h
+       libwindow-settings/mate-wm-manager.c
+Copyright: 1998-2002, Red Hat, Inc.
+           2002, Seth Nickell
+License: GPL-2+
+
+Files: capplets/common/capplet-util.c
+       capplets/common/capplet-util.h
+       capplets/common/file-transfer-dialog.c
+       capplets/common/file-transfer-dialog.h
+       capplets/keyboard/mate-keyboard-properties-a11y.h
+Copyright: 2001-2002, Ximian, Inc.
+License: GPL-2+
+ 
+Files: typing-break/drw-break-window.c
+       typing-break/drw-break-window.h
+       typing-break/drw-monitor.c
+       typing-break/main.c
+Copyright: 2002, CodeFactory AB
+           2002-2003, Richard Hult <richard@imendio.com>
+License: GPL-2+
+ 
+Files: capplets/appearance/appearance-support.c
+       capplets/appearance/appearance-support.h
+       capplets/common/dconf-util.c
+       capplets/common/dconf-util.h
+Copyright: 2012, Stefano Karapetsas
+License: GPL-2+
+
+Files: capplets/appearance/appearance-font.c
+       capplets/appearance/appearance-font.h
+       capplets/appearance/appearance-style.c
+       capplets/appearance/appearance.h
+Copyright: 2007-2010, The GNOME Foundation
+License: GPL-2+
+
+Files: font-viewer/font-thumbnailer.c
+       font-viewer/font-view.c
+       font-viewer/ftstream-vfs.c
+Copyright: 2002-2003, James Henstridge <james@daa.com.au>
+License: GPL-2+
+
+Files: typing-break/drw-utils.c
+       typing-break/drw-utils.h
+       typing-break/drwright.h
+Copyright: 2002, 2003, Richard Hult <richard@imendio.com>
+License: GPL-2+
+
+Files: capplets/about-me/e-image-chooser.c
+       capplets/about-me/e-image-chooser.h
+Copyright: 2004, Novell, Inc.
+License: GPL-2
+
+Files: typing-break/drw-timer.c
+       typing-break/drw-timer.h
+Copyright: 2009, Nathaniel Smith <njs@pobox.com>
+License: GPL-2+
+
+Files: capplets/about-me/eel-alert-dialog.c
+       capplets/about-me/eel-alert-dialog.h
+Copyright: *No copyright*
+License: LGPL-2+
+
+Files: capplets/common/mate-theme-apply.h
+       capplets/common/mate-theme-info.h
+Copyright: 2002, Jonathan Blandford <jrb@gnome.org>
+License: LGPL-2+
+
+Files: capplets/display/scrollarea.c
+       capplets/display/scrollarea.h
+Copyright: 2006-2008, Soren Sandmann <sandmann@daimi.au.dk>
+License: LGPL-2+
+
+Files: capplets/common/capplet-stock-icons.c
+       capplets/common/capplet-stock-icons.h
+Copyright: 2002, Sun Microsystems, Inc.
+License: LGPL-2+
+
+Files: typing-break/drw-selection.c
+       typing-break/drw-selection.h
+Copyright: 2002, Red Hat, Inc.
+License: MIT~OldStyle+LegalDisclaimer
+
+Files: capplets/default-applications/mate-da-capplet.h
+Copyright: 2005-2006, Luca Cavalli
+           2010, Perberos <perberos@gmail.com>
+License: GPL-2
+
+Files: capplets/default-applications/mate-da-capplet.c
+Copyright: 2005-2006, Luca Cavalli
+           2008, Thomas Wood <thos@gnome.org>
+           2010, Perberos <perberos@gmail.com>
+License: GPL-2
+
+Files: typing-break/drwright.c
+Copyright: 2002, CodeFactory AB
+           2002-2003, Richard Hult <richard@imendio.com>
+           2003-2005, Imendio HB
+License: GPL-2+
+
+Files: typing-break/drw-monitor.h
+Copyright: 2002, CodeFactory AB
+           2002, Richard Hult <richard@imendi.com>
+License: GPL-2+
+
+Files: capplets/about-me/mate-about-me.c
+Copyright: 2002, Diego Gonzalez
+License: GPL-2+
+
+Files: capplets/about-me/mate-about-me-password.c
+Copyright: 2002, Diego Gonzalez
+           2006, Johannes H. Jensen
+License: GPL-2+
+
+Files: capplets/keyboard/mate-keyboard-properties.c
+Copyright: 2000-2001, Ximian, Inc.
+           2001, Jonathan Blandford
+License: GPL-2+
+
+Files: capplets/display/xrandr-capplet.c
+Copyright: 2007-2008, Red Hat, Inc.
+License: GPL-2+
+
+Files: capplets/mouse/mate-mouse-properties.c
+Copyright: 2001, Red Hat, Inc.
+           2001, Ximian, Inc.
+License: GPL-2+
+
+Files: capplets/keyboard/mate-keyboard-properties-xkb.h
+Copyright: 2003-2007, Sergey V Udaltsov
+License: GPL-2+
+
+Files: capplets/network/mate-network-properties.c
+Copyright: 2002, Sun Microsystems, Inc.
+License: GPL-2+
+ 
+Files: capplets/common/mate-theme-apply.c
+Copyright: 2002, Jonathan Blandford <aes@gnome.org>
+License: LGPL-2.1+
+Comment:
+ The license header of this file refers to a GPL-2.1+ license version which
+ does not exist. The license header also refers to "This library ...", which
+ alludes that this file should actually be dealt with as licensed under LGPL-2.1+.
+ .
+ See https://github.com/mate-desktop/mate-control-center/issues/95.
+
+Files: capplets/about-me/eel-gtk-macros.h
+Copyright: 1999-2001, Eazel, Inc.
+License: LGPL-2+
+
+Files: capplets/common/mate-theme-info.c
+Copyright: 2002, Jonathan Blandford <jrb@gnome.org>
+           2011, Perberos
+License: LGPL-2+
+
+Files: capplets/keybindings/eggaccelerators.h
+Copyright: 2002, Red Hat, Inc.
+License: LGPL-2+
+
+Files: capplets/keybindings/eggcellrendererkeys.h
+Copyright: 2000, Jonathan Blandford, Red Hat, Inc. <jrb@redhat.com>
+License: LGPL-2+
+
+Files: capplets/keybindings/eggaccelerators.c
+Copyright: 2002, Red Hat, Inc.
+           1998-2001 Tim Janik
+License: LGPL-2+
+
+Files: po/*.po
+       po/gnome-copyrights.txt
+Copyright: 2003-2006, Miloslav Trmac <mitr@volny.cz>.
+           2003-2005, Sharif FarsiWeb, Inc.
+           2004-2006, Adam Weinberger and the GNOME Foundation
+           2004, Zuza Software Foundation
+           2005, Canonical Ltd.
+           2005, Free Software Foundation, Andhra Pradesh.
+           2005, THE PACKAGE'S COPYRIGHT HOLDER.
+           2006, Lukas Novotny <lukasnov@cvs.gnome.org>.
+           2007, Aleś Navicki
+           2007-2008, Rosetta Contributors and Canonical Ltd
+           1999-2010, Free Software Foundation, Inc.
+           2009, Krasimir "Bfaf" Chonov <mk2616@abv.bg>.
+           2009, The GNOME Foundation.
+           Croatiann team
+           2001, Roy-Magne Mo <rmo@sunnmore.net>
+           1999-2014, THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+
+Files: capplets/network/icons/scalable/mate-network-properties.svg
+       capplets/display/icons/scalable/mate-preferences-desktop-display.svg
+Copyright: *No copyright*
+License: GPL-2
+
+Files: capplets/about-me/icons/Makefile.am
+       capplets/about-me/Makefile.am
+       capplets/about-me/mate-about-me-password.h
+       capplets/about-me/*.list
+       capplets/about-me/*.ui
+       capplets/about-me/*.1
+       capplets/about-me/*.in
+       capplets/about-me/AUTHORS
+       capplets/about-me/icons/left-index-finger.png
+       capplets/about-me/icons/left-index-finger.svg
+       capplets/about-me/icons/left-little-finger.png
+       capplets/about-me/icons/left-little-finger.svg
+       capplets/about-me/icons/left-middle-finger.png
+       capplets/about-me/icons/left-middle-finger.svg
+       capplets/about-me/icons/left-ring-finger.png
+       capplets/about-me/icons/left-ring-finger.svg
+       capplets/about-me/icons/left-thumb.png
+       capplets/about-me/icons/left-thumb.svg
+       capplets/about-me/icons/print_error.png
+       capplets/about-me/icons/print_error.svg
+       capplets/about-me/icons/print_ok.png
+       capplets/about-me/icons/print_ok.svg
+       capplets/about-me/icons/right-index-finger.png
+       capplets/about-me/icons/right-index-finger.svg
+       capplets/about-me/icons/right-little-finger.png
+       capplets/about-me/icons/right-little-finger.svg
+       capplets/about-me/icons/right-middle-finger.png
+       capplets/about-me/icons/right-middle-finger.svg
+       capplets/about-me/icons/right-ring-finger.png
+       capplets/about-me/icons/right-ring-finger.svg
+       capplets/about-me/icons/right-thumb.png
+       capplets/about-me/icons/right-thumb.svg
+       capplets/accessibility/at-properties/Makefile.am
+       capplets/accessibility/at-properties/main.c
+       capplets/accessibility/at-properties/*.ui
+       capplets/accessibility/at-properties/*.png
+       capplets/accessibility/at-properties/*.in
+       capplets/accessibility/Makefile.am
+       capplets/appearance/data/Makefile.am
+       capplets/appearance/data/*.png
+       capplets/appearance/data/*.pcf
+       capplets/appearance/data/*.in
+       capplets/appearance/data/*.1
+       capplets/appearance/data/*.ui
+       capplets/appearance/Makefile.am
+       capplets/common/Makefile.am
+       capplets/common/activate-settings-daemon.c
+       capplets/common/activate-settings-daemon.h
+       capplets/common/mate-theme-test.c
+       capplets/common/theme-thumbnail.c
+       capplets/common/theme-thumbnail.h
+       capplets/common/wm-common.c
+       capplets/common/wm-common.h
+       capplets/default-applications/Makefile.am
+       capplets/default-applications/*.1
+       capplets/default-applications/*.in
+       capplets/default-applications/*.ui
+       capplets/display/icons/*x*/*.png
+       capplets/display/Makefile.am
+       capplets/display/TODO
+       capplets/display/*.ui
+       capplets/display/*.in
+       capplets/display/foo-marshal.*
+       capplets/display/Makefile.am
+       capplets/keybindings/Makefile.am
+       capplets/keybindings/eggcellrendererkeys.c
+       capplets/keybindings/mate-keybinding-properties.c
+       capplets/keybindings/*.in
+       capplets/keybindings/*.ui
+       capplets/keyboard/Makefile.am
+       capplets/keyboard/*.in
+       capplets/keyboard/*.ui
+       capplets/mouse/Makefile.am
+       capplets/mouse/*.in
+       capplets/mouse/*.png
+       capplets/mouse/*.ui
+       capplets/network/icons/*x*/*.png
+       capplets/network/Makefile.am
+       capplets/network/*.in
+       capplets/network/*.ui
+       capplets/windows/Makefile.am
+       capplets/windows/*.in
+       capplets/windows/mate-metacity-support.c
+       capplets/windows/mate-metacity-support.h
+       capplets/Makefile.am
+       font-viewer/Makefile.am
+       font-viewer/*.in
+       font-viewer/*.thumbnailer
+       libslab/Makefile.am
+       libslab/libslab-utils.c
+       libslab/libslab-utils.h
+       libslab/mate-utils.c
+       libslab/*.in
+       libslab/*.list
+       libslab/*.svg
+       libwindow-settings/Makefile.am
+       libwindow-settings/marco-window-manager.h
+       libwindow-settings/mate-wm-manager.h
+       libwindow-settings/*.in
+       po/LINGUAS
+       po/POTFILES.in
+       po/POTFILES.skip
+       shell/Makefile.am
+       shell/*.in
+       shell/*.menu
+       typing-break/Makefile.am
+       typing-break/*.png
+       typing-break/*.svg
+       .tx/config
+       AUTHORS
+       COPYING
+       ChangeLog
+       Makefile.am
+       NEWS
+       README
+       TODO
+       autogen.sh
+       configure.ac
+       *.convert
+       org.mate.*.xml.in.in
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2 or GPL-2+ or LGPL-2+ or LGPL-2.1+ or MIT~OldStyle+LegalDisclaimer
+
+License: GPL-2
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 of the License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Library General Public License 2.1
+ can be found in "/usr/share/common-licenses/LGPL-2.1"
+
+License: MIT~OldStyle+LegalDisclaimer
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of the copyright holder not be used
+ in advertising or publicity pertaining to distribution of the software
+ without specific, written prior permission.  The copyright holder makes
+ no representations about the suitability of this software for any purpose. 
+ It is provided "as is" without express or implied warranty.
+ .
+ THE COPYRIGHT HOLDER DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT
+ SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL
+ DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

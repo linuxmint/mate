@@ -1,0 +1,60 @@
+#!/usr/bin/make -f
+
+PKD   = $(word 1,$(abspath $(dir $(MAKEFILE_LIST))))
+PKG   = $(word 2,$(shell dpkg-parsechangelog -l$(PKD)/changelog | grep ^Source))
+UVER  = $(shell dpkg-parsechangelog -l$(PKD)/changelog | perl -ne 'print $$1 if m{^Version:\s+(?:\d+:)?(\d.*)(?:\-\d+.*)};')
+DTYPE = +dfsg1
+VER  ?= $(subst $(DTYPE),,$(UVER))
+
+DHFLAGS=--parallel
+
+%:
+	dh $@ $(DHFLAGS)
+
+override_dh_install:
+	rm -rfv debian/tmp/usr/share/applications/mimeinfo.cache
+	rm -rfv debian/tmp/usr/lib/*/*.la
+	rm -rfv debian/tmp/usr/lib/*/*/*.la
+	dh_install --fail-missing
+
+override_dh_auto_configure:
+	cp debian/mate-slab/mate-slab.pc.in libslab/mate-slab.pc.in
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
+		--disable-scrollkeeper \
+		--localstatedir=/var \
+		--disable-static \
+		--disable-update-mimedb \
+		--with-gtk=2.0
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_strip:
+	dh_strip -pmate-control-center --dbg-package=mate-control-center-dbg
+	dh_strip -plibmate-window-settings1 --dbg-package=libmate-window-settings1-dbg
+	dh_strip -plibmate-slab0 --dbg-package=libmate-slab0-dbg
+
+get-orig-source: $(PKG)_$(VER)$(DTYPE).orig.tar.xz $(info I: $(PKG)_$(VER)$(DTYPE))
+	@
+
+$(PKG)_$(VER)$(DTYPE).orig.tar.xz:
+	@echo "# Downloading..."
+	uscan --noconf --verbose --rename --destdir=$(CURDIR) --check-dirname-level=0 --force-download --download-version $(VER) $(PKD)
+	$(if $(wildcard $(PKG)-$(VER)),$(error $(PKG)-$(VER) exist, aborting..))
+	@echo "# Extracting..."
+	mkdir $(PKG)-$(VER) \
+	    && tar -xf $(PKG)_$(VER).orig.tar.* --directory $(PKG)-$(VER) --strip-components 1 \
+	    || $(RM) -r $(PKG)-$(VER)
+	@echo "# Cleaning-up..."
+	cd $(PKG)-$(VER) \
+	    && $(RM) -r -v \
+	        help/ \
+	        m4/
+	$(RM) -v $(PKG)_$(VER).orig.tar.*
+	@echo "# Packing..."
+	find -L "$(PKG)-$(VER)" -xdev -type f -print | sort \
+	    | XZ_OPT="-6v" tar -caf "$(PKG)_$(VER)$(DTYPE).orig.tar.xz" -T- --owner=root --group=root --mode=a+rX \
+	    && $(RM) -r "$(PKG)-$(VER)"

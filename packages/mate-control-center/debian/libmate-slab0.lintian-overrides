@@ -1,0 +1,3 @@
+# Discussed with upstream. The exit() call takes place in a forked context
+# and thus is valid/ok.
+libmate-slab0: shlib-calls-exit usr/lib/x86_64-linux-gnu/libmate-slab.so.0.0.0

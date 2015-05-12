@@ -1,0 +1,235 @@
+'\" t
+.\"     Title: mate-control-center
+.\"    Author: Bastien Nocera <hadess@hadess.net>
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 03/24/2014
+.\"    Manual: User Commands
+.\"    Source: MATE
+.\"  Language: English
+.\"
+.TH "MATE\-CONTROL\-CENT" "1" "" "MATE" "User Commands"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/734663
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+mate-control-center \- Configure MATE settings
+.SH "SYNOPSIS"
+.HP \w'\fBmate\-control\-center\ \fR\fB[OPTION...]\fR\fB\ \fR\fB[PANEL]\fR\fB\ \fR\fB[ARG...]\fR\ 'u
+\fBmate\-control\-center \fR\fB[OPTION...]\fR\fB \fR\fB[PANEL]\fR\fB \fR\fB[ARG...]\fR
+.SH "DESCRIPTION"
+.PP
+\fBmate\-control\-center\fR
+is a graphical user interface to configure various aspects of MATE\&.
+.PP
+When run without arguments, the shell displays the
+overview, which shows all available configuration panels\&. The overview allows to open individual panels by clicking on them\&. It also has a search entry to find panels by searching keywords\&.
+.PP
+It is also possible to specify a panel name as commandline argument to go directly to that panel\&. Individual panels may accept further arguments to specify which tab to open (for multi\-tabbed panels) or which item to display (for panels with lists)\&.
+.PP
+Note that
+\fBmate\-control\-center\fR
+is not meant to expose each and every setting that is available\&. The settings that can be found here represent what is considered useful and commonly needed options\&. For more exotic or uncommon options, you can look at
+\fBmate\-tweak\-tool\fR
+or the
+\fBgsettings\fR
+commandline utility\&.
+.SH "PANELS"
+.PP
+The following panel names can be specified:
+.PP
+\fBbackground\fR
+.RS 4
+The background panel lets you set your desktop background\&.
+.RE
+.PP
+\fBbluetooth\fR
+.RS 4
+The bluetooth panel lets you configure your computer\*(Aqs Bluetooth adapter, and pair the computer with Bluetooth keyboards, phones, etc\&.
+.RE
+.PP
+\fBcolor\fR
+.RS 4
+The color panel can calibrate monitors, web cams and printers for accurate color reproduction\&.
+.RE
+.PP
+\fBdatetime\fR
+.RS 4
+The datetime panel lets you set the timezone and time format\&.
+.sp
+Some operations in this panel affect all user accounts on the computer and require privieges\&.
+.RE
+.PP
+\fBdisplay\fR
+.RS 4
+The display panel configures the resolution and arrangement of monitors and laptop panels\&. Note that monitors can be rearranged by drag\-and\-drop, and you can change which monitor is your main display by dragging the black bar\&.
+.RE
+.PP
+\fBinfo\fR
+.RS 4
+The info panel shows a general overview of the system configuration\&. It also lets you change the default applications for various tasks and the handling of removable media\&.
+.RE
+.PP
+\fBkeyboard\fR
+.RS 4
+The keyboard panel can change how the keyboard reacts to key presses and lets you change keyboard shortcuts or create custom shortcuts\&.
+.sp
+You can open this panel on a specific tab by passing
+\fBtyping\fR
+or
+\fBshortcuts\fR
+as extra argument\&.
+.RE
+.PP
+\fBmouse\fR
+.RS 4
+The mouse panel can change how mice and touchpads react to user input\&.
+.RE
+.PP
+\fBnetwork\fR
+.RS 4
+The network panel provides a view of available network devices (wired, wireless or mobile) and their current configuration\&. It also provides a way to create new VPN connections and configure proxy settings\&.
+.sp
+You can open this panel on a specific dialog by passing
+\fBcreate\-wifi\fR,
+\fBconnect\-hidden\-wifi\fR,
+\fBconnect\-3g\fR,
+\fBconnect\-8021x\-wifi\fR
+or
+\fBshow\-device\fR
+as extra argument\&. The last three parameters require an additional extra argument for the network object in the form
+\fI/org/freedesktop/NetworkManager/Devices/0\fR\&.
+.RE
+.PP
+\fBnotifications\fR
+.RS 4
+The notifications panel provides a way to control the display of notifications\&.
+.RE
+.PP
+\fBonline\-accounts\fR
+.RS 4
+The online\-accounts panel shows your configured online accounts and lets you add or remove accounts\&.
+.RE
+.PP
+\fBpower\fR
+.RS 4
+The power panel shows the fill level of batteries and can configure what happens when the computer is idle or runs out of battery\&.
+.RE
+.PP
+\fBprinters\fR
+.RS 4
+The printers panel shows all known printers and their status\&. It is possible to inspect queued print jobs and add new printers\&.
+.sp
+Some operations in this panel require privileges\&.
+.RE
+.PP
+\fBprivacy\fR
+.RS 4
+The privacy panel allows to control visible file usage history, temporary files, and name\&.
+.RE
+.PP
+\fBregion\fR
+.RS 4
+The region panel contains regional settings such as the display language, formatting for times, dates, numbers, and input sources\&.
+.RE
+.PP
+\fBsearch\fR
+.RS 4
+The search panel controls the results visible in the overview, and the files and folders to be indexed\&.
+.RE
+.PP
+\fBscreen\fR
+.RS 4
+The screen panel contains settings that control the screen brightness and screen lock behavior\&.
+.RE
+.PP
+\fBsharing\fR
+.RS 4
+The sharing panel contains settings that control what is shared over the network\&.
+.RE
+.PP
+\fBsound\fR
+.RS 4
+The sound panel shows all known sound devices and their configuration, including volume and balance settings\&.
+.sp
+You can open this panel on a specific tab by passing
+\fBoutput\fR,
+\fBinput\fR,
+\fBhardware\fR,
+\fBeffects\fR
+or
+\fBapplications\fR
+as extra argument\&.
+.RE
+.PP
+\fBuniversal\-access\fR
+.RS 4
+The universal\-access panel contains settings for accessible technologies such as the screen reader, magnifier, screen keyboard and AccessX options\&.
+.RE
+.PP
+\fBuser\-accounts\fR
+.RS 4
+The user\-accounts panel shows all user accounts that exist on the computer and allows to change them in some ways, such as changing the user name, password or permissions\&. It also allows to create or remove accounts\&.
+.sp
+Some operations in this panel require privileges\&.
+.RE
+.PP
+\fBwacom\fR
+.RS 4
+the wacom panel shows connected Wacom graphics tablets and lets you calibrate and configure such devices\&.
+.RE
+.SH "OPTIONS"
+.PP
+\fB\-?\fR, \fB\-\-help\fR
+.RS 4
+Prints a short help text and exits\&.
+.RE
+.PP
+\fB\-\-version\fR
+.RS 4
+Prints the program version and exits\&.
+.RE
+.PP
+\fB\-v\fR, \fB\-\-verbose\fR
+.RS 4
+Enables verbose mode\&.
+.RE
+.PP
+\fB\-l\fR, \fB\-\-list\fR
+.RS 4
+Lists the available panels and exits\&.
+.RE
+.PP
+\fB\-o\fR, \fB\-\-overview\fR
+.RS 4
+Opens the overview\&.
+.RE
+.PP
+\fB\-s\fR \fIterm\fR, \fB\-\-search\fR \fIterm\fR
+.RS 4
+Sets the following search term\&.
+.RE
+.SH "EXIT STATUS"
+.PP
+On success 0 is returned, a non\-zero failure code otherwise\&.
+.SH "SEE ALSO"
+.PP
+\fBgsettings\fR(1)
+.SH "NAME"
+.PP
+This manual page adopted for MATE Desktop Environment by Vangelis Mouhtsis <vangelis@gnugr.org>.

@@ -1,0 +1,3 @@
+usr/include/libmate-slab/
+usr/lib/*/libmate-slab.so
+usr/lib/*/pkgconfig/mate-slab.pc
