@@ -1,0 +1,337 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-menus
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-menus/
+
+Files: libmenu/desktop-entries.c
+       libmenu/desktop-entries.h
+       libmenu/entry-directories.c
+       libmenu/entry-directories.h
+       libmenu/matemenu-tree.c
+       libmenu/matemenu-tree.h
+       libmenu/menu-layout.c
+       libmenu/menu-layout.h
+       libmenu/menu-util.c
+       libmenu/menu-util.h
+       python/matemenu.c
+       util/test-menu-spec.c
+Copyright: 2002-2005 Red Hat, Inc
+License: LGPL-2+
+ 
+Files: libmenu/canonicalize.c
+       libmenu/canonicalize.h
+Copyright: 1996-2002, Free Software Foundation, Inc
+           2002, Red Hat, Inc. (trivial port to GLib)
+License: LGPL-2.1+
+ 
+Files: util/mate-menus-ls.py
+Copyright: 2008, Novell, Inc
+License: GPL-2+
+ 
+Files: libmenu/menu-monitor.c
+Copyright: 2005, Red Hat, Inc
+           2006, Mark McLoughlin
+           2007, Sebastian Dröge
+           2008, Vincent Untz
+License: LGPL-2+
+ 
+Files: libmenu/menu-monitor.h
+Copyright: 2005, Red Hat, Inc
+           2011, Perberos
+License: LGPL-2+
+
+Files: po/*
+Copyright:
+ 2004-2010, THE PACKAGE'S COPYRIGHT HOLDER
+ 2010, Mate Foundation
+ 2008, F Wolff <friedel@translate.org.za>
+ 2010, Daniel Martinez <entaltoaragon@gmail.com>
+ 2006, Djihed Afifi <djihed@gmail.com>
+ 2006-2009, Khaled Hosny <khaledhosny@eglug.org>
+ 2007, Anas Husseini <linux.anas@gmail.com>
+ 2007-2009, Amitakhya Phukan <amitakhya@svn.gnome.org>
+ 2006-2010, Rosetta Contributors and Canonical Ltd
+ 2007, Xose S. Puente <xspuente@gmail.com>
+ 2005-2007, Ales Nyakhaychyk <nab@mail.by>
+ 2006, Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+ 2006, Alaksandar Navicki <zolak@lacinka.org>
+ 2004-2009, Free Software Foundation, Inc.
+ 2004-2007 Vladimir "Kaladan" Petkov <vpetkov@i-space.org>
+ 2005, Rostislav "zbrox" Raykov <zbrox@i-space.org>
+ 2008-2009, Alexander Shopov <ash@contact.bg>
+ 2005, Mahay Alam Khan <makl10n@yahoo.com>
+ 2005, Samia Niamatullah <mailsamia2001@yahoo.com>
+ 2010, Sadia Afroz <sadia@ankur.org.bd>
+ 2005, Mahay Alam Khan <makl10n@yahoo.com>
+ 2005, Samia Niamatullah <mailsamia2001@yahoo.com>
+ 2009, Runa Bhattacharjee <runab@redhat.com>
+ 2004-2007, Free Software Foundation, Inc.
+ 2006, Jérémy Ar Floc'h <jeremy.lefloch@gmail.com>
+ 2004-2007, Jordi Mallach <jordi@sindominio.net>
+ 2008-2009, Gil Forcada <gilforcada@guifi.net>
+ 2009-2010, Reşat SABIQ <tilde.birlik@gmail.com>
+ 2004-2005, Miloslav Trmac <mitr@volny.cz>
+ 2006, Petr Tomeš <ptomes@gmail.com>
+ 2007, Jakub Friedl <jfriedl@suse.cz>
+ 2007-2009, Petr Kovar <pknbe@volny.cz>
+ 2005, Dafydd Harries <daf@muse.19inch.net>
+ 2007, Mark McLoughlin
+ 2004, David Nielsen <dnielsen@breakmygentoo.net>
+ 2005, Martin Willemoes Hansen <mwh@sysrq.dk>
+ 2006, Ole Laursen <olau@hardworking.dk>
+ 2007, Peter Bach <bach.peter@gmail.com>
+ 2004-2005, Hendrik Brandt <heb@mate-de.org>
+ 2006-2007, Hendrik Richter <hendrikr@gnome.org>
+ 2009, Mario Blättermann <mariobl@gnome.org>
+ 2010, Christian Kirbach <Christian.Kirbach@googlemail.com>
+ 2004, Simos Xenitellis <simos@gnome.org>
+ 2005, Nikos Charonitakis <charosn@her.forthnet.gr>
+ 2006, Kostas Papadimas <pkst@gnome.org>
+ 2009, Thomas Thurman <tthurman@gnome.org>
+ 2004-2005, Adam Weinberger <adamw@gnome.org>
+ 2005, David Lodge <dave@cirt.net>
+ 2009, Philip Withnall <philip@tecnocode.co.uk>
+ 2006, Joop EGGEN <joop_eggen@yahoo.de>
+ 2006, Guillaume SAVATON <llumeao@tuxfamily.org>
+ 2010, Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>
+ 2005-2006, Francisco Javier F. Serrador <serrador@cvs.gnome.org>
+ 2007, Claudio Saavedra <csaavedra@alumnos.utalca.cl>
+ 2009 Jorge González <jorgegonz@svn.gnome.org>
+ 2005, Priit Laes <amd@store20.com>
+ 2005-2007, Ivar Smolin <okul@linux.ee>
+ 2004-2005, Mikel Olasagasti <hey_neken@mundurat.net>
+ 2005-2010, Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+ 2005, Sharif FarsiWeb, Inc.
+ 2005, Farzaneh Sarafraz <farzaneh@farsiweb.info>
+ 2005, Meelad Zakaria <meelad@farsiweb.info>
+ 2005-2008, Roozbeh Pournader <roozbeh@gmail.com>
+ 2008, Arash Mousavi <mousavi.arash@gmail.com>
+ 2008, Elnaz Sarbar <elnaz.s@gmail.com>
+ 2004-2005, Tommi Vainikainen <Tommi.Vainikainen@iki.fi>
+ 2005, Ilkka Tuohela <hile@iki.fi>
+ 2004-2005, Baptiste Mille-Mathias <bmm80@free.fr>
+ 2005, Vincent Untz <vuntz@gnome.org>
+ 2005, Christophe Merlet <redfox@redfoxcenter.org>
+ 2007, Robert-André Mauchin <zebob.m@gmail.com>
+ 2007, Stéphane Raimbault <stephane.raimbault@gmail.com>
+ 2007, Massimo Furlani <massimo.furlani@libero.it>
+ 2009-2010, Dooitze de Jong <dooitzedejong@gmail.com>
+ 2007, Jaap Haitsma <jaap@haitsma.org>
+ 2008, Peter Hoogsteen <p.hoogsteen@chello.nl >
+ 2009, berend <berendy@gmail.com>
+ 2007-2009, Seán de Búrca <leftmostcat@gmail.com>
+ 2010, Fran Diéguez.
+ 2005-2009, Ignacio Casal Quinteiro <icq@cvs.gnome.org>
+ 2009, Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>
+ 2009, Suso Baleato <suso.baleato@xunta.es>
+ 2009, Fran Dieguez <fran.dieguez@glug.es>.
+ 2009, Anton Meixome <meixome@mancomun.org>
+ 2010, Fran Diéguez <frandieguez@ubuntu.com>
+ 2007, Ankit Patel <ankit@redhat.com>
+ 2009, Sweta Kothari <swkothar@redhat.com>
+ 2005, Yuval Tanny <tanai@int.gov.il>
+ 2004, Amanpreet Singh Alam <aalam@redhat.com>
+ 2005-2009, Rajesh Ranjan <rranjan@redhat.com>
+ 2005, Krešo Kunjas <kkunjas@gmail.com>
+ 2005, Ruzanna Khachatryan <ruzannak@hotmail.com>
+ 2005, Norayr Chilingaryan <norik@freenet.am>
+ 2005, ahmad riza h nst <ari@160c.afraid.org>
+ 2010, Dirgita <dirgitadevina@gmail.com>
+ 2007, Michael Terry <mike@mterry.name>
+ 2008, Anna Jonna Ármannsdóttir <annajonna@gmail.com>
+ 2009. Sveinn í Felli <sveinki@nett.is>
+ 2005-2009, Francesco Marletta <francesco.marletta @ tiscali.it>
+ 2009, Luca Ferretti <elle.uca@libero.it>
+ 2004, Satoru SATOH <ss@mate.gr.jp>
+ 2005-2007, Takeshi AIHANA <takeshi.aihana@gmail.com>
+ 2009-2010, Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>
+ 2008, Moldabekov Margulan <moldabekov@gmail.com>
+ 2008, Erzhan Shaniev <erzhan.jktl@gmail.com>
+ 2010, Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+ 2007-2010, Shankar Prasad <svenkate@redhat.com>
+ 2000, Sung-Hyun Nam <namsh@kldp.org>
+ 2000-2007, Young-Ho Cha <ganadist@chollian.net>
+ 2007, Eunju Kim <eukim@redhat.com>
+ 1998-2010, Changwoo Ryu <cwryu@debian.org>
+ 2005-2006, Erdal Ronahi <erdal.ronahi@gmail.com>
+ 2005, Timur Jamakeev <ztimur@gmail.com>
+ 2005, Justina Klingaitė <justina.klingaite@gmail.com>
+ 2004-2007, Žygimantas Beručka <zygis@gnome.org>
+ 2007-2008, Gintautas Miliauskas <gintas@akl.lt>
+ 2006-2009, Raivis Dejus <orvils@gmail.com>
+ 2010, Peteris Krisjanis <pecisk@gmail.com>
+ 2008, Sangeeta Kumari <sangeeta09@gmail.com>
+ 2009, Rajesh Ranjan <rajesh672@gmail.com>
+ 2006, Fano Rajaonarisoa <dikatenyfano@gmail.com>
+ 2006, Thierry Randrianiriana <randrianiriana@gmail.com>
+ 2005, Арангел Ангов <ufo@linux.net.mk>
+ 2006, Arangel Angov <ufo@linux.net.mk>
+ 2006-2007, Jovan Naumovski <jovan@lugola.net>
+ 2007, Arangel Angov <arangel@linux.net.mk>
+ 2006, Ani Peter <peter.ani@gmail.com>
+ 2007-2008, Praveen|പ്രവീണ് A|എ <pravi.a@gmail.com>
+ 2007, Ani Peter <apeter@redhat.com>
+ 2007  Santhosh Thottingal <santhosh00@gmail.com>
+ 2006, Badral <badral@openmn.org>
+ 2005, Gayatri Deshpande <gafinde@gmail.com>
+ 2006, Rahul Bhalerao <b.rahul.pm@gmail.com>
+ 2008-2009, Sandeep Shedmake <sandeep.shedmake@gmail.com>
+ 2009, Sandeep Shedmake <sshedmak@redhat.com>
+ 2004, Hasbullah Bin Pit (sebol) <sebol@my-penguin.org>
+ 2004-2005, Red Hat, Inc.
+ 2004-2008, Kjartan Maraas <kmaraas@gnome.org>
+ 2005, Terance Edward Sola <terance@lyse.net>
+ 2009, Nils-Christoph Fiedler <linux@medienkompanie.de>
+ 2005, Ganesh Ghimire <gghimire@gmail.com>
+ 2007, Nabin Gautam <nabin@mpp.org.np>
+ 2004, Daniel van Eeden <daniel_e@dds.nl>
+ 2005, Tino Meinen <a.t.meinen@chello.nl>
+ 2007-2010, Wouter Bolsterlee <wbolster@gnome.org>
+ 2001, Roy-Magne Mo <rmo@sunnmore.net>
+ 2003-2004, Åsmund Skjæveland <aasmunds@fys.uio.no>
+ 2005, Kjartan Maraas <kmaraas@gnome.org>
+ 2008, Eskild Hustvedt <eskildh@gnome.org>
+ 2010, Torstein Winterseth <kvikende@fsfe.org>
+ 2007, Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+ 2006, Subhransu Behera <arya_subhransu@yahoo.co.in>
+ 2008-2009, Manoj Kumar Giri <mgiri@redhat.com>
+ 2005-2009, A S Alam <aalam@users.sf.net>
+ 2009, Amanpreet Singh Alam <aalam@users.sf.net>
+ 2004-2009, Duarte Loreto <happyguy_pt@hotmail.com>
+ 2005, Afonso Celso Medina <afmedina@uol.com.br>
+ 2006-2007, Og Maciel <ogmaciel@ubuntu.com>
+ 2007-2008, Leonardo Ferreira Fontenelle <leonardof@gnome.org>
+ 2008, Fabrício Godoy <skarllot@gmail.com>
+ 2009, Krix Apolinário <krixapolinario@gmail.com>
+ 2005, Dan Damian <dand@mate.ro>
+ 2007, Alexandru Szasz <alexxed@gmail.com>
+ 2008, Adi Roiban <adi@roiban.ro>
+ 2004, Dmitry G. Mastrukov <dmitry@taurussoft.org>
+ 2005-2007, Leonid Kanter <leon@asplinux.ru>
+ 2005, Steve Murphy <murf@e-tools.com>
+ 2005, Philibert Ndandali  <ndandali@yahoo.fr>
+ 2005, Viateur MUGENZI <muvia1@yahoo.fr>
+ 2005, Noëlla Mupole <s24211045@tuks.co.za>
+ 2005, Carole Karema <karemacarole@hotmail.com>
+ 2005, JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>
+ 2005, Augustin KIBERWA  <akiberwa@yahoo.co.uk>
+ 2005, Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>
+ 2007, Danishka Navin <snavin@redhat.com>
+ 2004-2005, Marcel Telka <marcel@telka.sk>
+ 2007, Peter Tuharsky <tuharsky@misbb.sk>
+ 2010, Pavol Klačanský <pavol@klacansky.com>
+ 2006, Matic Žgur <mr.zgur@gmail.com>
+ 2005-2010, Matej Urbančič <mateju@svn.gnome.org>
+ 2005-2007, Elian Myftiu <elian@alblinux.net>
+ 2008, Laurent Dhima <laurenti@alblinux.net>
+ 2005, Данило Шеган <danilo@gnome.org>
+ 2006, Слободан Д. Средојевић <slobo@akrep.be>
+ 2005, Danilo Šegan <danilo@gnome.org>"
+ 2006, Slobodan D. Sredojević <slobo@akrep.be>
+ 2004-2006, Christian Rose <menthos@menthos.com>
+ 2007-2009, Daniel Nylander <po@danielnylander.se>
+ 2006, Shakthi Kannan <shaks@shakthimaan.com>
+ 2006, Jayaradha N <jayaradhaa@gmail.com>
+ 2007-2009, Dr.T.Vasudevan <agnihot3@gmail.com>
+ 2005, Y.Kiran Chandra <kiran@gnu.org.in>
+ 2007, Bharat Kumar <jonnalagaddabharat@gmail.com>
+ 2009, Krishna Babu K <kkrothap@redhat.com>
+ 2004-2007, Theppitak Karoonboonyanan <thep@linux.thai.net>
+ 2006, Onur Can Çakmak <onur.cakmak@gmail.com>
+ 2005-2009, Baris Cicek <baris@teamforce.name.tr>
+ 2005-2009, Gheyret T.Kenji <gheyret@yahoo.com>
+ 2005-2009, Sahran <sahran@live.com>
+ 2005-2007, Maxim Dziumanenko <dziumanenko@gmail.com>
+ 2007, Nurali Abdurahmonov <mavnur@gmail.com>
+ 2004, Trinh Minh Thanh <tmthanh@yahoo.com>
+ 2005-2007, Clytie Siddall <clytie@riverland.net.au>
+ 2004, Funda Wang <fundawang@linux.net.cn>
+ 2005-2007, Woodman Tuen <wmtuen@gmail.com>
+License: GPL-2+ or LGPL-2+ or LGPL-2.1+
+Comment:
+ Same license(s) as the mate-menus package.
+
+Files: autogen.sh
+       .tx/config
+       AUTHORS
+       COPYING
+       COPYING.LIB
+       ChangeLog
+       NEWS
+       README
+       py-compile
+       Makefile.am
+       configure.ac
+       desktop-directories/*
+       layout/*
+       libmenu/Makefile.am
+       libmenu/libmate-menu.pc.in
+       libmenu/libmate-menu-uninstalled.pc.in
+       m4/python.m4
+       python/Makefile.am
+       util/Makefile.am
+Copyright: *No copyright*
+License: GPL-2+ or LGPL-2+
+Comment:
+ File(s) have no license header. Using license from
+ COPYING or COPYING.LIB file.
+
+Files: debian/*
+Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
+           2013-2014 Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA  02110-1301  USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2,1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
