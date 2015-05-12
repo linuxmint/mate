@@ -12,6 +12,7 @@ projects.append("mate-polkit")
 projects.append("marco")
 projects.append("mate-settings-daemon")
 projects.append("mate-session-manager")
+
 projects.append("mate-menus")
 projects.append("mate-panel")
 projects.append("mate-backgrounds")
