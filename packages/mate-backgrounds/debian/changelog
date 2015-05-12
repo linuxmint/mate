@@ -1,0 +1,31 @@
+mate-backgrounds (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2015 17:25:08 +0200
+
+mate-backgrounds (1.8.0-2) unstable; urgency=low
+
+  * debian/copyright:
+    + Point to git.mate-desktop.org in Source: field.
+    + Fix typo (opinion -> option).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 May 2014 09:09:23 +0200
+
+mate-backgrounds (1.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright file after new upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/control:
+    + Bump Standards: to 3.9.5. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 12 Mar 2014 01:33:57 +0100
+
+mate-backgrounds (1.6.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #728460).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 01 Nov 2013 20:40:35 +0100

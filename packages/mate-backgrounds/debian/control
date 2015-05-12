@@ -1,0 +1,22 @@
+Source: mate-backgrounds
+Section: x11
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
+Build-Depends: debhelper (>= 9),
+               mate-common,
+               libglib2.0-dev,
+Build-Depends-Indep: intltool
+Standards-Version: 3.9.5
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-backgrounds.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-backgrounds.git
+
+Package: mate-backgrounds
+Architecture: all
+Depends: ${misc:Depends}
+Description: Set of backgrounds packaged with the MATE Desktop Environment
+ The package mate-backgrounds provides a collection of desktop wallpapers
+ created with MATE users in mind.
