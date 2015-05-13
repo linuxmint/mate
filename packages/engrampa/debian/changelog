@@ -1,0 +1,89 @@
+engrampa (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 May 2015 09:43:09 +0200
+
+engrampa (1.8.1+dfsg1-1) unstable; urgency=medium
+
+  [Vangelis Mouthsis ]
+  * debian/control:
+    + Bump Standartds: to 3.9.6. No changes needed.
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/rules:
+    + Use upstream's NEWS file as upstream ChangeLog.
+  * debian/patches:
+    + Drop 0001_superfluous-dir-with-unar.patch. Part of this upstream release.
+    + Drop 1001_fix-hyphens-on-man-page.patch. Accepted upstream.
+    + Drop 1002_add-keywords-key-to-desktop-files.patch. Accepted upstream.
+  * debian/copyright:
+    + Really mention all upstream files.
+  * debian/control:
+    + Fix field spacing (reported by lintian).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Oct 2014 12:50:23 +0200
+
+engrampa (1.8.0+dfsg1-6) unstable; urgency=low
+
+  * debian/control:
+    + Downgrade (bin:package engrampa) to Suggests: rpm2cpio. Upgrade
+      (bin:package engrampa) to Recommends: zip, unzip, xz-utils. (Closes:
+      #750794).
+  * debian/patches:
+    + Add 0001_superfluous-dir-with-unar.patch. Stop creating superfluous
+      directory when extracting files from .rar archives with unar. (Closes:
+      #749951).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 07 Jun 2014 16:20:55 +0200
+
+engrampa (1.8.0+dfsg1-5) unstable; urgency=low
+
+  * debian/control:
+    + Add B-D: libjson-glib-dev. Allows opening .rar archives with unar on
+      Debian jessie (and beyond). (Closes: #748104, #749817).
+    + Add to Suggests (bin:engrampa): unar.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 13:13:06 +0200
+
+engrampa (1.8.0+dfsg1-4) unstable; urgency=low
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Add D (bin:package engrampa): caja-common. This issue is being addressed
+      upstream, with the goal that engrampa can run without caja components
+      installed. A removal of the dependency in a future package upload
+      is very likely. (Closes: #748194).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 19 May 2014 09:00:39 +0200
+
+engrampa (1.8.0+dfsg1-3) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Breaks: field to bin:package engrampa. The package breaks
+      engrampa-common (<< 1.8.0).
+  * debian/rules:
+    + Before running dh_install, drop the not-packaged engrampa.convert file.
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 May 2014 23:53:08 +0200
+
+engrampa (1.8.0+dfsg1-2) unstable; urgency=low
+
+  * debian/control:
+    + Fix copy+paste error in LONG_DESCRIPTION of bin:package engrampa-dbg.
+  * debian/engrampa-common.install:
+    + Drop mate-conf .convert files from package.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 13:55:36 +0200
+
+engrampa (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734720).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Apr 2014 16:18:54 +0200

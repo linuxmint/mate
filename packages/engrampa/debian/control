@@ -1,0 +1,110 @@
+Source: engrampa
+Section: x11
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper (>= 9),
+               libglib2.0-dev,
+               libjson-glib-dev,
+               libgtk2.0-dev,
+               libcaja-extension-dev,
+               gettext,
+               intltool,
+               yelp-tools,
+               mate-common
+Standards-Version: 3.9.6
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/engrampa.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/engrampa.git
+
+Package: engrampa
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         tar (>= 1.13.25),
+         bzip2 (>= 1.0.1),
+         gzip (>= 1.3.2),
+         p7zip-full,
+         engrampa-common (= ${source:Version}),
+         caja-common,
+Recommends: mate-icon-theme,
+            gvfs,
+            xz-utils,
+            zip,
+            unzip,
+Suggests: lha,
+          unar | unrar | p7zip-rar,
+          rpm2cpio,
+          sharutils,
+          ncompress,
+          binutils,
+          cpio,
+          unace,
+          lzip,
+          lzma,
+          lzop,
+          rzip,
+          unalz,
+          zoo,
+          arj,
+          rar,
+Breaks: engrampa-common (<< 1.8.0),
+Description: archive manager for MATE
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ Engrampa supports the following formats:
+  * Tar (.tar) archives, including those compressed with
+    gzip (.tar.gz, .tgz), bzip (.tar.bz, .tbz), bzip2 (.tar.bz2, .tbz2),
+    compress (.tar.Z, .taz), lzip (.tar.lz, .tlz), lzop (.tar.lzo, .tzo),
+    lzma (.tar.lzma) and xz (.tar.xz)
+  * Zip archives (.zip)
+  * Jar archives (.jar, .ear, .war)
+  * 7z archives (.7z)
+  * iso9660 CD images (.iso)
+  * Lha archives (.lzh)
+  * Single files compressed with gzip (.gz), bzip (.bz), bzip2 (.bz2),
+    compress (.Z), lzip (.lz), lzop (.lzo), lzma (.lzma) and xz (.xz)
+ .
+ Engrampa doesn't perform archive operations by itself, but relies on
+ standard tools for this.
+
+Package: engrampa-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: engrampa (<= 1.0.3-1)
+Description: archive manager for MATE (common files)
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ This package contains the architecture independent files.
+
+Package: engrampa-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         engrampa (= ${binary:Version})
+Description: archive manager for MATE (debugging symbols)
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ This package contains debugging symbols for engrampa.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

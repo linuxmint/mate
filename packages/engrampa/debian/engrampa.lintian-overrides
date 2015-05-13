@@ -1,0 +1,6 @@
+# engrampa ships its caja extension in /usr/lib/*/caja/extensions-2.0/libcaja-engrampa.so,
+# this erroneously triggers debhelper's makeshlibs script
+engrampa: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+engrampa: postinst-has-useless-call-to-ldconfig
+engrampa: postrm-has-useless-call-to-ldconfig
+
