@@ -1,0 +1,295 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-terminal
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-terminal/
+
+Files: *
+Copyright: 2011, Perberos <perberos@gmail.com>,
+           2013, Guilherme de S. Pastore <gpastore@gnome.org>
+           2013, Havoc Pennington <hp@redhat.com>
+           2013, Mariano Suárez-Alvarez <mariano@gnome.org>
+           2013, Perberos <perberos@gmail.com>
+           2013, Steve Zesch <stevezesch2@gmail.com>
+           2013, Stefano Karapetsas <stefano@karapetsas.com>
+License: GPL-3+
+
+Files: src/terminal-app.c
+       src/terminal-options.c
+       src/terminal-options.h
+       src/terminal-util.c
+       src/terminal.c
+Copyright: 2001-2002, Havoc Pennington
+           2002, Red Hat, Inc.
+           2002, Sun Microsystems
+           2003, Mariano Suarez-Alvarez
+           2008-2010 Christian Persch
+License: GPL-3+
+
+Files: src/eggdesktopfile.h
+       src/eggsmclient-private.h
+       src/eggsmclient-win32.c
+       src/eggsmclient.c
+       src/eggsmclient.h
+Copyright: 2007, Novell, Inc.
+License: LGPL-3+
+
+Files: src/extra-strings.c
+       src/terminal-info-bar.c
+       src/terminal-info-bar.h
+       src/terminal-tab-label.h
+Copyright: 2008-2010, Christian Persch
+License: GPL-3+
+
+Files: src/profile-editor.h
+       src/terminal-accels.h
+       src/terminal-intl.h
+       src/terminal-window.h
+Copyright: 2001, Havoc Pennington
+           2002, Havoc Pennington
+License: LGPL-3+
+
+Files: src/terminal-app.h
+       src/terminal-screen.h
+       src/terminal-util.h
+Copyright: 2001, Havoc Pennington
+           2008, Christian Persch
+License: LGPL-3+
+
+Files: src/terminal-debug.c
+       src/terminal-debug.h
+       src/terminal-encoding.h
+Copyright: 2002, Red Hat, Inc.
+           2002-2003, Red Hat, Inc.
+License: LGPL-3+
+
+Files: src/terminal-dconf.c
+       src/terminal-dconf.h
+Copyright: 2011, Novell, Inc.
+License: GPL-2+
+
+Files: src/terminal-gsettings.c
+       src/terminal-gsettings.h
+Copyright: 2001-2003, Sun Microsystems, Inc.
+License: GPL-2+
+
+Files: src/terminal-screen.c
+       src/terminal-tab-label.c
+Copyright: 2001, Havoc Pennington
+           2007-2010 Christian Persch
+License: GPL-3+
+
+Files: src/profile-editor.c
+       src/terminal-profile.c
+Copyright: 2001-2002, Havoc Pennington
+           2002, Mathias Hasselmann
+           2008, Christian Persch
+License: GPL-3+
+
+Files: src/terminal-search-dialog.c
+       src/terminal-search-dialog.h
+Copyright: 2005, Paolo Maggi
+           2010, Red Hat, Inc.
+License: GPL-3+
+
+Files: src/terminal-screen-container.c
+       src/terminal-screen-container.h
+Copyright: 2008-2010 Christian Persch
+License: LGPL-3+
+
+Files: src/terminal-tabs-menu.c
+Copyright: 2003, David Bordoley
+           2003-2004, Christian Persch
+License: GPL-3+
+
+Files: src/terminal-window.c
+Copyright: 2001, Havoc Pennington
+           2002, Red Hat, Inc.
+           2007-2009, Christian Persch
+License: GPL-3+
+
+Files: src/terminal-accels.c
+Copyright: 2001-2002, Havoc Pennington, Red Hat Inc.
+           2008, Christian Persch
+License: GPL-3+
+
+Files: src/skey-popup.c
+Copyright: 2002, Jonathan Blandford <jrb@gnome.org>
+           2008, Christian Persch
+License: GPL-3+
+
+Files: src/terminal-encoding.c
+Copyright: 2002, Red Hat, Inc.
+           2008, Christian Persch
+License: GPL-3+
+
+Files: src/terminal-tabs-menu.h
+Copyright: 2003, David Bordoley
+License: GPL-3+
+
+Files: src/terminal-version.h.in
+Copyright: 2009, Christian Persch
+License: LGPL-2.1+
+
+Files: src/eggsmclient-xsmp.c
+Copyright: 1998, Carsten Schaar, and twm
+           1998, The Open Group
+           2007, Novell, Inc.
+License: LGPL-3+
+
+Files: src/terminal-profile.h
+Copyright: 2001, Havoc Pennington
+           2002, Mathias Hasselmann
+           2008, Christian Persch
+License: LGPL-3+
+
+Files: src/eggshell.h
+Copyright: 1997-2000, Free Software Foundation
+           1999-2000, Red Hat, Inc.
+License: LGPL-3+
+
+Files: src/eggshell.c
+Copyright: 1997-1999, the Free Software Foundation
+           1997-2000, Free Software Foundation
+           1999-2000, Red Hat, Inc.
+License: LGPL-3+
+
+Files: src/eggdesktopfile.c
+Copyright: 1999-2000, Red Hat Inc.
+           2001, George Lebl
+           2007, Novell, Inc.
+License: LGPL-3+
+
+Files: src/skey-popup.h
+Copyright: 2002, Jonathan Blandford <jrb@redhat.com>
+License: LGPL-3+
+
+Files: src/skey/md4.c
+Copyright: 2001, Nikos Mavroyanopoulos
+License: LGPL-3+
+
+Files: src/eggsmclient-osx.c
+Copyright: 2007, Novell, Inc.
+           2008, Red Hat, Inc.
+License: LGPL-3+
+
+Files: po/*.po
+Copyright: 2009, Christian Persch
+           2002-2010, Free Software Foundation, Inc.
+           2005-2006, Rosetta Contributors and Canonical Ltd.
+           2007, gnome.org
+           2004-2006, Miloslav Trmac <mitr@volny.cz>.
+           2006-2010, The GNOME Foundation.
+           2004-2006, Adam Weinberger and the GNOME Foundation
+           2003-2005, Sharif FarsiWeb, Inc.
+           1999-2004, Jesús Bravo Álvarez
+           2006, Ubuntu Georgian Translators.
+           THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-3+
+Comment:
+ Copyright information obtained from .po files
+ and from po/gnome-copyrights.txt.
+ .
+ Assuming license as found in COPYING file.
+
+Files: po/LINGUAS
+       po/POTFILES.*
+       src/Makefile.am
+       src/*.ui
+       src/*.xml.in
+       src/terminal-marshal.list
+       src/*.template
+       src/terminal.about
+       src/terminal.xml
+       src/skey/Makefile.am
+       src/skey/btoe.*
+       src/skey/md4.h
+       src/skey/md5.*
+       src/skey/sha1.*
+       src/skey/skey*.*
+       Makefile.am
+       autogen.sh
+       configure.ac
+       mate-terminal.1
+       mate-terminal.desktop.in.in
+       mate-terminal.wrapper
+Copyright: *No copyright*
+License: GPL-3+
+Comment:
+ Assuming license as found in COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
+           2014 Mike Gabriel <sunweaver@debian.org>
+License: GPL-3+ or GPL-2+ or LGPL-3+ or LGPL-2.1+
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-3+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU Library General Public License 3
+ can be found in "/usr/share/common-licenses/LGPL-3".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Library General Public License 2.1
+ can be found in "/usr/share/common-licenses/LGPL-2.1".

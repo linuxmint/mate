@@ -1,0 +1,12 @@
+Description: Add keywords entry in desktop file
+Author: Wences Arana <aranax@debian.org.gt>
+Forwarded: No
+
+--- a/mate-terminal.desktop.in.in
++++ b/mate-terminal.desktop.in.in
+@@ -13,4 +13,4 @@
+ X-MATE-Bugzilla-Version=@VERSION@
+ Categories=System;GTK;Utility;TerminalEmulator;
+ StartupNotify=true
+-
++_Keywords=MATE;terminal;shell;prompt;command;commandline;

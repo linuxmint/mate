@@ -1,0 +1,75 @@
+mate-terminal (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 May 2015 09:23:57 +0200
+
+mate-terminal (1.8.1+dfsg1-4) unstable; urgency=medium
+
+  * debian/mate-terminal.{postinst,prerm):
+    + Use mate-terminal.wrapper (instead of mater-terminal binary directly) as
+      alternative for x-terminal-emulator. (Closes: #773431).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 06 Jan 2015 10:19:40 +0100
+
+mate-terminal (1.8.1+dfsg1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1002_fix-occasional-segfaults-at-session-startup.patch.
+      Fix segfaults for mate-terminal in non-standard setups if started
+      during session startup. (Closes: #769947).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Nov 2014 20:25:38 +0100
+
+mate-terminal (1.8.1+dfsg1-2) unstable; urgency=medium
+
+  * A changelog fixup upload. The below two changes have already been
+    included in 1.8.1+dfsg1-1.
+
+  * debian/control:
+    + Add  Vangelis Mouhtsis to Uploaders: field.
+  * debian/rules:
+    + Use upstream's NEWS file as upstream ChangeLog.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 12:41:01 +0200
+
+mate-terminal (1.8.1+dfsg1-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Mike Gabriel ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 12:33:46 +0200
+
+mate-terminal (1.8.0+dfsg1-3) unstable; urgency=low
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+
+  [ Mike Gabriel ]
+  * debian/control: Add D (bin:package mate-terminal): mate-desktop-common.
+    (Closes: #750864).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 11 Jun 2014 21:38:20 +0200
+
+mate-terminal (1.8.0+dfsg1-2) unstable; urgency=low
+
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+    + Fix copy+paste error in tarball repacking code.
+  * debian/mate-terminal.manpages:
+    + Drop this file as it is redundant to upstream's make install.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 12:30:51 +0200
+
+mate-terminal (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734963).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Mar 2014 17:11:12 +0100
