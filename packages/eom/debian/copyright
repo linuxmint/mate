@@ -1,0 +1,364 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: eom (old name: mate-image-viewer)
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/eom/
+
+Files: plugins/statusbar-date/eom-statusbar-date-plugin.c
+       plugins/statusbar-date/eom-statusbar-date-plugin.h
+       src/eom-application.c
+       src/eom-application.h
+       src/eom-config-keys.h
+       src/eom-debug.c
+       src/eom-debug.h
+       src/eom-dialog.c
+       src/eom-dialog.h
+       src/eom-enums.h
+       src/eom-error-message-area.c
+       src/eom-error-message-area.h
+       src/eom-exif-details.c
+       src/eom-exif-details.h
+       src/eom-exif-util.c
+       src/eom-exif-util.h
+       src/eom-image-private.h
+       src/eom-image.c
+       src/eom-image.h
+       src/eom-job-queue.c
+       src/eom-job-queue.h
+       src/eom-jobs.c
+       src/eom-jobs.h
+       src/eom-list-store.c
+       src/eom-list-store.h
+       src/eom-metadata-reader-jpg.c
+       src/eom-metadata-reader-jpg.h
+       src/eom-metadata-reader-png.c
+       src/eom-metadata-reader-png.h
+       src/eom-metadata-reader.c
+       src/eom-metadata-reader.h
+       src/eom-module.c
+       src/eom-module.h
+       src/eom-plugin-engine.c
+       src/eom-plugin-engine.h
+       src/eom-plugin-manager.c
+       src/eom-plugin-manager.h
+       src/eom-plugin.c
+       src/eom-plugin.h
+       src/eom-preferences-dialog.c
+       src/eom-preferences-dialog.h
+       src/eom-print-image-setup.c
+       src/eom-print-image-setup.h
+       src/eom-print-preview.c
+       src/eom-print-preview.h
+       src/eom-print.c
+       src/eom-print.h
+       src/eom-properties-dialog.c
+       src/eom-properties-dialog.h
+       src/eom-python-module.h
+       src/eom-python-plugin.c
+       src/eom-python-plugin.h
+       src/eom-session.c
+       src/eom-session.h
+       src/eom-statusbar.c
+       src/eom-statusbar.h
+       src/eom-thumb-nav.c
+       src/eom-thumb-nav.h
+       src/eom-thumb-view.c
+       src/eom-thumb-view.h
+       src/eom-thumbnail.c
+       src/eom-thumbnail.h
+       src/eom-transform.c
+       src/eom-util.c
+       src/eom-util.h
+       src/eom-window.c
+       src/eom-window.h
+       src/main.c
+       src/uta.c
+       src/uta.h
+       src/zoom.c
+       src/zoom.h
+Copyright: 2000-2009, The Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: bindings/python/eom.*
+       cut-n-paste/toolbar-editor/eggmarshalers.list
+       cut-n-paste/toolbar-editor/eggtypebuiltins.c
+       cut-n-paste/toolbar-editor/eggtypebuiltins.h
+       jpegutils/jpegint.h
+       jpegutils/transupp.h
+       plugins/fullscreen/eom-fullscreen-plugin.c
+       plugins/fullscreen/eom-fullscreen-plugin.h
+       desktop/fullscreen/fullscreen.eom-plugin.destop
+       plugins/reload/eom-reload-plugin.c
+       plugins/reload/eom-reload-plugin.h
+       plugins/reload/reload.eom-plugin.desktop
+       plugins/statusbar-date/statusbar-date.eom-plugin.desktop
+       src/eom-image-jpeg.h
+       src/eom-image-save-info.c
+       src/eom-image-save-info.h
+       src/eom-pixbuf-util.c
+       src/eom-pixbuf-util.h
+       src/eom-save-as-dialog-helper.c
+       src/eom-save-as-dialog-helper.h
+       src/eom-scroll-view.c
+       src/eom-scroll-view.h
+       src/eom-transform.h
+       src/eom-uri-converter.c
+       src/eom-uri-converter.h
+       src/*.xml
+       src/*.template
+       src/*.list
+       autogen.sh
+Copyright: *No copyright*
+License: GPL-2+
+ Using license from COPYING file.
+
+Files: cut-n-paste/toolbar-editor/egg-editable-toolbar.c
+       cut-n-paste/toolbar-editor/egg-editable-toolbar.h
+       cut-n-paste/toolbar-editor/egg-toolbars-model.c
+Copyright: 2002-2004, Marco Pesenti Gritti
+           2003-2005, Christian Persch
+License: GPL-2+
+
+Files: cut-n-paste/toolbar-editor/egg-toolbar-editor.c
+       cut-n-paste/toolbar-editor/egg-toolbar-editor.h
+       cut-n-paste/toolbar-editor/egg-toolbars-model.h
+Copyright: 2003-2004, Marco Pesenti Gritti
+License: GPL-2+
+
+Files: src/eom-file-chooser.c
+       src/eom-file-chooser.h
+Copyright: *No copyright*
+License: GPL-2+
+
+Files: src/eom-close-confirmation-dialog.c
+       src/eom-close-confirmation-dialog.h
+Copyright: 2004-2009, GNOME Foundation
+License: GPL-2+
+
+Files: src/eom-sidebar.c
+       src/eom-sidebar.h
+Copyright: 2004, Red Hat, Inc.
+           2007, The Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: jpegutils/transupp-6b.c
+       jpegutils/transupp-6b.h
+Copyright: 1997, Thomas G. Lane
+           2001-2002, The Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: src/eom-python-module.c
+Copyright: 2005, Raphael Slinckx
+License: GPL-2+
+
+Files: jpegutils/transupp-8a.c
+Copyright: 1997-2009, Thomas G. Lane, Guido Vollbeding
+           2001-2002, The Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: cut-n-paste/totem-screensaver/totem-scrsaver.h
+Copyright: 2004, Bastien Nocera <hadess@hadess.net>
+License: LGPL-2+
+
+Files: cut-n-paste/totem-screensaver/totem-scrsaver.c
+Copyright: 2004-2006, Bastien Nocera <hadess@hadess.net>
+           2010, Carlos Garcia Campos
+           2010, Christian Persch
+License: LGPL-2+
+
+Files: src/eom-image-jpeg.c
+Copyright: 1999, Michael Zucchi
+           1999, The Free Software Foundation
+License: LGPL-2+
+
+Files: jpegutils/jpegint-8a.h
+Copyright: 1991-1997, Thomas G. Lane
+License: BSD-3-clause~IJG
+
+Files: jpegutils/transupp-8a.h
+Copyright: 1997-2009, Thomas G. Lane
+           1997-2009, Guido Vollbeding
+License: BSD-3-clause~IJG
+
+Files: po/*.po
+       po/cmn.po
+       po/en_US.po
+Copyright: 2000-2009, Free Software Foundation, Inc.
+           2007, Ihar Hrachyshka
+           2009, GNOME Foundation
+           THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: bindings/python/eom.*
+       cut-n-paste/toolbar-editor/eggmarshalers.c
+       cut-n-paste/toolbar-editor/eggmarshalers.h
+       cut-n-paste/toolbar-editor/eggmarshalers.list
+       cut-n-paste/toolbar-editor/eggtypebuiltins.c
+       cut-n-paste/toolbar-editor/eggtypebuiltins.h
+       data/eom-image-properties-dialog.ui
+       data/icons/22x22/actions/eom-image-collection.png
+       data/icons/22x22/actions/eom-plugin.png
+       data/icons/22x22/actions/slideshow-play.png
+       data/icons/22x22/actions/eom-plugin.svg
+       data/icons/22x22/actions/slideshow-play.svg
+       data/icons/22x22/apps/eom.svg
+       data/icons/22x22/apps/eom.png
+       data/icons/16x16/actions/eom-image-collection.png
+       data/icons/16x16/actions/eom-plugin.png
+       data/icons/16x16/actions/slideshow-play.png
+       data/icons/16x16/actions/eom-plugin.svg
+       data/icons/16x16/actions/slideshow-play.svg
+       data/icons/16x16/apps/eom.svg
+       data/icons/16x16/apps/eom.png
+       data/icons/scalable/actions/eom-plugin.svg
+       data/icons/scalable/actions/slideshow-play.svg
+       data/icons/scalable/actions/eom-image-collection.svg
+       data/icons/scalable/apps/eom.svg
+       data/icons/32x32/actions/eom-image-collection.png
+       data/icons/32x32/actions/eom-plugin.png
+       data/icons/32x32/actions/slideshow-play.png
+       data/icons/32x32/actions/eom-plugin.svg
+       data/icons/32x32/actions/slideshow-play.svg
+       data/icons/32x32/actions/eom-image-collection.svg
+       data/icons/32x32/apps/eom.svg
+       data/icons/32x32/apps/eom.png
+       data/icons/24x24/actions/eom-image-collection.png
+       data/icons/24x24/actions/slideshow-play.png
+       data/icons/24x24/apps/eom.png
+       data/icons/48x48/actions/slideshow-play.png
+       data/eom-preferences-dialog.ui
+       data/eom.pc.in
+       data/eom.convert
+       data/eom-toolbar.xml
+       data/gtkrc
+       data/eom-multiple-save-as-dialog.ui
+       data/eom.desktop.in.in
+       data/org.mate.eom.gschema.xml.in.in
+       data/pixmaps/thumbnail-frame.png
+       data/eom-ui.xml
+       jpegutils/jpegint.h
+       jpegutils/transupp.h
+       plugins/fullscreen/eom-fullscreen-plugin.c
+       plugins/fullscreen/eom-fullscreen-plugin.h
+       desktop/fullscreen/fullscreen.eom-plugin.destop
+       man/eom.1
+       plugins/reload/eom-reload-plugin.c
+       plugins/reload/eom-reload-plugin.h
+       plugins/reload/reload.eom-plugin.desktop
+       plugins/statusbar-date/statusbar-date.eom-plugin.desktop
+       po/LINGUAS
+       po/POTFILES.*
+       src/eom-image-jpeg.h
+       src/eom-image-save-info.c
+       src/eom-image-save-info.h
+       src/eom-pixbuf-util.c
+       src/eom-pixbuf-util.h
+       src/eom-save-as-dialog-helper.c
+       src/eom-save-as-dialog-helper.h
+       src/eom-scroll-view.c
+       src/eom-scroll-view.h
+       src/eom-transform.h
+       src/eom-uri-converter.c
+       src/eom-uri-converter.h
+       src/*.xml
+       src/*.template
+       src/*.list
+       bindings/Makefile.am
+       bindings/python/Makefile.am
+       cut-n-paste/Makefile.am
+       cut-n-paste/totem-screensaver/Makefile.am
+       cut-n-paste/toolbar-editor/Makefile.am
+       data/icons/22x22/Makefile.am
+       data/icons/16x16/Makefile.am
+       data/icons/scalable/Makefile.am
+       data/icons/Makefile.am
+       data/icons/32x32/Makefile.am
+       data/icons/24x24/Makefile.am
+       data/icons/48x48/Makefile.am
+       data/Makefile.am
+       data/pixmaps/Makefile.am
+       doc/reference/Makefile.am
+       doc/Makefile.am
+       jpegutils/Makefile.am
+       man/Makefile.am
+       plugins/Makefile.am
+       src/Makefile.am
+       Makefile.am
+       configure.ac
+Copyright: *No copyright*
+License: GPL-2+
+ Using license from COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+ or BSD-3-clause~IJG
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: BSD-3-clause~IJG
+ Permission is hereby granted to use, copy, modify, and distribute this
+ software (or portions thereof) for any purpose, without fee, subject to these
+ conditions:
+ .
+ (1) If any part of the source code for this software is distributed, then this
+ README file must be included, with this copyright and no-warranty notice
+ unaltered; and any additions, deletions, or changes to the original files
+ must be clearly indicated in accompanying documentation.
+ .
+ (2) If only executable code is distributed, then the accompanying
+ documentation must state that "this software is based in part on the work of
+ the Independent JPEG Group".
+ .
+ (3) Permission for use of this software is granted only if the user accepts
+ full responsibility for any undesirable consequences; the authors accept
+ NO LIABILITY for damages of any kind.
+ .
+ These conditions apply to any software derived from or based on the IJG code,
+ not just to the unmodified library.  If you use our work, you ought to
+ acknowledge us.
+ .
+ Permission is NOT granted for the use of any IJG author's name or company name
+ in advertising or publicity relating to this software or products derived from
+ it.  This software may be referred to only as "the Independent JPEG Group's
+ software".
+ .
+ We specifically permit and encourage the use of this software as the basis of
+ commercial products, provided that all warranty or liability claims are
+ assumed by the product vendor.
+
+

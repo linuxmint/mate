@@ -1,0 +1,37 @@
+#!/usr/bin/make -f
+
+export CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+export CFLAGS:=$(shell dpkg-buildflags --get CFLAGS)
+export CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS)
+export LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
+
+TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
+
+DHFLAGS=--parallel
+
+%:
+	dh $@ --with python2
+
+override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+	        --disable-silent-rules \
+                --disable-scrollkeeper \
+                --localstatedir=/var \
+                --with-librsvg
+
+override_dh_install:
+	rm -f debian/tmp/usr/lib/*/*.la
+	rm -f debian/tmp/usr/lib/*/*.a
+	rm -f debian/tmp/usr/lib/*/*/*.la
+	rm -f debian/tmp/usr/lib/*/*/*.a
+	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-eom.install.in > debian/gir1.2-eom.install
+	dh_install --fail-missing
+
+override_dh_strip:
+	dh_strip -p eom --dbg-package=eom-dbg
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
+

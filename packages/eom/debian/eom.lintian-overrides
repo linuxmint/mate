@@ -1,0 +1,6 @@
+# eom ships plugins in /usr/lib/eom/plugins/*.so, this erroneously triggers debhelper's
+# makeshlibs script
+eom: pkg-has-shlibs-control-file-but-no-actual-shared-libs
+eom: postinst-has-useless-call-to-ldconfig
+eom: postrm-has-useless-call-to-ldconfig
+
