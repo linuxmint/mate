@@ -1,0 +1,62 @@
+Description: Add keywords key to .desktop files
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+--- a/savers/cosmos-slideshow.desktop.in.in
++++ b/savers/cosmos-slideshow.desktop.in.in
+@@ -7,4 +7,5 @@
+ Terminal=false
+ Type=Application
+ Categories=Screensaver;
++Keywords=MATE;screensaver;slideshow;cosmos;
+ OnlyShowIn=MATE;
+--- a/savers/footlogo-floaters.desktop.in.in
++++ b/savers/footlogo-floaters.desktop.in.in
+@@ -7,4 +7,5 @@
+ Terminal=false
+ Type=Application
+ Categories=Screensaver;
++Keywords=MATE;screensaver;logo;bubbles;
+ OnlyShowIn=MATE;
+--- a/savers/gnomelogo-floaters.desktop.in.in
++++ b/savers/gnomelogo-floaters.desktop.in.in
+@@ -7,4 +7,5 @@
+ Terminal=false
+ Type=Application
+ Categories=Screensaver;
++Keywords=MATE;screensaver;GNOME;logo;bubbles;
+ OnlyShowIn=MATE;
+--- a/savers/personal-slideshow.desktop.in.in
++++ b/savers/personal-slideshow.desktop.in.in
+@@ -7,4 +7,5 @@
+ Terminal=false
+ Type=Application
+ Categories=Screensaver;
++Keywords=MATE;screensaver;custom;slideshow;pictures;folder;
+ OnlyShowIn=MATE;
+--- a/savers/popsquares.desktop.in.in
++++ b/savers/popsquares.desktop.in.in
+@@ -7,4 +7,5 @@
+ Terminal=false
+ Type=Application
+ Categories=Screensaver;
++Keywords=MATE;screensaver;grid;pulsing;colors;
+ OnlyShowIn=MATE;
+--- a/data/mate-screensaver-preferences.desktop.in
++++ b/data/mate-screensaver-preferences.desktop.in
+@@ -6,6 +6,7 @@
+ Terminal=false
+ Type=Application
+ Categories=GTK;Settings;DesktopSettings;
++Keywords=MATE;screensaver;preferences;
+ OnlyShowIn=MATE;
+ StartupNotify=true
+ X-MATE-Bugzilla-Bugzilla=MATE
+--- a/src/mate-screensaver.desktop.in.in
++++ b/src/mate-screensaver.desktop.in.in
+@@ -6,6 +6,7 @@
+ Exec=mate-screensaver
+ OnlyShowIn=MATE;
+ NoDisplay=true
++Keywords=MATE;screensaver;locker;
+ X-MATE-Autostart-Phase=Application
+ X-MATE-Autostart-Notify=true
+ X-MATE-Bugzilla-Bugzilla=MATE

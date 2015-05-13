@@ -1,0 +1,10 @@
+etc/xdg/
+usr/share/backgrounds/
+usr/share/dbus-1/
+usr/share/desktop-directories/
+usr/share/glib-2.0/
+usr/share/locale/
+usr/share/man/
+usr/share/mate-background-properties/
+usr/share/mate-screensaver/
+usr/share/pixmaps/

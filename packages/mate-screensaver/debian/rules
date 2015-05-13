@@ -1,0 +1,44 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+        SYSTEMD_SUPPORT=--with-systemd
+else
+        SYSTEMD_SUPPORT=--without-systemd
+endif
+
+%:
+	dh $@ $(DHFLAGS)
+
+override_dh_install:
+	rm -rfv debian/tmp/usr/share/MateConf/
+	rm -fv debian/tmp/usr/lib/*/*.la 
+	rm -rfv debian/tmp/usr/share/omf/
+	rm -rfv debian/tmp/usr/share/help/*/fdl/
+	rm -rfv debian/tmp/usr/share/help/*/gpl/
+	rm -rfv debian/tmp/usr/share/help/*/lgpl/
+	# For Debian we ship our own mate-screensaver PAM configuration...
+	rm -rfv debian/tmp/etc/pam.d/mate-screensaver
+	dh_install --fail-missing
+
+override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+	        --disable-silent-rules \
+	        --disable-static \
+	        --with-xscreensaverdir=/usr/share/xscreensaver/config \
+	        --with-xscreensaverhackdir=/usr/lib/xscreensaver \
+	        --with-mit-ext \
+	        --libexecdir=/usr/lib/ \
+	        --with-console-kit \
+	        --with-libnotify \
+	        --enable-locking \
+	        --with-gtk=2.0 \
+	        $(SYSTEMD_SUPPORT)
+
+override_dh_strip:
+	dh_strip --dbg-package=mate-screensaver-dbg
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
