@@ -1,0 +1,81 @@
+atril (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 May 2015 09:43:14 +0200
+
+atril (1.8.1+dfsg1-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0002_forgotten-mutex-unlock.patch. Don't forget to unlock the
+      trylock'ed mutex. Prevents from unpredictable behaviour after that
+      mutex unlocking has been forgotten. (Closes: #779848).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 09:26:24 +0100
+
+atril (1.8.1+dfsg1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_open-multiple-files.patch. Allow selecting multiple files
+      and opening them in Atril. (Closes: #772014).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 04 Dec 2014 12:32:18 +0100
+
+atril (1.8.1+dfsg1-2) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control: Bump Standards: to 3.9.6.
+    + No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Use upstream's NEWS file as upstream ChangeLog.
+  * debian/rules:
+    + Drop libatril-properties-page.la on non-amd64 builds, as well.
+  * debian/copyright:
+    + Drop information of ev-version.h. Not shipped in upstream sources
+      anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Oct 2014 18:45:13 +0200
+
+atril (1.8.1+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_add-keywords-key-to-desktop-files.patch. Applied upstream.
+    + Drop 1002_FTBFS-atril-with-clang.patch. Applied upstream.
+  * debian/copyright:
+    + Really mention all upstream files.
+    + Fix short license names in two locations.
+    + Remove duplicate file paragraph for po/*.po.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Sep 2014 10:47:57 +0200
+
+atril (1.8.0+dfsg1-4) unstable; urgency=medium
+
+  * debian/control:
+    + Modify B-D: libtiff4-dev -> libtiff-dev. (Closes: #753820).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 08 Jul 2014 01:15:47 +0200
+
+atril (1.8.0+dfsg1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1002_FTBFS-atril-with-clang.patch. Fix FTBFS when build with clang.
+      (Closes: #753344).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 20:16:19 +0200
+
+atril (1.8.0+dfsg1-2) unstable; urgency=low
+
+  * debian/control:
+    + Drop B-D: libt1-dev. Package has been removed from Debian unstable.
+      (For reference see #638759 and #744881).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 08:39:16 +0200
+
+atril (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734911).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 11:47:31 +0200

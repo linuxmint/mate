@@ -1,0 +1,31 @@
+Description: Don't build non-DFSG (GFDL 1.1 licensed) help files
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -14,8 +14,7 @@
+     libmisc     \
+     properties  \
+     shell       \
+-    po          \
+-    help
++    po
+ 
+ if ENABLE_TESTS
+     SUBDIRS += test
+--- a/configure.ac
++++ b/configure.ac
+@@ -802,14 +802,6 @@
+ data/icons/scalable/apps/Makefile
+ data/icons/scalable/actions/Makefile
+ data/icons/scalable/mimetypes/Makefile
+-help/Makefile
+-help/reference/Makefile
+-help/reference/libdocument/Makefile
+-help/reference/libdocument/version.xml
+-help/reference/libview/Makefile
+-help/reference/libview/version.xml
+-help/reference/shell/Makefile
+-help/reference/shell/version.xml
+ libdocument/Makefile
+ libdocument/ev-version.h
+ libmisc/Makefile
