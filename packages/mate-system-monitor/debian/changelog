@@ -1,0 +1,50 @@
+mate-system-monitor (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 May 2015 09:42:54 +0200
+
+mate-system-monitor (1.8.0+dfsg1-2) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+    + Fix copy+paste error in tarball repacking code.
+  * debian/mate-system-monitor-common.install:
+    + Drop mate-conf .convert files from package.
+
+  [ Stefano Karapetsas ]
+  * debian/control:
+    + mate-system-monitor depends on mate-system-monitor-common.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 10:35:29 +0200
+
+mate-system-monitor (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    + Provide README explaining the patch numbering scheme.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/patches:
+    + Drop patch 1001_add-keywords-to-desktop-file.patch. Fixed upstream.
+    + Refresh patch 2001_omit-gfdl-licensed-help-files.patch.
+    + Add patch 1001_fix-name-section-in-man-page.patch. Fix whatis
+      entry in NAME section of mate-system-monitor.1 man page.
+  * debian/copyright:
+    + Adapt to files in new (repacked) upstream tarball.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * debian/control:
+    + Drop B-D: libmate-wnck-dev.
+    + Add B-D: libwnck-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Mar 2014 17:38:50 +0100
+
+mate-system-monitor (1.6.1+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734871).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Feb 2014 10:43:50 +0100
