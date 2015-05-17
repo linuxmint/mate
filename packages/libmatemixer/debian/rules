@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure -- \
+		--disable-static
+
+override_dh_makeshlibs:
+	dh_makeshlibs -V 'libmatemixer0 (>= 1.10.0)'
+
+override_dh_strip:
+	dh_strip -plibmatemixer0 --dbg-package=libmatemixer0-dbg
+
+override_dh_auto_clean:
+	dh_auto_clean
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

@@ -1,0 +1,72 @@
+Source: libmatemixer
+Section: libs
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders:
+ John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+ Stefano Karapetsas <stefano@karapetsas.com>,
+ Mike Gabriel <sunweaver@debian.org>,
+Build-Depends:
+ debhelper (>= 9),
+ libglib2.0-dev,
+ libgtk2.0-dev,
+ intltool,
+ mate-common,
+Standards-Version: 3.9.5
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/libmatemixer.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/libmatemixer.git
+
+Package: libmatemixer0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+             multiarch-support,
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ libmatemixer-common
+Description: MATE library to manage keyboard configuration
+ libmatemixer is a mixer library for MATE desktop.
+ . 
+ This package contains the shared libraries.
+
+Package: libmatemixer-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: MATE library to manage keyboard configuration (common files)
+ libmatemixer is a mixer library for MATE desktop.
+ .
+ This package contains the architecture-independent files.
+
+Package: libmatemixer-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ libmatemixer0 (= ${binary:Version}),
+ libglib2.0-dev,
+ libgtk2.0-dev,
+ libx11-dev,
+Description: MATE library to manage keyboard configuration (development files)
+ libmatemixer is a mixer library for MATE desktop.
+ .
+ This package contains the development files.
+
+Package: libmatemixer0-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ libmatemixer0 (= ${binary:Version}),
+Description: MATE library to manage keyboard configuration (debugging symbols)
+ libmatemixer is a mixer library for MATE desktop.
+ .
+ This package contains the debugging symbols for the libmatemixer libraries.
+ .
+ They are installed into /usr/lib/debug and will automatically be used
+ by gdb.
