@@ -1,0 +1,34 @@
+mate-media (1.10.0-1) rafaela; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 17 May 2015 11:14:10 +0200
+
+mate-media (1.8.0+dfsg1-3) unstable; urgency=medium
+
+  * debian/control:
+    + Prefer pulse backend of MATE media to the gstreamer backend on default
+      installations. (Closes: #753584).
+    + Fix EOLs for several multi-line fields.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Aug 2014 18:10:10 +0200
+
+mate-media (1.8.0+dfsg1-2) unstable; urgency=low
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+    + Remove non-packaged *.convert files after build.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Fix D (bin:package mate-media-gstreamer): marco-common (instead of
+      marco >= 1.5.0). (Closes: #750456).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 04 Jun 2014 01:44:40 +0200
+
+mate-media (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734802).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Apr 2014 21:54:28 +0200
