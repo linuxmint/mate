@@ -1,0 +1,38 @@
+Author: Steve Zesch <https://github.com/szesch>
+ Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Description: Add MIME type support
+Forwarded: https://github.com/mate-desktop/mate-user-share/issues/20
+--- a/data/dav_user_2.2.conf
++++ b/data/dav_user_2.2.conf
+@@ -14,11 +14,14 @@
+ LoadModule auth_digest_module ${HTTP_MODULES_PATH}/mod_auth_digest.so
+ LoadModule authz_groupfile_module ${HTTP_MODULES_PATH}/mod_authz_groupfile.so
+ LoadModule dnssd_module ${HTTP_MODULES_PATH}/mod_dnssd.so
++LoadModule mime_module ${HTTP_MODULES_PATH}/mod_mime.so
+ 
+ DNSSDEnable on
+ DNSSDAutoRegisterVHosts Off
+ DNSSDAutoRegisterUserDir Off
+ 
++TypesConfig /etc/mime.types
++
+ <VirtualHost *>
+   DocumentRoot ${XDG_PUBLICSHARE_DIR}
+ 
+--- a/data/dav_user_2.4.conf
++++ b/data/dav_user_2.4.conf
+@@ -19,11 +19,14 @@
+ LoadModule authz_user_module ${HTTP_MODULES_PATH}/mod_authz_user.so
+ LoadModule authz_groupfile_module ${HTTP_MODULES_PATH}/mod_authz_groupfile.so
+ LoadModule dnssd_module ${HTTP_MODULES_PATH}/mod_dnssd.so
++LoadModule mime_module ${HTTP_MODULES_PATH}/mod_mime.so
+ 
+ DNSSDEnable on
+ DNSSDAutoRegisterVHosts Off
+ DNSSDAutoRegisterUserDir Off
+ 
++TypesConfig /etc/mime.types
++
+ <VirtualHost *>
+   DocumentRoot ${XDG_PUBLICSHARE_DIR}
+ 

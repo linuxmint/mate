@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+PKD   = $(word 1,$(abspath $(dir $(MAKEFILE_LIST))))
+PKG   = $(word 2,$(shell dpkg-parsechangelog -l$(PKD)/changelog | grep ^Source))
+UVER  = $(shell dpkg-parsechangelog -l$(PKD)/changelog | perl -ne 'print $$1 if m{^Version:\s+(?:\d+:)?(\d.*)(?:\-\d+.*)};')
+DTYPE = +dfsg1
+VER  ?= $(subst $(DTYPE),,$(UVER))
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_BUILD_PARALLEL = 1
+
+DEB_DH_INSTALL_ARGS += --list-missing
+
+DEB_DH_MAKESHLIBS_ARGS += --exclude=libcaja-share-extension.so
+
+DEB_CONFIGURE_EXTRA_FLAGS += --disable-silent-rules \
+	--libdir=/usr/lib/$(dpkg-architecture -qDEB_BUILD_MULTIARCH) \
+	--with-httpd=/usr/lib/apache2/mpm-worker/apache2 \
+	--with-modules-path=/usr/lib/apache2/modules/
+
+install/mate-user-share::
+	rm -f debian/tmp/usr/share/mate-user-share/dav_user_2.0.conf
+	rm -f debian/tmp/usr/lib/*/caja/extensions-2.0/libcaja-share-extension.la
+
+
