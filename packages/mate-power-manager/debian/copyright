@@ -1,0 +1,271 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-power-manager
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://git.mate-desktop.org/mate-power-manager/
+
+Files: applets/brightness/egg-dbus-monitor.c
+       applets/brightness/egg-dbus-monitor.h
+       applets/brightness/egg-debug.c
+       applets/brightness/egg-debug.h
+       applets/brightness/gpm-common.c
+       applets/brightness/gpm-common.h
+       applets/inhibit/egg-dbus-monitor.c
+       applets/inhibit/egg-dbus-monitor.h
+       applets/inhibit/egg-debug.c
+       applets/inhibit/egg-debug.h
+       applets/inhibit/gpm-common.c
+       applets/inhibit/gpm-common.h
+       src/egg-array-float.c
+       src/egg-array-float.h
+       src/egg-color.c
+       src/egg-color.h
+       src/egg-console-kit.c
+       src/egg-console-kit.h
+       src/egg-dbus-monitor.c
+       src/egg-dbus-monitor.h
+       src/egg-dbus-proxy.c
+       src/egg-dbus-proxy.h
+       src/egg-debug.c
+       src/egg-debug.h
+       src/egg-discrete.c
+       src/egg-discrete.h
+       src/egg-idletime.c
+       src/egg-idletime.h
+       src/egg-precision.c
+       src/egg-precision.h
+       src/egg-string.c
+       src/egg-string.h
+       src/egg-test.c
+       src/egg-test.h
+       src/egg-unique.c
+       src/egg-unique.h
+       src/gpm-backlight-helper.c
+       src/gpm-brightness.c
+       src/gpm-brightness.h
+       src/gpm-button.c
+       src/gpm-button.h
+       src/gpm-common.c
+       src/gpm-common.h
+       src/gpm-control.c
+       src/gpm-disks.c
+       src/gpm-disks.h
+       src/gpm-engine.c
+       src/gpm-engine.h
+       src/gpm-graph-widget.c
+       src/gpm-graph-widget.h
+       src/gpm-load.c
+       src/gpm-load.h
+       src/gpm-networkmanager.c
+       src/gpm-networkmanager.h
+       src/gpm-phone.c
+       src/gpm-phone.h
+       src/gpm-point-obj.c
+       src/gpm-point-obj.h
+       src/gpm-prefs-core.h
+       src/gpm-screensaver.c
+       src/gpm-screensaver.h
+       src/gpm-self-test.c
+       src/gpm-session.c
+       src/gpm-session.h
+       src/gpm-statistics.c
+       src/gpm-upower.c
+       src/gpm-upower.h
+       tools/mate-power-manager-bugreport
+Copyright: 2005-2010, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: src/gpm-backlight.c
+       src/gpm-backlight.h
+       src/gpm-control.h
+       src/gpm-dpms.c
+       src/gpm-dpms.h
+       src/gpm-idle.c
+       src/gpm-idle.h
+       src/gpm-manager.c
+       src/gpm-manager.h
+       src/gpm-tray-icon.c
+       src/gpm-tray-icon.h
+Copyright: 2004-2005, William Jon McCann <mccann@jhu.edu>
+           2005-2009, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: src/msd-osd-window.c
+       src/msd-osd-window.h
+Copyright:  2006, William Jon McCann <mccann@jhu.edu>
+            2009, Novell, Inc
+License: LGPL-2+
+
+Files: .tx/config
+       applets/Makefile.am
+       applets/brightness/Makefile.am
+       applets/brightness/*.xml
+       applets/brightness/*.in
+       applets/inhibit/Makefile.am
+       applets/inhibit/*.xml
+       applets/inhibit/*.in
+       data/icons/22x22/actions/Makefile.am
+       data/icons/22x22/actions/*.png
+       data/icons/22x22/apps/Makefile.am
+       data/icons/22x22/apps/*.png
+       data/icons/22x22/status/Makefile.am
+       data/icons/22x22/status/*.png
+       data/icons/22x22/Makefile.am
+       data/icons/16x16/actions/Makefile.am
+       data/icons/16x16/actions/*.png
+       data/icons/16x16/apps/Makefile.am
+       data/icons/16x16/apps/*.png
+       data/icons/16x16/status/Makefile.am
+       data/icons/16x16/status/*.png
+       data/icons/16x16/Makefile.am
+       data/icons/scalable/actions/Makefile.am
+       data/icons/scalable/actions/*.svg
+       data/icons/scalable/apps/Makefile.am
+       data/icons/scalable/apps/*.svg
+       data/icons/scalable/status/Makefile.am
+       data/icons/scalable/status/*.svg
+       data/icons/scalable/Makefile.am
+       data/icons/32x32/actions/Makefile.am
+       data/icons/32x32/actions/*.png
+       data/icons/32x32/apps/Makefile.am
+       data/icons/32x32/apps/*.png
+       data/icons/32x32/status/Makefile.am
+       data/icons/32x32/status/*.png
+       data/icons/32x32/Makefile.am
+       data/icons/24x24/actions/Makefile.am
+       data/icons/24x24/actions/*.png
+       data/icons/24x24/apps/Makefile.am
+       data/icons/24x24/apps/*.png
+       data/icons/24x24/status/Makefile.am
+       data/icons/24x24/status/*.png
+       data/icons/24x24/Makefile.am
+       data/icons/48x48/actions/Makefile.am
+       data/icons/48x48/actions/*.png
+       data/icons/48x48/apps/Makefile.am
+       data/icons/48x48/apps/*.png
+       data/icons/48x48/status/Makefile.am
+       data/icons/48x48/status/*.png
+       data/icons/48x48/Makefile.am
+       data/icons/Makefile.am
+       data/Makefile.am
+       data/*.ui
+       data/*.in
+       data/mate-power-manager.convert
+       docs/Makefile.am
+       docs/config.xsl
+       docs/docbook.css
+       man/Makefile.am
+       man/*.sgml
+       patches/gpm-manager.patch
+       po/LINGUAS
+       po/POTFILES.*
+       po/gnome-copyrights.txt
+       policy/Makefile.am
+       policy/*.in2
+       src/Makefile.am
+       src/gpm-marshal.list
+       src/*.xml
+       tools/Makefile.am
+       AUTHORS
+       COPYING
+       ChangeLog
+       HACKING
+       Makefile.am
+       NEWS
+       NEWS.GNOME
+       README
+       TODO
+       autogen.sh
+       configure.ac
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/gpm-kbd-backlight.c
+       src/gpm-kbd-backlight.h
+Copyright: 2010, Alex Launi <alex launi canonical com>
+License: GPL-2+
+
+Files: applets/brightness/brightness-applet.c
+       applets/inhibit/inhibit-applet.c
+Copyright: 2006, Benjamin Canou <bookeldor@gmail.com>
+           2006-2009, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: src/gpm-prefs-core.c
+       src/gpm-prefs.c
+Copyright: 2005, Jaap Haitsma <jaap@haitsma.org>
+           2005, William Jon McCann <mccann@jhu.edu>
+           2005-2009, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: src/gsd-media-keys-window.c
+       src/gsd-media-keys-window.h
+Copyright: 2006-2007, William Jon McCann <mccann@jhu.edu>
+License: GPL-2+
+
+Files: src/gpm-main.c
+Copyright: 2003, David Zeuthen, <david@fubar.dk>
+           2004, Benjamin Kahn, <xkahn@zoned.net>
+           2005-2007, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: src/gpm-stock-icons.h
+Copyright: 2002, Jorn Baayen
+           2003-2004, Colin Walters <walters@verbum.org>
+           2005-2007, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: po/*.po
+Copyright: 2005-2010, Free Software Foundation, Inc.
+           2005-2006, Adam Weinberger <adamw@gnome.org>
+           2005-2009, Richard Hughes <richard@hughsie.com>
+           2005-2010, THE mate-power-manager'S COPYRIGHT HOLDER
+           2006–2010, The Gnome Project.
+           2006, Sharif FarsiWeb, Inc.
+           2006-2007, Rosetta Contributors and Canonical Ltd.
+           2008, Ihar Hrachyshka
+           2009, The Gnome Foundation.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".

@@ -1,0 +1,5 @@
+0001_fix-backlight-popup-gtkbuilder.patch
+0002_handle-UP-DEVICE-STATE-UNKNOWN.patch
+0003_fix-power-statistics-when-unplugging-wireless-device-with-battery.patch
+2001_omit-gfdl-licensed-help-files.patch
+2002_compile-extra-man-pages.patch
