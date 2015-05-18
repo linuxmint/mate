@@ -1,224 +1,43 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mate-media
-Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/mate-media/
+This work was packaged for Debian by:
 
-Files: mate-volume-control/src/applet-main.c
-       mate-volume-control/src/dialog-main.c
-       mate-volume-control/src/gvc-applet.c
-       mate-volume-control/src/gvc-applet.h
-       mate-volume-control/src/gvc-balance-bar.h
-       mate-volume-control/src/gvc-channel-bar.h
-       mate-volume-control/src/gvc-channel-map.h
-       mate-volume-control/src/gvc-combo-box.h
-       mate-volume-control/src/gvc-log.c
-       mate-volume-control/src/gvc-log.h
-       mate-volume-control/src/gvc-mixer-card.h
-       mate-volume-control/src/gvc-mixer-control.h
-       mate-volume-control/src/gvc-mixer-dialog.h
-       mate-volume-control/src/gvc-mixer-event-role.h
-       mate-volume-control/src/gvc-mixer-sink-input.h
-       mate-volume-control/src/gvc-mixer-sink.h
-       mate-volume-control/src/gvc-mixer-source-output.h
-       mate-volume-control/src/gvc-mixer-source.h
-       mate-volume-control/src/gvc-mixer-stream.h
-       mate-volume-control/src/gvc-speaker-test.h
-       mate-volume-control/src/gvc-stream-status-icon.h
-       sound-theme/gvc-sound-theme-chooser.h
-       sound-theme/gvc-sound-theme-editor.h
-Copyright: 2008-2009, Red Hat, Inc.
-License: GPL-2+
+    Stefano Karapetsas <stefano@karapetsas.com> on Sun, 06 Nov 2011 14:04:05 +0100
 
-Files: gst-mixer-applet/applet.c
-       gst-mixer-applet/applet.h
-       gst-mixer-applet/dock.c
-       gst-mixer-applet/dock.h
-       gst-mixer-applet/keys.h
-       gst-mixer-applet/load.c
-       gst-mixer-applet/preferences.c
-       gst-mixer-applet/preferences.h
-       gst-mixer/src/button.c
-       gst-mixer/src/button.h
-       gst-mixer/src/element.c
-       gst-mixer/src/element.h
-       gst-mixer/src/main.c
-       gst-mixer/src/misc.c
-       gst-mixer/src/misc.h
-       gst-mixer/src/preferences.c
-       gst-mixer/src/preferences.h
-       gst-mixer/src/track.c
-       gst-mixer/src/track.h
-       gst-mixer/src/volume.c
-       gst-mixer/src/volume.h
-       gst-mixer/src/window.c
-       gst-mixer/src/window.h
-Copyright: 2003-2004, Ronald Bultje <rbultje@ronald.bitfreak.net>
-License: LGPL-2+
+It was downloaded from:
 
-Files: mate-volume-control/src/gvc-balance-bar.c
-       mate-volume-control/src/gvc-channel-bar.c
-       mate-volume-control/src/gvc-channel-map.c
-       mate-volume-control/src/gvc-mixer-dialog.c
-       mate-volume-control/src/gvc-mixer-event-role.c
-       mate-volume-control/src/gvc-mixer-sink-input.c
-       mate-volume-control/src/gvc-mixer-sink.c
-       mate-volume-control/src/gvc-mixer-source-output.c
-       mate-volume-control/src/gvc-mixer-source.c
-       mate-volume-control/src/gvc-mixer-stream.c
-       mate-volume-control/src/gvc-stream-status-icon.c
-Copyright: 2008, William Jon McCann
-License: GPL-2+
+    <https://github.com/perberos/Mate-Extra>
 
-Files: mate-volume-control/src/gvc-combo-box.c
-       mate-volume-control/src/gvc-speaker-test.c
-Copyright: 2009, Bastien Nocera
-License: GPL-2+
+Upstream Author:
 
-Files: sound-theme/sound-theme-file-utils.c
-       sound-theme/sound-theme-file-utils.h
-Copyright: 2008, Bastien Nocera <hadess@hadess.net>
-License: GPL-2+
+    Perberos <perberos@gmail.com>
 
-Files: sound-theme/gvc-sound-theme-chooser.c
-       sound-theme/gvc-sound-theme-editor.c
-Copyright: 2008, Bastien Nocera <hadess@hadess.net>
-           2008, William Jon McCann
-License: GPL-2+
+Copyright:
 
-Files: mate-volume-control/src/gvc-level-bar.c
-       mate-volume-control/src/gvc-level-bar.h
-Copyright: 2008, William Jon McCann <william.jon.mccann@gmail.com>
-License: GPL-2+
+    Copyright (C) 2011 Perberos
 
-Files: gst-mixer/src/schemas.c
-       gst-mixer/src/schemas.h
-Copyright: 2012, Stefano Karapetsas <stefano@karapetsas.com>
-License: LGPL-2+
+License:
 
-Files: build-aux/git-version-gen
-Copyright: 2007-2008, Free Software Foundation, Inc.
-License: GPL-3+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
 
-Files: mate-volume-control/src/gvc-mixer-card.c
-Copyright: 2008, William Jon McCann
-           2009, Bastien Nocera
-License: GPL-2+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-Files: mate-volume-control/src/gvc-mixer-control.c
-Copyright: 2006-2008, Lennart Poettering
-           2008, Sjoerd Simons <sjoerd@luon.net>
-           2008, William Jon McCann
-License: GPL-2+
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>
 
-Files: gst-mixer/icons/16x16/devices/Makefile.am
-       gst-mixer/icons/16x16/devices/*.png
-       gst-mixer/icons/16x16/status/Makefile.am
-       gst-mixer/icons/16x16/status/*.png
-       gst-mixer/icons/16x16/Makefile.am
-       gst-mixer/icons/Makefile.am
-       gst-mixer/pixmaps/Makefile.am
-       gst-mixer/pixmaps/*.png
-       gst-mixer/src/Makefile.am
-       gst-mixer/Makefile.am
-       gst-mixer/*.convert
-       gst-mixer/*.in
-Copyright: *No copyright*
-License: LGPL-2+
-Comment:
- Using license from COPYING.gst-mixer file.
+On Debian systems, the complete text of the GNU General
+Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-Files: gst-mixer-applet/Makefile.am
-       gst-mixer-applet/*.xml
-       gst-mixer-applet/*.in
-       man/Makefile.am
-       man/*.1
-       mate-volume-control/data/icons/16x16/status/Makefile.am
-       mate-volume-control/data/icons/16x16/status/*.png
-       mate-volume-control/data/icons/16x16/Makefile.am
-       mate-volume-control/data/icons/22x22/status/Makefile.am
-       mate-volume-control/data/icons/22x22/status/*.png
-       mate-volume-control/data/icons/22x22/Makefile.am
-       mate-volume-control/data/icons/24x24/status/Makefile.am
-       mate-volume-control/data/icons/24x24/status/*.png
-       mate-volume-control/data/icons/24x24/Makefile.am
-       mate-volume-control/data/icons/32x32/status/Makefile.am
-       mate-volume-control/data/icons/32x32/status/*.png
-       mate-volume-control/data/icons/32x32/Makefile.am
-       mate-volume-control/data/icons/scalable/devices/Makefile.am
-       mate-volume-control/data/icons/scalable/devices/*.svg
-       mate-volume-control/data/icons/scalable/status/Makefile.am
-       mate-volume-control/data/icons/scalable/status/*.svg
-       mate-volume-control/data/icons/scalable/Makefile.am
-       mate-volume-control/data/icons/Makefile.am
-       mate-volume-control/data/Makefile.am
-       mate-volume-control/data/*.in
-       mate-volume-control/src/Makefile.am
-       mate-volume-control/Makefile.am
-       sound-theme/sounds/Makefile.am
-       sound-theme/sounds/*.ogg
-       sound-theme/sounds/*.in
-       sound-theme/Makefile.am
-       Makefile.am
-       autogen.sh
-       configure.ac
-Copyright: *No copyright*
-License: GPL-2+
-Comment:
- Using license from COPYING file.
+The Debian packaging is:
 
-Files: debian/*
-Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
-           2014, Mike Gabriel <sunweaver@debian.org>
-License: GPL-2+ or GPL-3+ or LGPL-2+
+    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
 
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
- .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- GNU Genaral Public License for more details.
- .
- You should have received a copy og the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
 
-License: GPL-3+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 3 of the License, or
- (at your option) any later version.
- .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- GNU Genaral Public License for more details.
- .
- You should have received a copy og the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
-
-License: LGPL-2+
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Library General Public
- License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later version.
- .
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- Library General Public License for more details.
- .
- You should have received a copy of the GNU Library General Public
- License along with this library; if not, write to the Free Software
- Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
- .
- On Debian systems, the complete text of the GNU General
- Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".

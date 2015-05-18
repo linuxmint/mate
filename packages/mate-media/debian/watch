@@ -1,4 +1,2 @@
 version=3
-opts=dversionmangle=s/\+dfsg1// \
-http://git.mate-desktop.org/mate-media/ \
-    snapshot/mate-media-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
+http://pub.mate-desktop.org/releases/(\d\.\d)/mate-media-(.*)\.tar\.xz

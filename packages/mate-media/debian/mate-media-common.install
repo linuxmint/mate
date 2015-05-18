@@ -1,2 +1,5 @@
+etc/xdg/autostart/
 usr/share/locale/
-etc/xdg/autostart/mate-volume-control-applet.desktop
+usr/share/man/
+usr/share/mate-media/
+usr/share/sounds/

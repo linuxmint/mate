@@ -1,137 +1,63 @@
 Source: mate-media
 Section: x11
 Priority: optional
-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Uploaders: Mike Gabriel <sunweaver@debian.org>,
-           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
 Build-Depends: cdbs,
-               debhelper (>= 9),
+               debhelper (>= 8),
                intltool,
                libglib2.0-dev,
                libgtk2.0-dev,
-               libgladeui-dev,
-               libmatemixer-dev,
-               libpulse-dev,
                libcanberra-gtk-dev,
                libxml2-dev,
                libunique-dev,
-               libgstreamer0.10-dev,
-               libgstreamer-plugins-base0.10-dev,
-               docbook-utils,
-               scrollkeeper,
-               gstreamer0.10-tools,
-               gstreamer0.10-plugins-base,
-               gstreamer0.10-plugins-good,
                mate-common,
-               libmate-desktop-dev,
-               libmate-panel-applet-dev,
-               yelp-tools,
-               libdconf-dev,
-               libstartup-notification0-dev,
-Standards-Version: 3.9.5
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-media.git;a=summary
-Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-media.git
+               libmatemixer-dev (>= 1.9.1),
+               libmate-desktop-dev (>= 1.9.3)
 
 Package: mate-media
-Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         mate-media-pulse (>= ${source:Version}) | mate-media-gstreamer (>= ${source:Version}),
-Description: MATE media utilities (metapackage)
- This package provides media utilities for the MATE desktop:
- .
-    * the MATE GStreamer/PulseAudio-based audio mixer.
- .
- This is a metapackage, it depends on GStreamer or PulseAudio backends
- for mate-media.
-
-Package: mate-media-gstreamer
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mate-media-common (>= ${source:Version}), mate-media-common (<< ${source:Version}.1),
-         gstreamer0.10-alsa | gstreamer0.10-audiosink,
-         gstreamer0.10-plugins-base,
-         gstreamer0.10-plugins-good,
-         x11-utils,
-         marco-common,
-         mate-desktop (>= 1.5.0),
+         mate-media-common (= ${source:Version}),
+         mate-desktop-common (>= 1.9.3)
 Recommends: alsa-utils,
-            sound-theme-freedesktop,
-Replaces: mate-media (<< 1.2.1-4)
-Conflicts: mate-media-pulse
-Breaks: mate-media (<< 1.2.1-4),
-        mate-applets (<< 1.6.0),
-Description: MATE media utilities (GStreamer backend)
- This package provides media utilities for the MATE desktop:
- .
-    * the MATE GStreamer-based audio mixer and applet.
- .
- This package uses GStreamer for mate-media package.
-
-Package: mate-media-pulse
-Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         mate-media-common (>= ${source:Version}), mate-media-common (<< ${source:Version}.1),
-         x11-utils,
-         pulseaudio,
-         marco (>= 1.5.0),
-         mate-desktop (>= 1.5.0),
-Recommends: sound-theme-freedesktop
-Replaces: mate-media (<< 1.2.1-4)
-Conflicts: mate-media-gstreamer
-Breaks: mate-media (<< 1.2.1-4)
-Description: MATE media utilities (PulseAudio backend)
- This package provides media utilities for the MATE desktop:
- .
-    * the MATE PulseAudio-based audio mixer.
- .
- This package uses PulseAudio for mate-media package.
+            sound-theme-freedesktop
+Replaces: mate-media-pulse (<< 1.9.0),
+          mate-media-gstreamer (<< 1.9.0)
+Breaks: mate-media-pulse (<< 1.9.0),
+        mate-media-gstreamer (<< 1.9.0)
+Description: MATE media utilities
+ MATE media utilities are the audio mixer and the volume
+ control applet.
 
 Package: mate-media-common
 Architecture: all
-Depends: ${misc:Depends},
-Replaces: mate-media (<< 1.2.1-4)
-Breaks: mate-media (<< 1.2.1-4)
+Depends: ${misc:Depends}
+Replaces: mate-media-pulse (<< 1.9.0),
+          mate-media-gstreamer (<< 1.9.0)
+Breaks: mate-media-pulse (<< 1.9.0),
+        mate-media-gstreamer (<< 1.9.0)
 Description: MATE media utilities (common files)
- This package provides media utilities for the MATE desktop.
- .
-    * the MATE GStreamer/PulseAudio-based audio mixer.
+ MATE media utilities are the audio mixer and the volume
+ control applet.
  .
  This package contains the common files.
 
-Package: mate-media-gstreamer-dbg
+Package: mate-media-dbg
 Section: debug
 Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
-         mate-media-gstreamer (= ${binary:Version}),
-Description: MATE media utilities (GStreamer version, debugging symbols)
- This package provides media utilities for the MATE desktop.
+         mate-media (= ${binary:Version})
+Description: MATE media utilities (debugging symbols)
+ MATE media utilities are the audio mixer and the volume
+ control applet.
  .
-    * the MATE GStreamer-based audio mixer.
- .
- This package contains the debugging symbols of the GStreamer backend.
- .
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.
-
-Package: mate-media-pulse-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: ${misc:Depends},
-         mate-media-pulse (= ${binary:Version}),
-Description: MATE media utilities (PulseAudio version, debugging symbols)
- This package provides media utilities for the MATE desktop.
- .
-    * the MATE PulseAudio-based audio mixer.
- .
- This package contains the debugging symbols of the PulseAudio backend.
+ This package contains debugging symbols for MATE media
+ utilities.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
