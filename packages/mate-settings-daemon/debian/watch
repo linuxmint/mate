@@ -1,3 +1,2 @@
 version=3
-http://git.mate-desktop.org/mate-settings-daemon/ \
-    snapshot/mate-settings-daemon-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
+http://pub.mate-desktop.org/releases/(\d\.\d)/mate-settings-daemon-(.*)\.tar\.xz

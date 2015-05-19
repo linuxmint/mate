@@ -1,133 +1,250 @@
 mate-settings-daemon (1.10.0-1) rafaela; urgency=medium
 
-  * New upstream version
+  * New version
 
- -- Clement Lefebvre <root@linuxmint.com>  Tue, 12 May 2015 16:34:31 +0200
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 19 May 2015 10:49:43 +0200
 
-mate-settings-daemon (1.8.2-4) unstable; urgency=medium
+mate-settings-daemon (1.9.90-1) unstable; urgency=low
 
-  * debian/changelog:
-    + Fix typo in previous changelog stanza.
-  * debian/patches:
-    + 0003_fix-unsafe-access-to-list-elements-in-background-plugin.patch.
-      Prevent mate-settings-daemon and thus MATE desktop from crashing (e.g.)
-      during screen size changes or screen configuration changes. (Closes:
-      #780399, LP:#1430204).
+  * New upstream release candidate
 
- -- Mike Gabriel <sunweaver@debian.org>  Fri, 13 Mar 2015 14:28:05 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 25 Feb 2015 23:42:12 +0100
 
-mate-settings-daemon (1.8.2-3) unstable; urgency=medium
+mate-settings-daemon (1.9.6-1) unstable; urgency=medium
 
-  * debian/changelog:
-    + Fix typo in previous changelog stanza.
-  * debian/patches:
-    + Add debian/patches/1001_fix-numlock-cpu-usage.patch. Prevent m-s-d from
-      causing high CPU load if the user repetitively toggles the NUMLOCK key
-      while being connected via a remote session (NX, X2Go, VNC, xrdp, etc.)
-      or sometimes also in a local X.org session. (Closes: #780226, #778278,
-      LP:#1364111).
+  * New upstream development release
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Mar 2015 20:36:14 +0100
+ -- stefano <stefano@debian>  Tue, 20 Jan 2015 09:59:34 +0100
 
-mate-settings-daemon (1.8.2-2) unstable; urgency=medium
+mate-settings-daemon (1.9.4-1) unstable; urgency=medium
 
-  [ Mike Gabriel ]
-  * debian/patches:
-    + Add README file explaining our patch naming scheme.
-    + Add 0002_fix-a11y-keyboard-dialog-segfaults.patch. Fix segfaults when
-      clicking on the checkboxes in the a11y-keyboard configuration dialog.
-      (Closes: #779916).
+  * New upstream development release
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Mar 2015 17:59:38 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 10 Nov 2014 11:01:14 +0100
 
-mate-settings-daemon (1.8.2-1) unstable; urgency=medium
+mate-settings-daemon (1.9.2-1) unstable; urgency=low
 
-  [ Vangelis Mouhtsis ]
-  * debian/control:
-    + Bump Standards: to 3.9.6. No changes needed.
+  * New upstream development release
 
-  [ Mike Gabriel ]
-  * New upstream release.
-  * debian/patches:
-    + Add 0001_prefer-gcalculator-for-media-keys.patch. Prefer gcalculator as
-      pocket calculator when the calculator media key is pressed.
-  * debian/rules:
-    + Use upstream's NEWS file as upstream ChangeLog.
-  * debian/control:
-    + Add Vangelis Mouhtsis to Uploaders: field.
-  * debian/copyright:
-    + Really mention all files in upstream source tree. Remove information for
-      files not shipped in upstream sources anymore.
-  * missing man pages:
-    + Add man pages for msd-datetime-mechanism and msd-locate-pointer.
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 12 Oct 2014 17:53:01 +0200
 
- -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Oct 2014 13:49:21 +0200
+mate-settings-daemon (1.9.0-1) unstable; urgency=low
 
-mate-settings-daemon (1.8.1-2) unstable; urgency=medium
+  * New upstream development release
 
-  * debian/control:
-    + Prefer pulse backend of MATE settings daemon to the gstreamer backend
-      on default installations. (Closes: #753588).
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 22 Mar 2014 15:51:21 +0100
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Aug 2014 17:44:50 +0200
+mate-settings-daemon (1.8.0-0) unstable; urgency=low
 
-mate-settings-daemon (1.8.1-1) unstable; urgency=low
+  * New upstream release
 
-  [ Mike Gabriel ]
-  * New upstream release.
-  * debian/control: 
-    + Versioned B-D: libmate-desktop-dev (>= 1.8.1).
-  * debian/rules:
-    + Remove files after build that we do not install into any bin:package.
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:33:22 +0100
 
-  [ Vangelis Mouhtsis ]
-  * debian/rules:
-    + Replace on dh_install --list-missing -> --fail-missing.
+mate-settings-daemon (1.7.90-1) unstable; urgency=low
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 19 May 2014 08:33:41 +0200
+  * New upstream development release
 
-mate-settings-daemon (1.8.0-3) unstable; urgency=low
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:33:23 +0100
 
-  * debian/rules:
-    + Enable parallel builds.
-  * debian/copyright:
-    + Fix typo (opinion -> option).
+mate-settings-daemon (1.7.1-1) unstable; urgency=low
 
- -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 16:38:33 +0200
+  * New upstream development release.
 
-mate-settings-daemon (1.8.0-2) unstable; urgency=high
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 10:41:53 +0100
 
-  * debian/changelog:
-    + Setting urgency to "high" as #742461 breaks existing MATE desktop
-      installations on Debian jessie.
-  * debian/control:
-    + Versioned dependency for bin:packages mate-settings-daemon-gstreamer and
-      mate-settings-daemon-pulse on mate-desktop-common (>= 1.8). (Closes:
-      #742461).
-  * debian/rules:
-    + Turn on compiler commands during package build (configure option:
-      --disable-silent-rules).
-  * debian/copyright:
-    + Point to git.mate-desktop.org in Source: field.
+mate-settings-daemon (1.7.0-1) unstable; urgency=low
 
- -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Mar 2014 15:13:30 +0200
+  * New upstream development release.
 
-mate-settings-daemon (1.8.0-1) unstable; urgency=low
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 26 Oct 2013 11:17:56 +0200
+
+mate-settings-daemon (1.6.1-1~mate1) unstable; urgency=low
 
   * New upstream release.
-  * debian/watch:
-    + Use tagged CGit tarball snapshots as upstream source.
-  * debian/copyright:
-    + Adapt to files in new upstream tarball.
-  * debian/rules:
-    + Build package using autogen.sh.
-  * man pages:
-    + Drop debian/man/mate-settings-daemon.1. Provided in upstream sources now.
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Mar 2014 22:15:19 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 11:44:45 +0200
 
-mate-settings-daemon (1.6.1-1) unstable; urgency=low
+mate-settings-daemon (1.6.0-2) unstable; urgency=low
 
-  * Inital release. (Closes: #728489).
+  * Cherry pick patch to fix libnotify initialization.
 
- -- Mike Gabriel <sunweaver@debian.org>  Fri, 31 Jan 2014 00:01:02 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 06 Apr 2013 18:32:34 +0200
+
+mate-settings-daemon (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 22:19:32 +0200
+
+mate-settings-daemon (1.5.7-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 22 Mar 2013 23:24:57 +0100
+
+mate-settings-daemon (1.5.6-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Use libnotify instead of libmatenotify.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 10 Mar 2013 20:22:37 +0100
+
+mate-settings-daemon (1.5.5-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 08 Feb 2013 00:29:08 +0100
+
+mate-settings-daemon (1.5.4-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 03 Dec 2012 23:55:39 +0100
+
+mate-settings-daemon (1.5.3-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 27 Oct 2012 17:03:33 +0200
+
+mate-settings-daemon (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+  * debian/control: add missing dependency on x11-xserver-utils.
+  * debian/control: fix dep min versions for MATE 1.5.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 23 Oct 2012 13:37:29 +0200
+
+mate-settings-daemon (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 17 Oct 2012 14:19:38 +0200
+
+mate-settings-daemon (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Oct 2012 23:16:50 +0200
+
+mate-settings-daemon (1.4.0-2) unstable; urgency=low
+
+  * Removed x11proto-xf86misc-dev from build depends.
+    It's obsolete and has been removed from Wheezy.
+    It's also not required to succesfully bulid mate-settings-daemon.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 14 Jul 2012 17:07:17 -0400
+
+mate-settings-daemon (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sat, 14 Jul 2012 15:13:27 -0400
+
+mate-settings-daemon (1.2.0-4) unstable; urgency=low
+
+  * Fixed lintian errors.
+  * Changed section from mate to x11.
+  * Add "metapackage" in mate-settings-daemon description.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 06 Apr 2012 00:07:40 +0200
+
+mate-settings-daemon (1.2.0-3) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 01 Apr 2012 12:40:44 -0400
+
+mate-settings-daemon (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 19:52:16 -0400
+
+mate-settings-daemon (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 28 Feb 2012 23:59:25 +0100
+
+mate-settings-daemon (1.1.1-3) unstable; urgency=low
+
+  * Re-added replaces fields in debian/control.
+  * Fix typo in old breaks (was mate-setting-daemon).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 25 Jan 2012 23:20:00 +0100
+
+mate-settings-daemon (1.1.1-2) unstable; urgency=low
+
+  * Remove replaces fields from debian/control.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 25 Jan 2012 01:54:02 +0100
+
+mate-settings-daemon (1.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add mate-setting-daemon-pulse to use pulseaudio.
+    The default package now supports gstreamer/alsa/oss.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 22 Jan 2012 23:25:05 +0100
+
+mate-settings-daemon (1.1.0-4) unstable; urgency=low
+
+  * Add libcanberra-gtk in build-depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 21 Dec 2011 16:00:58 +0100
+
+mate-settings-daemon (1.1.0-3) unstable; urgency=low
+
+  * Add more build depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 21 Dec 2011 06:41:39 +0100
+
+mate-settings-daemon (1.1.0-2) unstable; urgency=low
+
+  * Enable pulse in debian/rules. This should fix the keybinding issue.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 21 Dec 2011 01:37:38 +0100
+
+mate-settings-daemon (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 10 Dec 2011 18:48:03 +0100
+
+mate-settings-daemon (1.0.0-3) unstable; urgency=low
+
+  * Dropped wrong depends on mate-common.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 16 Nov 2011 01:52:11 +0100
+
+mate-settings-daemon (1.0.0-2) unstable; urgency=low
+
+  * Fixed debian/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 05 Nov 2011 18:57:22 +0100
+
+mate-settings-daemon (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 12:16:12 +0000
+
+mate-settings-daemon (2011.10.27-2) unstable; urgency=low
+
+  * Fixed mateconf schemas.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 15:48:45 +0200
+
+mate-settings-daemon (2011.10.27-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 28 Oct 2011 04:15:35 +0200
+
+mate-settings-daemon (2011.10.18-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 22 Oct 2011 01:31:28 +0200
+
