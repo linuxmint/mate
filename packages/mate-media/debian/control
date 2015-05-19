@@ -8,6 +8,7 @@ Homepage: http://www.mate-desktop.org/
 Build-Depends: cdbs,
                debhelper (>= 8),
                intltool,
+               libdconf-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
                libcanberra-gtk-dev,
