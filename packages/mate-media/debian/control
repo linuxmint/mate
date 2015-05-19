@@ -18,6 +18,7 @@ Build-Depends: cdbs,
                libmatemixer-dev (>= 1.9.1),
                libmate-desktop-dev (>= 1.9.3),
                libstartup-notification0-dev
+
 Package: mate-media
 Architecture: any
 Depends: ${shlibs:Depends},
