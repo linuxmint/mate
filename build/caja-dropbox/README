@@ -1,0 +1,18 @@
+This is Caja-Dropbox, a fork of Nautilus-Dropbox for MATE Desktop.
+
+
+Building Dropbox Caja Extension From Source Tarball
+--------------------------------------------------
+
+You will need the following packages (or equivalent):
+
+libcaja-extension-dev
+
+In the caja-dropbox dir just do:
+$ ./autogen.sh
+$ make
+$ sudo make install
+
+After installing the package you must restart Caja. You can do that by issuing the following command (note: if you're running compiz, doing so may lock up your computer - log out and log back in instead):
+
+$ killall caja

@@ -1,0 +1,6 @@
+[Caja Extension]
+Icon=caja-dropbox
+Name=Caja Dropbox
+Description=Shows status labels in dropbox folder
+Version=@VERSION@
+Website=http://www.mate-desktop.org/

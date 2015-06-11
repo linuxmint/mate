@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Caja Dropbox
+GenericName=File Synchronizer For Mate
+Comment=Installs and launches proprietary Dropbox cloud software
+Exec=caja-dropbox start -i
+Terminal=false
+Type=Application
+Icon=caja-dropbox
+Categories=Network;FileTransfer;
+StartupNotify=false

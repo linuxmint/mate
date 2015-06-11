@@ -1,0 +1,32 @@
+Source: caja-dropbox
+Section: non-free/x11
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Build-Depends: debhelper (>= 8),
+               libcaja-extension-dev,
+               libglib2.0-dev (>= 2.14.0),
+               python-gtk2 (>= 2.12),
+               python-docutils (>= 0.6),
+               python (>= 2.6.6-3~),
+               mate-common
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
+
+Package: caja-dropbox
+Architecture: i386 amd64
+Depends: procps,
+         python-gtk2 (>= 2.12),
+         python-gpgme,
+         policykit-1,
+         ${shlibs:Depends},
+         ${python:Depends},
+         ${misc:Depends},
+Suggests: caja,
+          dropbox,
+Description: Dropbox integration for Caja
+ Caja Dropbox is an extension that integrates the Dropbox web service with
+ your MATE Desktop.
+ .
+ To use this package you need to install the proprietary dropbox package
+ from https://www.dropbox.com/install.
