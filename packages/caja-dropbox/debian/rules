@@ -1,0 +1,44 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+%:
+	dh $@ $(DHFLAGS) --with=python2
+
+override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-static
+
+override_dh_makeshlibs:
+	# Don't generate a shlibs file for the plugin
+	dh_makeshlibs -X/usr/lib/caja/
+
+override_dh_auto_install:
+	dh_auto_install
+	# Drop useless files
+	rm -rfv debian/caja-dropbox/usr/bin/dropbox
+	rm -rfv debian/caja-dropbox/usr/lib/*/caja/extensions-*/libcaja-dropbox.la
+	rm -rfv debian/caja-dropbox/usr/share/applications/dropbox.desktop
+	rm -rfv debian/caja-dropbox/usr/share/man/*
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f INSTALL
+	rm -f aclocal.m4
+	rm -f config.guess
+	rm -f config.h.in
+	rm -f config.sub
+	rm -f configure
+	rm -f depcomp
+	rm -f install-sh
+	rm -f ltmain.sh
+	rm -f missing
+	rm -f omf.make
+	rm -f xmldocs.make
+	for x in `find . -name Makefile.in`; do \
+          rm -f $$x; \
+        done
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=../
