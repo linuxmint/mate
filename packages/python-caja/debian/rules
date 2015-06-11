@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+%:
+	dh $@ $(DHFLAGS)
+
+override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/caja-python/*.la
+	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	dh_install --fail-missing
+
+override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-static \
+		--enable-gtk-doc
+
+override_dh_strip:
+	dh_strip --dbg-package=python-caja-dbg
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
