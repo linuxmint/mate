@@ -1,0 +1,56 @@
+Source: mate-indicator-applet
+Section: x11
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Build-Depends: debhelper (>= 9),
+               libgtk2.0-dev,
+               libmate-panel-applet-dev,
+               libdbus-glib-1-dev,
+               yelp-tools,
+               libtool,
+               intltool,
+               libxml2-dev,
+               gtk-doc-tools,
+               libindicator-dev (>= 0.3.90),
+               mate-common
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org
+
+Package: mate-indicator-applet
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-indicator-applet-common (= ${source:Version}),
+         mate-panel
+Provides: indicator-renderer
+Description: MATE panel indicator applet
+ indicator-applet is an applet to display information from
+ various applications consistently in the MATE panel.
+
+Package: mate-indicator-applet-common
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: mate-indicator-applet (<< 1.8.0)
+Breaks: mate-indicator-applet (<< 1.8.0)
+Description: MATE panel indicator applet (common files)
+ indicator-applet is an applet to display information from
+ various applications consistently in the MATE panel.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-indicator-applet-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-indicator-applet (= ${binary:Version})
+Description: MATE panel indicator applet (debugging symbols)
+ indicator-applet is an applet to display information from
+ various applications consistently in the MATE panel.
+ .
+ This package contains debugging symbols for the mate-indicator-applet package.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
