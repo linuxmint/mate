@@ -1,0 +1,96 @@
+mate-utils (1.10.0-1) rafaela; urgency=medium
+
+  * 1.10.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Jun 2015 17:53:07 +0200
+
+mate-utils (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 06 Apr 2015 11:15:16 +0200
+
+mate-utils (1.9.0-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Apr 2014 16:14:27 +0200
+
+mate-utils (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:26:09 +0100
+
+mate-utils (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 21:35:25 +0100
+
+mate-utils (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 25 Jan 2014 11:31:59 +0100
+
+mate-utils (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 02 Apr 2013 16:40:40 +0200
+
+mate-utils (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 24 Mar 2013 16:36:28 +0100
+
+mate-utils (1.5.0-2) unstable; urgency=low
+
+  * debian/control: Add mate-utils-common as dependency of mate-utils package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 29 Jan 2013 07:56:19 +0100
+
+mate-utils (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Add mate-utils-dev, mate-utils-common and mate-utils-dbg packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Jan 2013 10:10:34 +0100
+
+mate-utils (1.4.0-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Mon, 16 Jul 2012 16:19:38 -0400
+
+mate-utils (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 01 Apr 2012 23:28:42 +0200
+
+mate-utils (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 12 Mar 2012 00:26:59 +0100
+
+mate-utils (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Dec 2011 11:11:43 +0100
+
+mate-utils (1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 20 Nov 2011 19:24:49 +0100
+
+mate-utils (1.0.6-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 22:39:43 +0100
