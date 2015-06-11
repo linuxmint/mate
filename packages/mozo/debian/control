@@ -1,0 +1,34 @@
+Source: mozo
+Section: utils
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Build-Depends: debhelper (>= 9),
+               autotools-dev,
+               python-support (>= 0.7),
+               python (>= 2.4),
+               mate-common
+Build-Depends-Indep: intltool (>= 0.40.0),
+                     gettext,
+                     libmatemenu-dev,
+                     python-gtk2 (>= 2.13.0),
+                     python-gobject (>= 2.15.1)
+XS-Python-Version: >= 2.4
+Standards-Version: 3.9.3
+Homepage: http://www.mate-desktop.org/
+
+Package: mozo
+Architecture: all
+Depends: ${python:Depends},
+         ${misc:Depends},
+         python-gtk2 (>= 2.13.0),
+         python-mate-menu,
+         mate-menus,
+         python-gobject (>= 2.15.1)
+Recommends: mate-panel
+XB-Python-Version: ${python:Versions}
+Description: easy MATE menu editing tool
+ Mozo is an easy-to-use menu editor for MATE that can add
+ and edit new entries and menus. It works with the freedesktop.org
+ menu specification and should work with any desktop environment
+ that uses the spec.
