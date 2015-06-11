@@ -1,0 +1,115 @@
+mate-netspeed (1.10.0-1) rafaela; urgency=medium
+
+  * 1.10.0
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Jun 2015 18:34:00 +0200
+
+mate-netspeed (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 05 Apr 2015 19:47:49 +0200
+
+mate-netspeed (1.9.1-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 22 Jan 2015 11:03:54 +0100
+
+mate-netspeed (1.9.0-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Apr 2014 16:12:34 +0200
+
+mate-netspeed (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:25:24 +0100
+
+mate-netspeed (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 19:01:44 +0100
+
+mate-netspeed (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 24 Jan 2014 21:29:07 +0100
+
+mate-netspeed (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 01 Apr 2013 15:00:10 +0200
+
+mate-netspeed (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 23 Mar 2013 12:19:22 +0100
+
+mate-netspeed (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 23 Feb 2013 15:46:25 +0100
+
+mate-netspeed (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Remove deprecated depends.
+  * Add debug package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 01 Dec 2012 01:14:15 +0100
+
+mate-netspeed (1.4.0-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Mon, 16 Jul 2012 11:58:58 -0400
+
+mate-netspeed (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 21:03:50 -0400
+
+mate-netspeed (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Mar 2012 17:10:55 +0100
+
+mate-netspeed (1.1.0-0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Dec 2011 00:51:22 +0100
+
+mate-netspeed (1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 23 Nov 2011 16:09:50 +0100
+
+mate-netspeed (1.0.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 20:21:26 +0100
+
+mate-netspeed (1.0.5-2) unstable; urgency=low
+
+  * Removed post-* and pre-* scripts.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 17:14:45 +0100
+
+mate-netspeed (1.0.5-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 17 Nov 2011 02:38:42 +0100
