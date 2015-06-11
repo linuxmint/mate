@@ -1,0 +1,103 @@
+mate-sensors-applet (1.10.1-1) rafaela; urgency=medium
+
+  * 1.10.1
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Jun 2015 19:04:04 +0200
+
+mate-sensors-applet (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 05 Apr 2015 20:02:04 +0200
+
+mate-sensors-applet (1.9.0-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Apr 2014 16:13:20 +0200
+
+mate-sensors-applet (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:25:39 +0100
+
+mate-sensors-applet (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 25 Jan 2014 13:22:39 +0100
+
+mate-sensors-applet (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 01 Apr 2013 12:08:49 +0200
+
+mate-sensors-applet (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 23 Mar 2013 13:28:26 +0100
+
+mate-sensors-applet (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+    * Fix load of save enabled sensors in GSettings.
+    * Fix string compare in hddtemp-plugin.
+    * Added missing includes.
+    * Improved internationalization of translators credits.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 20 Jan 2013 16:03:18 -0500
+
+mate-sensors-applet (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Remove deprecated dependencies.
+  * Add mate-sensors-applet-dbg package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 16 Dec 2012 23:47:40 +0100
+
+mate-sensors-applet (1.4.0-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Mon, 16 Jul 2012 11:57:03 -0400
+
+mate-sensors-applet (1.2.0-3) unstable; urgency=low
+
+  * Add support for NVIDIA sensors (mate-sensors-applet-nvidia package).
+  * Add support for ATI sensors (mate-sensors-applet-ati package).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 May 2012 17:31:47 +0200
+
+mate-sensors-applet (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 21:09:25 -0400
+
+mate-sensors-applet (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 11 Mar 2012 17:26:00 +0100
+
+mate-sensors-applet (1.1.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * debian/watch: source is now .xz.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 26 Jan 2012 00:40:08 +0100
+
+mate-sensors-applet (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Dec 2011 00:52:52 +0100
+
+mate-sensors-applet (1.0.7-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Nov 2011 01:03:32 +0100
