@@ -6,35 +6,33 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper (>= 9),
-               dh-python,
                intltool,
                libglib2.0-dev,
-               libgirepository1.0-dev,
                libgtk2.0-dev,
                libstartup-notification0-dev,
                libx11-dev,
                libxrandr-dev,
                libxml2-dev,
-               libunique-dev,
                gtk-doc-tools,
                python-dev,
+               python-support,
                libglib2.0-doc,
                libgtk2.0-doc,
                mate-common,
-               rarian-compat,
                yelp-tools,
                libdconf-dev (>= 0.10.0),
-Standards-Version: 3.9.6
+               gobject-introspection,
+               libgirepository1.0-dev
+Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-desktop.git;a=summary
-Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-desktop.git
+Vcs-Browser: https://github.com/mate-desktop/debian-packages
+Vcs-Git: git://github.com/mate-desktop/debian-packages.git
 
 Package: mate-desktop
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libunique-1.0-0,
          hicolor-icon-theme,
          libmate-desktop-2-17,
          mate-desktop-common (= ${source:Version}),
@@ -68,6 +66,8 @@ Description: Library with common API for various MATE modules (common files)
 Package: libmate-desktop-2-17
 Architecture: any
 Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+             multiarch-support,
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Provides: libmatedesktop
@@ -90,8 +90,9 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libmate-desktop-2-17 (= ${binary:Version}),
-         libgdk-pixbuf2.0-dev,
+         libstartup-notification0-dev,
          libgtk2.0-dev,
+         libdconf-dev (>= 0.10.0)
 Breaks: libmatedesktop-dev
 Replaces: libmatedesktop-dev
 Description: Library with common API for various MATE modules (development files)
@@ -163,16 +164,18 @@ Description: Library with common API for various MATE modules (library debugging
 
 Package: gir1.2-mate-desktop
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: ${gir:Depends},
          ${misc:Depends},
-         ${python:Depends},
-         ${gir:Depends},
-         gir1.2-gtk-2.0
-Description: GObject introspection data for MATE desktop
+         ${shlibs:Depends}
+Description: GObject introspection data for the mate-desktop library
  The MATE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
- This package contains introspection data for MATE desktop.
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains introspection data for the library.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
