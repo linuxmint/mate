@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: libmatemixer
+Upstream-Name: libmatekbd
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://git.mate-desktop.org/libmatemixer
+Source: http://git.mate-desktop.org/libmatekbd
 
 Files: *
 Copyright: 2006, Sergey V. Udaltsov <svu@gnome.org>

@@ -1,19 +1,20 @@
 #!/usr/bin/make -f
 
+DHFLAGS=--parallel
+
 %:
-	dh $@
+	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	dh_install --list-missing
+	rm -rfv debian/tmp/usr/lib/*/*.la
+	rm -rfv debian/tmp/usr/lib/*/*/*.la
+	dh_install --fail-missing
 
 override_dh_auto_configure:
-	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
-	dh_auto_configure -- \
+	dh_auto_configure $(DHFLAGS) -- \
+		--enable-gtk-doc \
 		--disable-static
-
-override_dh_makeshlibs:
-	dh_makeshlibs -V 'libmatemixer0 (>= 1.10.0)'
 
 override_dh_strip:
 	dh_strip -plibmatemixer0 --dbg-package=libmatemixer0-dbg
