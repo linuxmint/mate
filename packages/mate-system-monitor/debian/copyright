@@ -6,6 +6,8 @@ Source: http://pub.mate-desktop.org/releases/
 Files: src/*.xml.in.in
        src/argv.cpp
        src/argv.h
+       src/cgroups.cpp
+       src/cgroups.h
        src/defaulttable.h
        src/disks.cpp
        src/disks.h
@@ -28,6 +30,8 @@ Files: src/*.xml.in.in
        src/procman_gksu.h
        src/procman_matesu.cpp
        src/procman_matesu.h
+       src/procproperties.cpp
+       src/procproperties.h
        src/selection.cpp
        src/selection.h
        src/selinux.cpp

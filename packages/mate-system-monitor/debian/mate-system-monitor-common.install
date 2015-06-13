@@ -1,2 +1,6 @@
+usr/share/appdata/
+usr/share/help/
 usr/share/locale/
+usr/share/MateConf/
 usr/share/pixmaps/
+debian/side.png usr/share/pixmaps/mate-system-monitor/
