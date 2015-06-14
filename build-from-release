@@ -21,5 +21,5 @@ os.system("rm -rf build/%s*" % project)
 os.system("tar xvfJ %s -C build/" % release) # Uncompress the release
 os.system("mv build/%s* build/%s" % (project, project))
 os.system("cp %s %s" % (release, orig)) # Add the orig
-os.system("cp -R packages/%s/debian build/%s/" % (project, project)) # Add the debian dir
+os.system("cp -R packages/%s/* build/%s/" % (project, project)) # Add the debian dir
 os.system("cp -R packages/%s/.pc build/%s/" % (project, project)) # Add the .pc dir
