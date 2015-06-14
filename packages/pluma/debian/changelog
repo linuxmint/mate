@@ -1,3 +1,9 @@
+pluma (1.10.0-2) rafaela; urgency=medium
+
+  * Enabled python extension support
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 14 Jun 2015 19:32:19 +0200
+
 pluma (1.10.0-1) rafaela; urgency=medium
 
   * 1.10.0
