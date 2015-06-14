@@ -1,0 +1,29 @@
+Source: mate-themes
+Section: x11
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9),
+               mate-common
+Build-Depends-Indep: libxml-parser-perl,
+                     libgtk2.0-dev,
+                     icon-naming-utils,
+                     pkg-config,
+                     intltool
+Homepage: http://www.mate-desktop.org/
+
+Package: mate-themes
+Architecture: all
+Depends: gtk2-engines,
+         gtk2-engines-murrine,
+         gtk2-engines-pixbuf,
+         librsvg2-common,
+         mate-icon-theme,
+         ${misc:Depends},
+Recommends: dmz-cursor-theme
+Suggests: gtk3-engines-unico
+Conflicts: mate-themes-gnome
+Description: Official themes for the MATE desktop
+ This package contains the official desktop themes of the MATE desktop
+ environment.
