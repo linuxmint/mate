@@ -1,81 +1,158 @@
-atril (1.10.0-1) rafaela; urgency=medium
+atril (1.10.0-2) rafaela; urgency=medium
 
-  * New upstream version
+  * 1.10.0
 
- -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 May 2015 09:43:14 +0200
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 15 Jun 2015 10:12:43 +0200
 
-atril (1.8.1+dfsg1-4) unstable; urgency=medium
+atril (1.9.90-1) unstable; urgency=low
 
-  * debian/patches:
-    + Add 0002_forgotten-mutex-unlock.patch. Don't forget to unlock the
-      trylock'ed mutex. Prevents from unpredictable behaviour after that
-      mutex unlocking has been forgotten. (Closes: #779848).
+  * New upstream release candidate
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 09:26:24 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 04 Apr 2015 20:29:19 +0200
 
-atril (1.8.1+dfsg1-3) unstable; urgency=medium
+atril (1.9.2-1) unstable; urgency=medium
 
-  * debian/patches:
-    + Add 0001_open-multiple-files.patch. Allow selecting multiple files
-      and opening them in Atril. (Closes: #772014).
+  * New upstream development release
 
- -- Mike Gabriel <sunweaver@debian.org>  Thu, 04 Dec 2014 12:32:18 +0100
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 22 Jan 2015 10:00:04 +0100
 
-atril (1.8.1+dfsg1-2) unstable; urgency=medium
+atril (1.9.0-1) unstable; urgency=low
 
-  [ Vangelis Mouhtsis ]
-  * debian/control: Bump Standards: to 3.9.6.
-    + No changes needed.
+  * New upstream development release
 
-  [ Mike Gabriel ]
-  * debian/rules:
-    + Use upstream's NEWS file as upstream ChangeLog.
-  * debian/rules:
-    + Drop libatril-properties-page.la on non-amd64 builds, as well.
-  * debian/copyright:
-    + Drop information of ev-version.h. Not shipped in upstream sources
-      anymore.
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 22 Apr 2014 16:09:52 +0200
 
- -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Oct 2014 18:45:13 +0200
+atril (1.8.0-0) unstable; urgency=low
 
-atril (1.8.1+dfsg1-1) unstable; urgency=medium
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:20:34 +0100
+
+atril (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 19:01:57 +0100
+
+atril (1.7.2-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 22:12:45 +0100
+
+atril (1.7.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 24 Jan 2014 19:26:04 +0100
+
+atril (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 21 Jan 2014 14:17:54 +0100
+
+mate-document-viewer (1.6.0-2) unstable; urgency=low
+
+  * Disable impress backend.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 23 Jul 2013 01:17:30 +0200
+
+mate-document-viewer (1.6.0-1) unstable; urgency=low
 
   * New upstream release.
-  * debian/patches:
-    + Drop 1001_add-keywords-key-to-desktop-files.patch. Applied upstream.
-    + Drop 1002_FTBFS-atril-with-clang.patch. Applied upstream.
-  * debian/copyright:
-    + Really mention all upstream files.
-    + Fix short license names in two locations.
-    + Remove duplicate file paragraph for po/*.po.
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Sep 2014 10:47:57 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 01 Apr 2013 11:47:49 +0200
 
-atril (1.8.0+dfsg1-4) unstable; urgency=medium
+mate-document-viewer (1.5.0-1) unstable; urgency=low
 
-  * debian/control:
-    + Modify B-D: libtiff4-dev -> libtiff-dev. (Closes: #753820).
+  * New upstream development release.
+  * Add libgxps-dev in build depends.
+  * Remove deprecated libs.
+  * Depend to debhelper 9.
+  * debian/rules: remove mateconf stuff.
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 08 Jul 2014 01:15:47 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Nov 2012 19:41:03 +0100
 
-atril (1.8.0+dfsg1-3) unstable; urgency=medium
+mate-document-viewer (1.4.0-1) unstable; urgency=low
 
-  * debian/patches:
-    + Add 1002_FTBFS-atril-with-clang.patch. Fix FTBFS when build with clang.
-      (Closes: #753344).
+  * New upstream release. 
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 20:16:19 +0200
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 15 Jul 2012 13:54:00 -0400
 
-atril (1.8.0+dfsg1-2) unstable; urgency=low
+mate-document-viewer (1.2.0-4) unstable; urgency=low
 
-  * debian/control:
-    + Drop B-D: libt1-dev. Package has been removed from Debian unstable.
-      (For reference see #638759 and #744881).
+  * Rebuild.
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 08:39:16 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 14 Jun 2012 00:15:41 +0200
 
-atril (1.8.0+dfsg1-1) unstable; urgency=low
+mate-document-viewer (1.2.0-3) unstable; urgency=low
 
-  * Initial release. (Closes: #734911).
+  * Rebuild.
 
- -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 11:47:31 +0200
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 May 2012 12:11:49 +0200
+
+mate-document-viewer (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 20:33:04 -0400
+
+mate-document-viewer (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Mar 2012 00:44:33 +0100
+
+mate-document-viewer (1.1.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 23 Dec 2011 22:28:21 +0100
+
+mate-document-viewer (1.1.0-2) unstable; urgency=low
+
+  * Fixed conflict between atril and atril-common.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Dec 2011 02:09:35 +0100
+
+mate-document-viewer (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 13 Dec 2011 23:12:09 +0100
+
+mate-document-viewer (1.0.7-2) unstable; urgency=low
+
+  * Fixed depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Nov 2011 00:09:47 +0100
+
+mate-document-viewer (1.0.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fixed mateconf schemas.
+  * Depends on mateconf witb triggers.
+  * Added atril-dbg and atril-common packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 26 Nov 2011 22:53:12 +0100
+
+mate-document-viewer (1.0.3-3) unstable; urgency=low
+
+  * Split into more appropriate packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 00:55:53 +0100
+
+mate-document-viewer (1.0.3-2) unstable; urgency=low
+
+  * New upstream release.
+  * Renamed binary package to atril.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 09 Nov 2011 23:56:52 +0100
+
+mate-document-viewer (1.0.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 06 Nov 2011 12:24:42 +0100
+
