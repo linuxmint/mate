@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+TYPELIBDIR=$(shell pkg-config gobject-introspection-1.0 --variable libdir | sed -e 's/.//')
+
 DHFLAGS=--parallel
 DEB_ATRIL_FLAGS=
 ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
@@ -16,6 +18,7 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/lib/*/atril/3/backends/*.la
 	rm -rfv debian/tmp/usr/share/MateConf/gsettings/atril.convert
+	sed 's@TYPELIBDIR@${TYPELIBDIR}@' debian/gir1.2-atril.install.in > debian/gir1.2-atril.install
 	dh_install --fail-missing
 
 override_dh_auto_test:
