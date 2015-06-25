@@ -8,8 +8,11 @@ if len(sys.argv) != 3:
 project = sys.argv[1]
 version = sys.argv[2]
 
+packaging = "debian-packages/%s" % project
+if os.path.exists ("packages/%s" % project):
+	packaging = "packages/%s" % project
+
 release = "releases/%s-%s.tar.xz" % (project, version)
-package = "packages/%s" % project
 orig = "build/%s_%s.orig.tar.xz" % (project, version)
 build_project = "build/"
 if not os.path.exists (release):
@@ -21,5 +24,5 @@ os.system("rm -rf build/%s*" % project)
 os.system("tar xvfJ %s -C build/" % release) # Uncompress the release
 os.system("mv build/%s* build/%s" % (project, project))
 os.system("cp %s %s" % (release, orig)) # Add the orig
-os.system("cp -R packages/%s/* build/%s/" % (project, project)) # Add the debian dir
-os.system("cp -R packages/%s/.pc build/%s/" % (project, project)) # Add the .pc dir
+os.system("cp -R %s/* build/%s/" % (packaging, project)) # Add the debian dir
+os.system("cp -R %s/.pc build/%s/" % (packaging, project)) # Add the .pc dir
