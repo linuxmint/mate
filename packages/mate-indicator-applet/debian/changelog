@@ -1,3 +1,9 @@
+mate-indicator-applet (1.10.0-2) rafaela; urgency=medium
+
+  * Fixed an upgrade conflict with 1.8
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 30 Jun 2015 14:36:49 +0200
+
 mate-indicator-applet (1.10.0-1) rafaela; urgency=medium
 
   * 1.10.0
