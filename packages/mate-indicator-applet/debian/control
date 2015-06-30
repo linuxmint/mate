@@ -31,8 +31,8 @@ Description: MATE panel indicator applet
 Package: mate-indicator-applet-common
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: mate-indicator-applet (<< 1.8.0)
-Breaks: mate-indicator-applet (<< 1.8.0)
+Replaces: mate-indicator-applet (<< 1.9.0)
+Breaks: mate-indicator-applet (<< 1.9.0)
 Description: MATE panel indicator applet (common files)
  indicator-applet is an applet to display information from
  various applications consistently in the MATE panel.
