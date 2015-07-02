@@ -1,3 +1,0 @@
-[submodule "debian-packages"]
-	path = debian-packages
-	url = https://github.com/mate-desktop/debian-packages
