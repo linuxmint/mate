@@ -1,3 +1,9 @@
+mate-control-center (1.10.0-2) rafaela; urgency=medium
+
+  * Fixed upgrade conflict with mate-control-center 1.8.3
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 02 Jul 2015 17:29:05 +0200
+
 mate-control-center (1.10.0-1) rafaela; urgency=medium
 
   * New upstream version
