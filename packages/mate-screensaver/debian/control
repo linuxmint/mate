@@ -45,7 +45,8 @@ Depends: ${shlibs:Depends},
          mate-desktop-common,
 Recommends: mate-power-manager
 Suggests: xscreensaver-data, rss-glx
-Breaks: mate-screensaver-common (<< 1.8.0),
+Breaks: mate-screensaver-common (<< 1.9.0),
+Replaces: mate-screensaver-common (<< 1.9.0),
 Description: MATE screen saver and locker
  mate-screensaver is a screen saver and locker that aims to have simple,
  sane and secure defaults, and be well integrated with the MATE desktop.
