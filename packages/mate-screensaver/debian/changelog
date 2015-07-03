@@ -1,3 +1,9 @@
+mate-screensaver (1.10.0-2) rafaela; urgency=medium
+
+  * Fixed upgrade issue with mate-screensaver 1.8.0-0+qiana
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Jul 2015 10:12:35 +0200
+
 mate-screensaver (1.10.0-1) rafaela; urgency=medium
 
   * New upstream version
