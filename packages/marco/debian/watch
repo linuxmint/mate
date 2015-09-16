@@ -1,4 +1,0 @@
-version=3
-opts=dversionmangle=s/\+dfsg1// \
-http://git.mate-desktop.org/marco/ \
-    snapshot/marco-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
