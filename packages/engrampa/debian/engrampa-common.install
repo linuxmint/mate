@@ -1,8 +1,0 @@
-usr/share/locale/
-usr/share/engrampa/
-usr/share/glib-2.0/
-usr/share/icons/
-usr/share/help/
-usr/share/dbus-1/services/org.mate.Engrampa.service
-usr/share/appdata/engrampa.appdata.xml
-usr/share/caja/extensions/libcaja-engrampa.caja-extension
