@@ -1,0 +1,3 @@
+version=3
+http://git.mate-desktop.org/mate-system-monitor/ \
+    snapshot/mate-system-monitor-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
