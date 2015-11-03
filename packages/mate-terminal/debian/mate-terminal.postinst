@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+set -e
+
+#DEBHELPER#
+
+# use mate-terminal.wrapper as alternative for x-terminal-emulator
+if [ "$1" = "configure" ]; then
+    update-alternatives --install /usr/bin/x-terminal-emulator \
+    x-terminal-emulator /usr/bin/mate-terminal.wrapper 30 \
+    --slave /usr/share/man/man1/x-terminal-emulator.1.gz \
+    x-terminal-emulator.1.gz /usr/share/man/man1/mate-terminal.1.gz
+fi
