@@ -20,6 +20,7 @@ Build-Depends: autotools-dev,
                libx11-dev,
                libxml2-dev,
                mate-common (>= 1.10),
+               python-gtk2-dev,
                yelp-tools,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
