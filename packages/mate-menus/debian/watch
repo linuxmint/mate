@@ -1,3 +1,0 @@
-version=3
-http://git.mate-desktop.org/mate-menus/ \
-    snapshot/mate-menus-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz

@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-
-if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
-	update-alternatives --remove x-window-manager /usr/bin/marco
-fi
-
-#DEBHELPER#
