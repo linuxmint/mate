@@ -29,12 +29,17 @@ print "============ CLONING ==============="
 call("git clone https://github.com/mate-desktop/%s.git" % project)
 print ""
 
+os.chdir(project)
+
 if label != "master":
     print "============ APPLYING LABEL %s ===============" % label
-    os.chdir(project)
     os.system("git checkout %s" % label)
-    os.chdir("..")
     print ""
+
+call("rm -rf .git")
+call("rm -rf .tx")
+
+os.chdir("..")
 
 call("mv %s %s" % (project, dir_name))
 
