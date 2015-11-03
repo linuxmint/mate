@@ -13,12 +13,23 @@ project = sys.argv[1]
 version = sys.argv[2]
 label = sys.argv[3]
 
+call("mkdir -p git-master")
+os.chdir("git-master")
+if os.path.exists(project):
+	print "============ PULLING ==============="
+	os.chdir(project)
+	call("git pull")
+	os.chdir("..")
+	print ""
+else:
+	print "============ CLONING ==============="
+	call("git clone https://github.com/mate-desktop/%s.git" % project)
+	print ""
+os.chdir("..")
 call("mkdir -p git")
-os.chdir("git")
-print "============ CLONING ==============="
-call("git clone https://github.com/mate-desktop/%s.git" % project)
-print ""
-os.chdir(project)
+call("rm -rf git/*")
+call("cp -R git-master/%s git/" % project)
+os.chdir("git/%s" % project)
 
 if label != "master":
 	print "============ APPLYING LABEL %s ===============" % label
@@ -29,8 +40,19 @@ print "============ AUTOGEN ==============="
 call("./autogen.sh")
 print ""
 
+if project in ['mate-desktop']:
+	print "============ MAKE ==============="
+	call("make")
+	print ""
+
 print "============ MAKE DIST ==============="
 call("make dist")
+print ""
+
+print "============ MAKE DISTCHECK ==============="
+call("make distcheck")
+print ""
+
 call("mv %s-*.tar.xz ../" % project)
 os.chdir("..")
 call("rm -rf %s" % project)
