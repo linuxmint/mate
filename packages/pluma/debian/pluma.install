@@ -1,6 +1,6 @@
-usr/lib/*/pluma/plugins/
 usr/bin/
-usr/share/man/
-usr/share/applications/
-usr/lib/pluma/pluma-bugreport.sh
 usr/lib/*/pluma/plugin-loaders/*.so
+usr/lib/*/pluma/plugins/
+usr/lib/pluma/pluma-bugreport.sh
+usr/share/applications/
+usr/share/man/

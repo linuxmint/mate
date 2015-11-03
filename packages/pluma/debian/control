@@ -2,40 +2,40 @@ Source: pluma
 Section: x11
 Priority: optional
 Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
-Build-Depends: debhelper (>= 9),
-               autotools-dev,
-               intltool,
-               yelp-tools,
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: autotools-dev,
+               debhelper (>= 9),
                gtk-doc-tools,
-               libenchant-dev,
+               intltool,
                iso-codes,
-               libsm-dev,
-               libxml2-dev,
+               libenchant-dev,
                libglib2.0-dev,
                libgtk2.0-dev,
                libgtksourceview2.0-dev,
+               libmate-desktop-dev (>= 1.10.0),
+               libsm-dev,
                libx11-dev,
-               libmate-desktop-dev (>= 1.9.0),
-               mate-common,
-               python-dev,
-               python-gobject-2-dev,
-               python-gtk2-dev,
-               python-gtksourceview2,
-               quilt,
-Standards-Version: 3.9.4
+               libxml2-dev,
+               mate-common (>= 1.10),
+               yelp-tools,
+Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
 
 Package: pluma
 Architecture: any
-Depends: ${misc:Depends},
+Depends: iso-codes,
+         mate-desktop-common,
+         pluma-common (= ${source:Version}),
+         ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends},
-         pluma-common (= ${source:Version}),
-         iso-codes
-Provides: mate-text-editor
-Breaks: mate-text-editor (<< 1.5.0)
-Replaces: mate-text-editor (<< 1.5.0)
+Recommends: zenity,
+Provides: mate-text-editor,
+Breaks: mate-text-editor (<< 1.5.0),
+Replaces: mate-text-editor (<< 1.5.0),
 XB-Python-Version: ${python:Versions}
 Description: official text editor of the MATE desktop environment
  Pluma is a text editor which supports most standard editor features,
@@ -55,8 +55,9 @@ Description: official text editor of the MATE desktop environment
 
 Package: pluma-common
 Architecture: all
-Depends: ${misc:Depends}
-Breaks: mate-text-editor (<< 1.5.0)
+Depends: python,
+         ${misc:Depends},
+Breaks: mate-text-editor (<< 1.5.0),
 Description: official text editor of the MATE desktop environment (common files)
  Pluma is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
@@ -76,11 +77,11 @@ Description: official text editor of the MATE desktop environment (common files)
  This package contains the architecture independent files.
 
 Package: pluma-dev
-Architecture: all
+Architecture: any
 Section: devel
-Depends: ${misc:Depends},
-         pluma (= ${source:Version})
-Breaks: mate-text-editor (<< 1.5.0)
+Depends: pluma (= ${binary:Version}),
+         ${misc:Depends},
+Breaks: mate-text-editor (<< 1.5.0),
 Description: official text editor of the MATE desktop environment (development files)
  Pluma is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
@@ -103,8 +104,8 @@ Package: pluma-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         pluma (= ${binary:Version})
+Depends: pluma (= ${binary:Version}),
+         ${misc:Depends},
 Description: official text editor of the MATE desktop environment (debugging symbols)
  Pluma is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
@@ -130,7 +131,7 @@ Description: official text editor of the MATE desktop environment (debugging sym
 Package: pluma-doc
 Section: doc
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
 Description: official text editor of the MATE desktop environment (documentation files)
  Pluma is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
