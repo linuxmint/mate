@@ -1,14 +1,26 @@
-pluma (1.10.0-2) rafaela; urgency=medium
+pluma (1.11.0-1) unstable; urgency=medium
 
-  * Enabled python extension support
+  * New upstream development release
 
- -- Clement Lefebvre <root@linuxmint.com>  Sun, 14 Jun 2015 19:32:19 +0200
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 15 Oct 2015 17:03:49 +0300
 
-pluma (1.10.0-1) rafaela; urgency=medium
+pluma (1.10.2-1) unstable; urgency=medium
 
-  * 1.10.0
+  * New upstream bugfix release
 
- -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Jun 2015 20:06:52 +0200
+ -- Vlad Orlov <monsta@inbox.ru>  Wed, 15 Jul 2015 17:41:57 +0300
+
+pluma (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 25 Jun 2015 12:40:02 +0300
+
+pluma (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 23 Jun 2015 17:11:54 +0300
 
 pluma (1.9.90-1) unstable; urgency=low
 

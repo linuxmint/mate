@@ -1,2 +1,3 @@
 version=3
-http://pub.mate-desktop.org/releases/(\d\.\d)/pluma-(.*)\.tar\.xz
+http://git.mate-desktop.org/pluma/ \
+    snapshot/pluma-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz

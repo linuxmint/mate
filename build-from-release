@@ -1,24 +1,30 @@
 #!/usr/bin/python
 import os, sys
 
-if len(sys.argv) != 3:
-	print "Usage: build-from-release project-name version"
-	sys.exit(1)
+if len(sys.argv) != 2:
+    print "Usage: build-from-release release_file"
+    sys.exit(1)
 
-project = sys.argv[1]
-version = sys.argv[2]
+release = sys.argv[1]
+
+if not os.path.exists (release):
+    print "ERROR: %s not found!" % release
+    sys.exit(1)
+
+dir_name = release.split("/")[-1].replace(".xz", "").replace(".tar", "")
+version = dir_name.split("-")[-1]
+project = dir_name.replace("-%s" % version, "")
+
+print ""
+print "Project: %s" % project
+print "Version: %s" % version
+print ""
 
 packaging = "debian-packages/%s" % project
 if os.path.exists ("packages/%s" % project):
-	packaging = "packages/%s" % project
+    packaging = "packages/%s" % project
 
-release = "releases/%s-%s.tar.xz" % (project, version)
 orig = "build/%s_%s.orig.tar.xz" % (project, version)
-build_project = "build/"
-if not os.path.exists (release):
-	print "ERROR: %s not found!" % release
-	sys.exit(1)
-
 os.system("mkdir -p build")
 os.system("rm -rf build/%s*" % project)
 os.system("tar xvfJ %s -C build/" % release) # Uncompress the release

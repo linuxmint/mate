@@ -1,8 +1,7 @@
-usr/share/locale/
-usr/share/glib-2.0/
-usr/share/MateConf/
-usr/share/pluma/plugins/
-usr/share/pluma/icons/
-usr/share/pluma/ui/
-usr/share/help/
 usr/share/appdata/
+usr/share/glib-2.0/
+usr/share/help/
+usr/share/locale/
+usr/share/pluma/icons/
+usr/share/pluma/plugins/
+usr/share/pluma/ui/
