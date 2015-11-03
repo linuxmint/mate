@@ -14,6 +14,9 @@ version = sys.argv[2]
 label = sys.argv[3]
 
 call("mkdir -p git-master")
+call("mkdir -p git")
+call("mkdir -p git-tar")
+
 os.chdir("git-master")
 if os.path.exists(project):
 	print "============ PULLING ==============="
@@ -26,7 +29,7 @@ else:
 	call("git clone https://github.com/mate-desktop/%s.git" % project)
 	print ""
 os.chdir("..")
-call("mkdir -p git")
+
 call("rm -rf git/*")
 call("cp -R git-master/%s git/" % project)
 os.chdir("git/%s" % project)
@@ -60,24 +63,15 @@ os.chdir("..")
 os.system("ls -al git/%s-%s.tar.xz" % (project, version))
 print ""
 
-print "============ ASSEMBLE PACKAGE ==============="
-packaging = "debian-packages/%s" % project
-if os.path.exists ("packages/%s" % project):
-	packaging = "packages/%s" % project
-
+print "============ COPY TAR ==============="
 release = "git/%s-%s.tar.xz" % (project, version)
-orig = "build/%s_%s.orig.tar.xz" % (project, version)
+orig = "git-tar/%s_%s.orig.tar.xz" % (project, version)
 build_project = "build/"
 if not os.path.exists (release):
 	print "ERROR: %s not found!" % release
 	sys.exit(1)
 
-call("mkdir -p build")
-call("rm -rf build/%s*" % project)
-call("tar xvfJ %s -C build/" % release) # Uncompress the release
-call("mv build/%s* build/%s" % (project, project))
 call("cp %s %s" % (release, orig)) # Add the orig
-call("cp -R %s/* build/%s/" % (packaging, project)) # Add the debian dir
-call("cp -R %s/.pc build/%s/" % (packaging, project)) # Add the .pc dir
-os.system("ls -al build/%s*" % project)
+
+os.system("ls -al git-tar/%s*" % project)
 print ""
