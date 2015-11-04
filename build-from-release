@@ -1,8 +1,8 @@
 #!/usr/bin/python
 import os, sys
 
-if len(sys.argv) != 2:
-    print "Usage: build-from-release release_file"
+if len(sys.argv) < 2:
+    print "Usage: build-from-release release_file [--automate-build | --local-build]"
     sys.exit(1)
 
 release = sys.argv[1]
@@ -26,9 +26,25 @@ if os.path.exists ("packages/%s" % project):
 
 orig = "build/%s_%s.orig.tar.xz" % (project, version)
 os.system("mkdir -p build")
-os.system("rm -rf build/%s*" % project)
+os.system("rm -rf build/*")
 os.system("tar xvfJ %s -C build/" % release) # Uncompress the release
 os.system("mv build/%s* build/%s" % (project, project))
 os.system("cp %s %s" % (release, orig)) # Add the orig
 os.system("cp -R %s/* build/%s/" % (packaging, project)) # Add the debian dir
 os.system("cp -R %s/.pc build/%s/" % (packaging, project)) # Add the .pc dir
+
+if len(sys.argv) > 2:
+    option = sys.argv[2]
+    if option == "--automate-build":    
+        # AUTOMATE BUILD
+        os.chdir("build/%s" % project)
+        os.system("dpkg-buildpackage -S -sa")
+        os.chdir("../..")
+        os.system("ls build/%s_%s*" % (project, version))
+        os.system("cp build/%s_%s* /var/www/build.linuxmint.com/automate/instances/linuxmint/upload/" % (project, version))
+    elif option == "--local-build":
+       # LOCAL BUILD
+       os.system("dpkg-buildpackage -j4")
+       os.system("sudo dpkg -i ../*.deb")
+       os.system("cp ../*.deb ../../debs/")
+
