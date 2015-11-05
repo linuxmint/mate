@@ -3,12 +3,14 @@
 DHFLAGS=--parallel
 
 %:
-	dh $@ $(DHFLAGS)
+	dh $@ $(DHFLAGS) --with python2
 
 override_dh_install:
 	rm -f debian/tmp/usr/share/MateConf/gsettings/*.convert
 	rm -rfv debian/tmp/usr/lib/*/pluma/plugin-loaders/*.la
 	rm -rfv debian/tmp/usr/lib/*/pluma/plugins/*.la
+	find -name "*.pyc" -exec rm {} \;
+	find -name "*.pyo" -exec rm {} \;
 	dh_install --fail-missing
 
 override_dh_auto_configure:
