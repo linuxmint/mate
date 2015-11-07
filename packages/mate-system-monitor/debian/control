@@ -41,8 +41,8 @@ Description: Process viewer and system resource monitor for MATE
 Package: mate-system-monitor-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: mate-system-monitor (<< 1.9.0),
-Breaks: mate-system-monitor (<< 1.9.0),
+Replaces: mate-system-monitor (<< 1.11.0),
+Breaks: mate-system-monitor (<< 1.11.0),
 Description: Process viewer and system resource monitor for MATE (common files)
  MATE system monitor allows you to graphically view and manipulate the running
  processes on your system.  It also provides an overview of available
