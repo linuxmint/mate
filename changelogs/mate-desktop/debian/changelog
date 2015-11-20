@@ -1,0 +1,61 @@
+mate-desktop (1.12.0.1-1) rosa; urgency=medium
+
+  * Updated translations
+  * refactor draw/expose code a bit and set the correct return type
+  * display properties: don't try to free a string literal (fix crash)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 20 Nov 2015 13:39:53 +0000
+
+mate-desktop (1.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 03 Nov 2015 11:17:31 +0000
+
+mate-desktop (1.11.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 15 Oct 2015 16:58:11 +0300
+
+mate-desktop (1.10.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 24 Aug 2015 15:38:25 +0300
+
+mate-desktop (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 13 Jul 2015 12:03:35 +0300
+
+mate-desktop (1.10.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 05 Apr 2015 19:48:48 +0200
+
+mate-desktop (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 24 Feb 2015 19:40:06 +0100
+
+mate-desktop (1.9.4-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 15 Jan 2015 11:44:31 +0100
+
+mate-desktop (1.9.3-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 10 Nov 2014 09:53:14 +0100
+
+mate-desktop (1.9.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 12 Jul 2014 10:58:01 +0200
