@@ -26,12 +26,17 @@ if os.path.exists ("packages/%s" % project):
 
 orig = "build/%s_%s.orig.tar.xz" % (project, version)
 os.system("mkdir -p build")
+os.system("mkdir -p debs")
 os.system("rm -rf build/*")
 os.system("tar xvfJ %s -C build/" % release) # Uncompress the release
 os.system("mv build/%s* build/%s" % (project, project))
 os.system("cp %s %s" % (release, orig)) # Add the orig
 os.system("cp -R %s/* build/%s/" % (packaging, project)) # Add the debian dir
 os.system("cp -R %s/.pc build/%s/" % (packaging, project)) # Add the .pc dir
+
+if os.path.exists ("changelogs/%s" % project):
+    # overwrite the changelog
+    os.system("cp changelogs/%s/debian/changelog build/%s/debian/changelog" % (project, project))
 
 if len(sys.argv) > 2:
     option = sys.argv[2]
