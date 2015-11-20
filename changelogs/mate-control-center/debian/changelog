@@ -1,0 +1,240 @@
+mate-control-center (1.12.0.1-1) rosa; urgency=medium
+
+  * Updated translations
+  * display properties: don't try to free a string literal (fix crash)
+  * Fix dangling pointer errors
+  * appearance: a bit of consistency in ui file
+  * Touchpad properties: Fixed alignment for two-three finger button combos
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 20 Nov 2015 13:10:48 +0000
+
+mate-control-center (1.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 03 Nov 2015 13:17:40 +0000
+
+mate-control-center (1.11.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 15 Oct 2015 16:58:07 +0300
+
+mate-control-center (1.10.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 05 Oct 2015 15:46:11 +0300
+
+mate-control-center (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Mon, 13 Jul 2015 17:21:23 +0300
+
+mate-control-center (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 23 Jun 2015 17:01:59 +0300
+
+mate-control-center (1.9.1-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 20 Jan 2015 21:34:29 +0100
+
+mate-control-center (1.9.0-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 22 Mar 2014 17:58:02 +0100
+
+mate-control-center (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:54:56 +0100
+
+mate-control-center (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 21:00:19 +0100
+
+mate-control-center (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 24 Jan 2014 19:38:42 +0100
+
+mate-control-center (1.6.0-3.1) unstable; urgency=low
+
+  * Rebuild for new dconf library in Jessie.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 03 Jul 2013 12:51:13 +0200
+
+mate-control-center (1.6.0-3) unstable; urgency=low
+
+  * Add conflict with GNOME's libslab0 and libslab0a.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 06 Apr 2013 17:49:48 +0200
+
+mate-control-center (1.6.0-2) unstable; urgency=low
+
+  * Cherry pick upstream patch to support Compiz 0.9.
+  * Add libglib2.0-bin as dependency.
+  * Add gconf2 in suggested packages (needed to support Compiz 0.8).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 04 Apr 2013 11:24:17 +0200
+
+mate-control-center (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 31 Mar 2013 18:21:00 -0400
+
+mate-control-center (1.5.5-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 23 Mar 2013 11:34:39 +0100
+
+mate-control-center (1.5.4-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 18 Feb 2013 23:34:10 +0100
+
+mate-control-center (1.5.3-2) unstable; urgency=low
+
+  * New upstream development release.
+  * Fixed a bug in the ordering of titlebar actions.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 13 Jan 2013 16:41:55 -0500
+
+mate-control-center (1.5.3-1) unstable; urgency=low
+
+  * Testing a bugfix. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Thu, 10 Jan 2013 23:23:23 -0500
+
+mate-control-center (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Dec 2012 23:26:56 +0100
+
+mate-control-center (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+  * debian/control: add gsettings-desktop-schemas as depends (needed for
+    shared proxy settings).
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 04 Dec 2012 08:09:50 +0100
+
+mate-control-center (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Add libdconf-dev in build depends.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 27 Oct 2012 17:06:10 +0200
+
+mate-control-center (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 21:42:56 -0400
+
+mate-control-center (1.3.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 28 Jun 2012 00:34:06 +0200
+
+mate-control-center (1.2.1-5) unstable; urgency=low
+
+  * Fix lintian errors.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 06 Apr 2012 14:03:29 +0200
+
+mate-control-center (1.2.1-4) unstable; urgency=low
+
+  * Ubuntu hack only used for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 01 Apr 2012 15:39:23 -0400
+
+mate-control-center (1.2.1-3) unstable; urgency=low
+
+  * Rebuild for precise 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 19:53:19 -0400
+
+mate-control-center (1.2.1-2) unstable; urgency=low
+
+  * Fixed version info and removed type-handling from depends 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 19:06:59 -0400
+
+mate-control-center (1.2.1-1) unstable; urgency=low
+
+  * Upstream bug fix.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 25 Mar 2012 18:14:26 -0400
+
+mate-control-center (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add --enable-ubuntu if build on Ubuntu.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 29 Feb 2012 00:01:10 +0100
+
+mate-control-center (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 10 Dec 2011 19:33:41 +0100
+
+mate-control-center (1.0.0-4) unstable; urgency=low
+
+  * Applied patch to solve gtk engine dection issue.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Nov 2011 23:06:08 +0100
+
+mate-control-center (1.0.0-3) unstable; urgency=low
+
+  * Added depends to build also /usr/bin/mate-control-center.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 24 Nov 2011 16:36:06 +0100
+
+mate-control-center (1.0.0-2) unstable; urgency=low
+
+  * Fixed debian/ folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 05 Nov 2011 23:35:24 +0100
+
+mate-control-center (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2011 12:31:11 +0000
+
+mate-control-center (2011.10.30-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 30 Oct 2011 13:11:11 +0100
+
+mate-control-center (2011.10.18-1) unstable; urgency=low
+
+  * Fixed version.
+  * Fixed debian/control.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 22 Oct 2011 23:27:26 +0200
+
+mate-control-center (2011.10.18) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 22 Oct 2011 01:46:24 +0200
+
