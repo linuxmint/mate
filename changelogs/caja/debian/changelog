@@ -1,0 +1,291 @@
+caja (1.12.0.1-1) rosa; urgency=medium
+
+  * Updated translations
+  * Fixed caja flooding .xsession-errors with "caja_menu_provider_get_background_items: assertion 'CAJA_IS_MENU_PROVIDER (provider)' failed"
+  * Don't translate default font value in gsettings schema
+  * fix g_object_unref call
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 20 Nov 2015 15:20:51 +0000
+
+caja (1.12.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 03 Nov 2015 13:15:10 +0000
+
+caja (1.11.0-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 15 Oct 2015 16:47:07 +0300
+
+caja (1.10.4-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 24 Sep 2015 14:36:03 +0300
+
+caja (1.10.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Tue, 21 Jul 2015 14:42:09 +0300
+
+caja (1.10.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 16 Jul 2015 12:25:13 +0300
+
+caja (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Vlad Orlov <monsta@inbox.ru>  Thu, 25 Jun 2015 12:38:01 +0300
+
+caja (1.10.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 06 Apr 2015 18:29:28 +0200
+
+caja (1.9.90-1) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 24 Feb 2015 20:29:21 +0100
+
+caja (1.9.4-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 13 Jan 2015 11:51:44 +0100
+
+caja (1.9.3-1) unstable; urgency=medium
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 10 Nov 2014 09:53:27 +0100
+
+caja (1.9.2-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 12 Oct 2014 14:31:17 +0200
+
+caja (1.9.0-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 17 Mar 2014 19:09:43 +0100
+
+caja (1.8.0-0) unstable; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 20:56:15 +0100
+
+caja (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:24:14 +0100
+
+caja (1.7.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 13 Feb 2014 09:54:40 +0100
+
+caja (1.7.0-1) unstable; urgency=low
+
+  * Add gvfs to Depends.
+  * Cherry pick upstream patch:
+    06-fix-thumbnails-frames.patch
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 12 Jul 2013 20:33:32 +0200
+
+mate-file-manager (1.6.1-3) unstable; urgency=low
+
+  * Cherry pick upstream patch:
+    05-fix-binary-check-2.patch
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 08 May 2013 23:28:39 +0200
+
+mate-file-manager (1.6.1-2) unstable; urgency=low
+
+  * Cherry pick upstream patches:
+    00-fix-radio-buttons.patch
+    01-fix-default-sort-order.patch
+    02-fix-spatial-mode.patch
+    03-fix-for-x-caja-desktop-windows.patch
+    04-fix-binary-check.patch
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 07 May 2013 12:31:38 +0200
+
+mate-file-manager (1.6.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 11 Apr 2013 19:45:50 +0200
+
+mate-file-manager (1.6.0-2) unstable; urgency=low
+
+  * Add patch to fix scrolling issue.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Apr 2013 10:12:40 +0200
+
+mate-file-manager (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 31 Mar 2013 16:48:38 +0200
+
+mate-file-manager (1.5.5-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 10 Mar 2013 19:01:07 +0100
+
+mate-file-manager (1.5.4-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 24 Feb 2013 14:32:35 +0100
+
+mate-file-manager (1.5.3-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 07 Feb 2013 23:55:50 +0100
+
+mate-file-manager (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 04 Dec 2012 00:20:22 +0100
+
+mate-file-manager (1.5.1-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 25 Nov 2012 00:37:35 +0100
+
+mate-file-manager (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 10 Oct 2012 20:02:32 +0200
+
+mate-file-manager (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 13 Jul 2012 19:10:40 -0400
+
+mate-file-manager (1.3.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Add meld and engrampa to suggested packages.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 16 Jun 2012 00:14:29 +0200
+
+mate-file-manager (1.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed acconfig.h and replaced it with AH_TEMPLATE and AC_DEFINE.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Tue, 03 Apr 2012 21:15:15 -0400
+
+mate-file-manager (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 29 Mar 2012 10:52:34 +0200
+
+mate-file-manager (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed mate-file-manager binary (empty) package. Use caja.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 23 Feb 2012 01:32:23 +0100
+
+mate-file-manager (1.1.2-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 05 Jan 2012 13:57:58 +0100
+
+mate-file-manager (1.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 26 Dec 2011 20:31:22 +0100
+
+mate-file-manager (1.1.0-2) unstable; urgency=low
+
+  * Removed .la file.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 10 Dec 2011 00:50:08 +0100
+
+mate-file-manager (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add gir package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 08 Dec 2011 21:53:14 +0100
+
+mate-file-manager (2011.12.01-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add caja-dbg and caja-common packages.
+  * Switch to autogen.sh.
+  * Add debian/watch file and get-orig-source in debian/rules.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 07 Dec 2011 22:58:52 +0100
+
+mate-file-manager (1.0.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 10 Nov 2011 23:23:14 +0100
+
+mate-file-manager (1.0.0-2) unstable; urgency=low
+
+  * File manager moved to caja package.
+  * Library files moved to libcaja-extension package.
+  * Include files moved to libcaja-extension-deve package.
+  * Added appropriate depends to gir1.2-caja package.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 04 Nov 2011 20:29:14 +0100
+
+mate-file-manager (1.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Nov 2011 18:14:55 +0000
+
+mate-file-manager (2011.11.03) unstable; urgency=low
+
+  * 2011.11.03
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Nov 2011 12:11:36 +0000
+
+mate-file-manager (2011.10.30-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 30 Oct 2011 15:16:27 +0100
+
+mate-file-manager (2011.10.18-2) unstable; urgency=low
+
+  * Fixed debian folder.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 29 Oct 2011 00:45:25 +0200
+
+mate-file-manager (2011.10.18-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 21 Oct 2011 02:26:02 +0200
+ 
