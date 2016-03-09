@@ -1,3 +1,9 @@
+pluma (1.12.2-1) unstable; urgency=medium
+
+  *  fix possible use-after-free during incremental search
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 09 Mar 2016 10:41:44 +0000
+
 pluma (1.12.0-1) unstable; urgency=medium
 
   * New upstream version

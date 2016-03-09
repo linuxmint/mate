@@ -1,3 +1,10 @@
+mate-system-monitor (1.12.1-1) unstable; urgency=medium
+
+  * fixes the huge icon of mate-sensors-applet process in LMDE 2
+  * fixes eating CPU and slowdowns during columns resizing
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 09 Mar 2016 10:39:19 +0000
+
 mate-system-monitor (1.12.0-2) unstable; urgency=medium
 
   * fix upgrade issue in Mint 17.x 
