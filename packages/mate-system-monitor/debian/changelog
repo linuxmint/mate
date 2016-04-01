@@ -1,3 +1,9 @@
+mate-system-monitor (1.12.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 01 Apr 2016 07:22:04 -0400
+
 mate-system-monitor (1.12.1-1) unstable; urgency=medium
 
   * fixes the huge icon of mate-sensors-applet process in LMDE 2
