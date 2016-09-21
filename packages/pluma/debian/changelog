@@ -1,3 +1,9 @@
+pluma (1.14.1-1) sarah; urgency=medium
+
+  * New upstream version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 21 Sep 2016 15:59:12 +0100
+
 pluma (1.14.0-1) sarah; urgency=medium
 
   * New upstream version
