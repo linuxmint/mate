@@ -4,39 +4,36 @@ Build order
 mate-common
 mate-desktop
 libmatekbd
-libmateweather
 mate-icon-theme
 caja
 marco
 mate-menus
 mate-session-manager
-mate-settings-daemon
-mate-panel
+libmatemixer
+mate-settings-daemon (libmatemixer)
 mate-notification-daemon
 mate-polkit
 mate-backgrounds
-mate-control-center
-pluma
+mate-control-center (mate-settings-daemon)
 mate-screensaver
 mate-terminal
-libmatemixer
-mate-utils
 mate-system-monitor
 eom
 engrampa
 atril
 mate-media
-mate-applets
-mate-indicator-applet
-mate-power-manager
-mate-netbook
 mate-user-guide
 mate-user-share
 mozo
 python-caja
 caja-dropbox
 caja-extensions
+libmateweather
+mate-panel (libmateweather)
+mate-utils (mate-panel)
+mate-power-manager (mate-panel)
+mate-netbook (mate-panel)
+mate-applets
+mate-indicator-applet
 mate-sensors-applet
-
-
-
+pluma
