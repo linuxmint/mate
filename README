@@ -1,3 +1,36 @@
+Clone debian-packages first
+---------------------------
+
+git clone https://github.com/mate-desktop/debian-packages.git
+
+Refresh releases from git
+-------------------------
+
+./download-git-releases
+
+These require to run autogen.sh, make dist..etc.
+
+Refresh releases from tar releases
+----------------------------------
+
+./download-tar-releases
+
+These are ready to build
+
+Refresh individual git release
+------------------------------
+
+./get-github-release project version label
+
+Example: ./get-github-release mate-common 1.22.0 v1.22.0
+
+Build
+-----
+
+./build-from-release suffix file.tar.xz
+
+Example: ./build-from-release +tina mate-common_1.22.0.orig.tar.xz
+
 Build order
 ----------
 
