@@ -1,0 +1,15 @@
+#!/usr/bin/python2
+
+import os
+import commands
+
+for path in commands.getoutput("find debian-packages/ -name changelog | grep -v mate-desktop-environment").split("\n"):
+    (current, project, debian, changelog) = path.split("/")
+    header = commands.getoutput("cat debian-packages/%s/debian/changelog | grep urgency | head -1" % project)
+    version = header.split("(")[1]
+    version = version.split(")")[0]
+    if ("-" in version):
+        version = version.split("-")[0]
+    command = "./get-github-release %s %s v%s" % (project, version, version)
+    print ("Running %s" % command)
+    os.system(command)
