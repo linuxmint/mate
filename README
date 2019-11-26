@@ -37,7 +37,6 @@ Build order
 mate-common
 mate-desktop
 libmatekbd
-mate-icon-theme
 caja
 marco
 mate-menus
@@ -46,27 +45,31 @@ libmatemixer
 mate-settings-daemon (libmatemixer)
 mate-notification-daemon
 mate-polkit
-mate-backgrounds
 mate-control-center (mate-settings-daemon)
 mate-screensaver
 mate-terminal
 mate-system-monitor
-eom
 engrampa
-atril
 mate-media
 mate-user-guide
-mate-user-share
+mate-user-share --- comment call to autogen.sh in debian/rules
 mozo
 python-caja
 caja-dropbox
 caja-extensions
-libmateweather
+libmateweather --- needs tzdata install, and usr/share/gtk-doc/ added to debian/libmateweather-dev.install
 mate-panel (libmateweather)
-mate-utils (mate-panel)
+mate-utils (mate-panel) --- usr/share/gtk-doc/ added to debian/libmatedic-dev.install
 mate-power-manager (mate-panel)
 mate-netbook (mate-panel)
 mate-applets
 mate-indicator-applet
 mate-sensors-applet
+
+And also (outside of Mint):
+
+mate-icon-theme
+mate-backgrounds
+eom
+atril
 pluma
